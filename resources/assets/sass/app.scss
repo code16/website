@@ -1,1 +1,21 @@
+@tailwind preflight;
+@tailwind utilities;
+
+@import "page/sharp";
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  @apply .font-sans;
+}
+
+a {
+  @apply .text-brand-cyan .no-underline;
+}
+
+p {
+  @apply .mb-2;
+}
 
