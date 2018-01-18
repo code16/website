@@ -13,6 +13,10 @@ body {
 
 a {
   @apply .text-brand-cyan .no-underline;
+
+  &:hover {
+    @apply .underline;
+  }
 }
 
 p {

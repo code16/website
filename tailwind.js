@@ -129,7 +129,7 @@ let colors = {
     // 'pink-lightest': '#ffebef',
 
     'brand-brown': '#282224',
-    'brand-cyan': '#9AFFFF',
+    'brand-cyan': '#61FFE3',
     'brand-white': '#D4D4D4'
 }
 
