@@ -21,7 +21,7 @@
                 </section>
                 <section class="mt-8 font-normal">
                     <p>SCM Gotham,</p>
-                    <p>24 rue du Vieux marché aux Vins,</p>
+                    <p>24 rue du Vieux marché aux Vins</p>
                     <p>67000 Strasbourg, France</p>
                 </section>
                 <section class="mt-16 text-3xl">
