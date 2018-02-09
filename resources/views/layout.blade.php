@@ -7,10 +7,10 @@
 
     <title>Code 16</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
-<body class="{{ $bodyClass }}">
+<body class="{{ $background ? "bg-$background" : '' }}">
 
     @yield('content')
 

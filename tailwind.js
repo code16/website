@@ -333,6 +333,7 @@ module.exports = {
         'normal': '0',
         'wide': '0.05em',
         'wider': '0.1em',
+        'widest': '0.15em',
     },
 
 

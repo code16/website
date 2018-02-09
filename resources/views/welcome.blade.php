@@ -1,4 +1,4 @@
-@extends('layout', ["bodyClass" => "bg-brand-brown"])
+@extends('layout', ["background" => "brand-brown"])
 
 @section('content')
     <div class="w-screen h-screen font-sans font-bold text-white tracking-wide p-8 sm:p-16">

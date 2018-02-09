@@ -20,6 +20,6 @@ a {
 }
 
 p {
-  @apply .mb-2;
+  @apply .mb-4 .font-serif .text-xl;
+  line-height: 1.75;
 }
-
