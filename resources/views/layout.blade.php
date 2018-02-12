@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="{{ $background ? "bg-$background" : '' }}">
-
-    @yield('content')
+    <div id="app">
+        @yield('content')
+    </div>
 
     <script src="{{ mix('js/app.js') }}"></script>
 

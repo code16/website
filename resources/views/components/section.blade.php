@@ -1,13 +1,11 @@
-<div>
+<div class="mb-32 ml-48">
     @if($title??false)
-        <div class="flex">
-            <div class="w-32"></div>
-            <h2 class="tracking-widest text-uppercase uppercase">{{ $title }}</h2>
+        <div>
+            <h2 class="tracking-widest text-uppercase uppercase inline-block"
+                v-sticky-title="{ paddingTop:64, anchorMode:'start', relativeAnchorX:-100 }">
+                {{ $title }}
+            </h2>
         </div>
     @endif
-    <div class="flex">
-        <div class="w-1/6"></div>
-        <div class="{{ $large??false ? 'w-1/2' : 'w-2/5' }}">{{ $slot }}</div>
-    </div>
-    <div class="w-100 h-32"></div>
+    <div class="{{ $large??false ? 'w-2/3' : 'w-2/3' }}">{{ $slot }}</div>
 </div>

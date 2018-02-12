@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="text-white p-8 sm:p-16">
-        <header class="mb-16 w-64">
-            <h1 class="uppercase tracking-wider text-4xl bg-white text-brand-brown text-right pb-6 px-2 pt-2">Code 16</h1>
+        <header class="mb-16">
+            <h1 class="uppercase tracking-wider text-4xl bg-white text-brand-brown text-right pb-6 px-2 pt-2 w-64" v-sticky-title="{ relativeStart:-64, paddingTop:64 }">Code 16</h1>
         </header>
         <div class="container">
             @component('components.section', ['large'=>true])
@@ -43,6 +43,27 @@
                     Plutôt que de miltilier les petits projets
                     et les contacts nous cherchons à créer des partenariats avec nos clients, pour travailler avec eux sur le long terme, a n d’assuer à nos logiciels une maintenance continue.
                 @endcomponent
+                    @component('components.paragraph')
+                        @slot('title')
+                            Nous sommes impliqué dans l’Open-source
+                        @endslot
+                        Plutôt que de miltilier les petits projets
+                        et les contacts nous cherchons à créer des partenariats avec nos clients, pour travailler avec eux sur le long terme, a n d’assuer à nos logiciels une maintenance continue.
+                    @endcomponent
+                    @component('components.paragraph')
+                        @slot('title')
+                            Nous sommes impliqué dans l’Open-source
+                        @endslot
+                        Plutôt que de miltilier les petits projets
+                        et les contacts nous cherchons à créer des partenariats avec nos clients, pour travailler avec eux sur le long terme, a n d’assuer à nos logiciels une maintenance continue.
+                    @endcomponent
+                    @component('components.paragraph')
+                        @slot('title')
+                            Nous sommes impliqué dans l’Open-source
+                        @endslot
+                        Plutôt que de miltilier les petits projets
+                        et les contacts nous cherchons à créer des partenariats avec nos clients, pour travailler avec eux sur le long terme, a n d’assuer à nos logiciels une maintenance continue.
+                    @endcomponent
             @endcomponent
         </div>
     </div>
