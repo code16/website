@@ -23,3 +23,8 @@ p {
   @apply .mb-4 .font-serif .text-xl;
   line-height: 1.75;
 }
+
+
+.sticky-title-object {
+  transition: transform 100ms ease-in-out;
+}
