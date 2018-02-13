@@ -17,11 +17,13 @@ function transform(el, { theta, translateX, translateY }) {
 // dy: distance from scrollY to "starting point" Y (top of the title)
 function getTransformData(state, { dy }) {
     let d = limit(dy/state.props.duration,0,1);
+    let anchorX = state.initialRect.width/2;
+    let anchorY = state.initialRect.width/2 - state.initialRect.height/2 - state.props.relativeAnchorX;
     //debugger;
     return {
-        theta: -90*d,
-        translateX: -(state.initialRect.width/2+state.props.paddingTop) * d,
-        translateY: -(state.initialRect.width/2-state.initialRect.height/2-state.props.relativeAnchorX) * d
+        theta: -90 *d,
+        translateX: anchorX * -d,
+        translateY: anchorY * -d
     }
 }
 
@@ -46,7 +48,7 @@ const defaultProps = {
     relativeAnchorX:0,
     startOffset:0,
     endOffset:0,
-    duration:90
+    duration:45
 };
 
 function handleScroll(el) {
@@ -68,15 +70,12 @@ function handleScroll(el) {
     let scrollY = window.pageYOffset;
     let dy = scrollY - (initialRect.y - paddingTop + startOffset);
 
-    //console.log(dy, duration);
-
-
     if((isSticky||isFirstScroll) && dy<duration) {
         setStatic(el, { state:el._stickyTitleState });
     }
     if(dy>duration) {
         if(hasContainer) {
-            if ((!touchTop || isFirstScroll) && scrollY < containerRect.y) {
+            if ((!touchTop || isFirstScroll) && scrollY < containerRect.y-paddingTop) {
                 if(isSticky) {
                     transform(el, getTransformData(el._stickyTitleState, { dy }));
                 }
@@ -85,7 +84,7 @@ function handleScroll(el) {
                 el._stickyTitleState.touchTop = true;
                 placeholder.style.display = 'block';
             }
-            else if ((touchTop||isFirstScroll) && scrollY > containerRect.y) {
+            else if ((touchTop||isFirstScroll) && scrollY > containerRect.y-paddingTop) {
                 setSticky(el, {state: el._stickyTitleState, dy});
                 el._stickyTitleState.touchTop = false;
             }

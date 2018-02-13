@@ -95,7 +95,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
@@ -106,7 +106,7 @@ module.exports = __webpack_require__(8);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sticky_title__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sticky_title__ = __webpack_require__(12);
 
 
 
@@ -11378,6 +11378,16 @@ process.umask = function() { return 0; };
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11407,10 +11417,13 @@ function getTransformData(state, _ref2) {
     var dy = _ref2.dy;
 
     var d = limit(dy / state.props.duration, 0, 1);
+    var anchorX = state.initialRect.width / 2;
+    var anchorY = state.initialRect.width / 2 - state.initialRect.height / 2 - state.props.relativeAnchorX;
+    //debugger;
     return {
         theta: -90 * d,
-        translateX: -(state.initialRect.width / 2 + state.props.paddingTop) * d,
-        translateY: -(state.initialRect.width / 2 - state.initialRect.height / 2 - state.props.relativeAnchorX) * d
+        translateX: anchorX * -d,
+        translateY: anchorY * -d
     };
 }
 
@@ -11443,7 +11456,7 @@ var defaultProps = {
     relativeAnchorX: 0,
     startOffset: 0,
     endOffset: 0,
-    duration: 90
+    duration: 45
 };
 
 function handleScroll(el) {
@@ -11451,34 +11464,52 @@ function handleScroll(el) {
         initialRect = _el$_stickyTitleState.initialRect,
         hasContainer = _el$_stickyTitleState.hasContainer,
         containerRect = _el$_stickyTitleState.containerRect,
+        placeholder = _el$_stickyTitleState.placeholder,
         _el$_stickyTitleState2 = _el$_stickyTitleState.props,
         paddingTop = _el$_stickyTitleState2.paddingTop,
         startOffset = _el$_stickyTitleState2.startOffset,
         duration = _el$_stickyTitleState2.duration,
         isSticky = _el$_stickyTitleState.isSticky,
         touchTop = _el$_stickyTitleState.touchTop,
-        touchBottom = _el$_stickyTitleState.touchBottom;
+        touchBottom = _el$_stickyTitleState.touchBottom,
+        _el$_stickyTitleState3 = _el$_stickyTitleState.isFirstScroll,
+        isFirstScroll = _el$_stickyTitleState3 === undefined ? true : _el$_stickyTitleState3;
 
     var scrollY = window.pageYOffset;
     var dy = scrollY - (initialRect.y - paddingTop + startOffset);
 
-    console.log(dy);
-    if (!isSticky && dy > duration) {
-        setSticky(el, { state: el._stickyTitleState, dy: dy });
-    } else if (isSticky && dy < duration) {
+    if ((isSticky || isFirstScroll) && dy < duration) {
         setStatic(el, { state: el._stickyTitleState });
+    }
+    if (dy > duration) {
+        if (hasContainer) {
+            if ((!touchTop || isFirstScroll) && scrollY < containerRect.y - paddingTop) {
+                if (isSticky) {
+                    transform(el, getTransformData(el._stickyTitleState, { dy: dy }));
+                }
+                el.style.position = 'absolute';
+                el.style.top = '0';
+                el._stickyTitleState.touchTop = true;
+                placeholder.style.display = 'block';
+            } else if ((touchTop || isFirstScroll) && scrollY > containerRect.y - paddingTop) {
+                setSticky(el, { state: el._stickyTitleState, dy: dy });
+                el._stickyTitleState.touchTop = false;
+            }
+        } else if (!isSticky || isFirstScroll) {
+            setSticky(el, { state: el._stickyTitleState, dy: dy });
+        }
     }
 
     if (hasContainer) {
         var containerBottom = containerRect.y + containerRect.height;
         var titleBottom = initialRect.width + paddingTop;
-        if (!touchBottom && scrollY > containerBottom - titleBottom) {
+        if ((!touchBottom || isFirstScroll) && scrollY > containerBottom - titleBottom) {
             el.style.position = 'absolute';
             el.style.top = 'auto';
             el.style.bottom = initialRect.width / 2 + 'px';
             el._stickyTitleState.touchBottom = true;
         } else if (touchBottom && scrollY < containerBottom - titleBottom) {
-            setSticky(el, { state: el._stickyTitleState });
+            setSticky(el, { state: el._stickyTitleState, dy: dy });
             el.style.bottom = 'auto';
             el._stickyTitleState.touchBottom = false;
         }
@@ -11488,6 +11519,8 @@ function handleScroll(el) {
     if (!el._stickyTitleState.isSticky) {
         transform(el, getTransformData(el._stickyTitleState, { dy: dy }));
     }
+
+    el._stickyTitleState.isFirstScroll = false;
 }
 
 function createPlaceholder(el) {
@@ -11541,12 +11574,6 @@ function findAncestor(el, cls) {
         window.removeEventListener('scroll', el._stickyTitleScrollListener);
     }
 });
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
