@@ -17,6 +17,7 @@ function transform(el, { theta, translateX, translateY }) {
 // dy: distance from scrollY to "starting point" Y (top of the title)
 function getTransformData(state, { dy }) {
     let d = limit(dy/state.props.duration,0,1);
+    //debugger;
     return {
         theta: -90*d,
         translateX: -(state.initialRect.width/2+state.props.paddingTop) * d,
@@ -53,6 +54,7 @@ function handleScroll(el) {
         initialRect,
         hasContainer,
         containerRect,
+        placeholder,
         props: {
             paddingTop,
             startOffset,
@@ -60,30 +62,49 @@ function handleScroll(el) {
         },
         isSticky,
         touchTop,
-        touchBottom
+        touchBottom,
+        isFirstScroll=true
     } = el._stickyTitleState;
     let scrollY = window.pageYOffset;
     let dy = scrollY - (initialRect.y - paddingTop + startOffset);
 
-    console.log(dy);
-    if(!isSticky && dy>duration) {
-        setSticky(el, { state:el._stickyTitleState, dy });
-    }
-    else if(isSticky && dy<duration) {
+    //console.log(dy, duration);
+
+
+    if((isSticky||isFirstScroll) && dy<duration) {
         setStatic(el, { state:el._stickyTitleState });
+    }
+    if(dy>duration) {
+        if(hasContainer) {
+            if ((!touchTop || isFirstScroll) && scrollY < containerRect.y) {
+                if(isSticky) {
+                    transform(el, getTransformData(el._stickyTitleState, { dy }));
+                }
+                el.style.position = 'absolute';
+                el.style.top = '0';
+                el._stickyTitleState.touchTop = true;
+                placeholder.style.display = 'block';
+            }
+            else if ((touchTop||isFirstScroll) && scrollY > containerRect.y) {
+                setSticky(el, {state: el._stickyTitleState, dy});
+                el._stickyTitleState.touchTop = false;
+            }
+        } else if(!isSticky||isFirstScroll) {
+            setSticky(el, { state: el._stickyTitleState, dy });
+        }
     }
 
     if(hasContainer) {
         let containerBottom = containerRect.y+containerRect.height;
         let titleBottom = initialRect.width+paddingTop;
-        if(!touchBottom && scrollY > containerBottom-titleBottom) {
+        if((!touchBottom || isFirstScroll) && scrollY > containerBottom-titleBottom) {
             el.style.position = 'absolute';
             el.style.top='auto';
             el.style.bottom = `${initialRect.width/2}px`;
             el._stickyTitleState.touchBottom = true
         }
         else if(touchBottom && scrollY < containerBottom-titleBottom) {
-            setSticky(el, { state:el._stickyTitleState });
+            setSticky(el, { state:el._stickyTitleState, dy });
             el.style.bottom = 'auto';
             el._stickyTitleState.touchBottom = false;
         }
@@ -93,6 +114,8 @@ function handleScroll(el) {
     if(!el._stickyTitleState.isSticky) {
         transform(el, getTransformData(el._stickyTitleState, { dy }));
     }
+
+    el._stickyTitleState.isFirstScroll = false;
 }
 
 function createPlaceholder(el) {
