@@ -8,18 +8,26 @@
         <div class="container">
             @component('components.section', ['large'=>true])
                 @component('components.paragraph')
-                    Developpeurs web, nous concevons depuis 2007 des solutions basées sur des technologies open-source, avec une approche d’artisan : un développement sur-mesure qui permet d’avoir la main à tous les niveaux.
+                    Nous concevons depuis 2007 des solutions basées
+                    sur des technologies Open-source, avec une approche d’artisan&nbsp;:
+                    un développement sur-mesure qui permet d’avoir la main à tous les niveaux.
                 @endcomponent
                 @component('components.paragraph')
-                    Ces dernières années, notre expertise c’est principalement appuyée sur les technologies Laravel et Vue.js.
+                    Ces dernières années, notre expertise s’est principalement appuyée
+                    sur les technologies <a href="https://laravel.com">Laravel</a>
+                    et <a href="https://vuejs.org">Vue.js</a>.
                 @endcomponent
                 @component('components.paragraph')
-                    Nos clients ont un point commun : ils veulent une solution adaptée à un problème peu standard tout en bénéficiant d’un système de gestion puissant et intuitif qui les rende autonomes au quotidien.
+                    Nos clients viennent de divers secteurs (la culture, le commerce, le tourisme, ...)
+                    et ont des besoins variés (site web de vente en ligne, logiciel de CRM, application mobile, ...)
+                    mais ils ont un point commun&nbsp;: ils veulent une solution adaptée
+                    à un problème spécifique tout en bénéficiant d’un système de gestion puissant
+                    et intuitif qui les rende autonomes au quotidien.
                 @endcomponent
             @endcomponent
             @component('components.section')
                 @slot('title')
-                    Notre Approche
+                    Notre Approche du développement
                 @endslot
                 @component('components.paragraph')
                     @slot('title')
