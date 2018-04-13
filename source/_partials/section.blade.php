@@ -1,7 +1,7 @@
-<div class="pb-32">
+<div class="pb-12 md:pb-32">
     <div class="relative">
         @if($title??false)
-            <div class="pl-16">
+            <div class="md:pl-16 mb-4 md:mb-16">
                 <h2 class="tracking-widest text-uppercase uppercase inline-block"
                     v-sticky-title:section="{{
                         json_encode((object)array_merge([
@@ -17,6 +17,8 @@
                 </h2>
             </div>
         @endif
-        <div class="{{ $large??false ? 'w-2/3' : 'w-2/3' }} pl-48">{{ $slot }}</div>
+        <div class="lg:max-w-lg xl:max-w-xl md:pl-48">
+            {{ $slot }}
+        </div>
     </div>
 </div>
