@@ -5,7 +5,10 @@
 ])
 
 @section('content')
-    @component('_partials/section', ['stickyTitle'=>[ 'startOffset'=>-130 ]])
+    @component('_partials/section', [
+        'stickyTitle'=>[ 'startOffset'=>-130 ],
+        'container'=>'max-w-xl'
+    ])
         @slot('title')
             {{ $page->title }}
         @endslot

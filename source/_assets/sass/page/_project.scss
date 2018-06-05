@@ -1,5 +1,24 @@
 .project {
   p {
     @apply .mb-8;
+    @screen lg { @apply .max-w-md; }
+    @screen xl { @apply .max-w-lg; }
+  }
+  img {
+    @screen md { max-width:calc(config('maxWidth.md') - 6rem);  }
+    @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
+    @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
+  }
+  .carousel {
+    @apply .relative .z-20;
+    margin-left: -16rem;
+    width: 100vw;
+    .VueCarousel-inner {
+      @screen md { @apply .max-w-lg; }
+      @screen lg { @apply .max-w-xl; }
+      @screen xl { @apply .max-w-2xl; }
+      margin-left: 16rem;
+      margin-right: 4rem;
+    }
   }
 }

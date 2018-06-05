@@ -137,7 +137,7 @@ function findAncestor(el, cls) {
     return el;
 }
 
-export default {
+const directive =  {
     inserted(el, { value={} }) {
         el._stickyTitleState = {
             initialRect: getRect(el),
@@ -164,4 +164,11 @@ export default {
         el._stickyTitleState = null;
         window.removeEventListener('scroll', el._stickyTitleScrollListener);
     }
+};
+
+const noop = ()=>{};
+
+export default function(Vue, { breakpoint=0 }={}) {
+    Vue.directive('sticky-title', window.innerWidth > breakpoint ? directive : noop);
 }
+
