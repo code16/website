@@ -17,7 +17,7 @@
                 </h2>
             </div>
         @endif
-        <div class="lg:max-w-lg xl:max-w-xl md:pl-48">
+        <div class="{{ $container??'lg:max-w-lg xl:max-w-xl' }} md:ml-48">
             {{ $slot }}
         </div>
     </div>

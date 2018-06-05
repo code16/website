@@ -15,7 +15,7 @@
         <div id="app" class="container">
             <header class="mb-16">
                 <a href="/" class="hover:no-underline">
-                    <h1 class="uppercase tracking-wider text-4xl {{ $headerClass }} text-right pb-6 px-2 pt-2 w-64" v-sticky-title="{ paddingTop:64 }">Code 16</h1>
+                    <h1 class="uppercase tracking-wider text-4xl {{ $headerClass }} text-right pb-6 px-2 pt-2 w-64 z-10" v-sticky-title="{ paddingTop:64 }">Code 16</h1>
                 </a>
             </header>
             @yield('content')
