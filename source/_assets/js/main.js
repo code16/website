@@ -15,7 +15,7 @@ new Vue({
         adjacentImages() {
             return [...this.$el.querySelectorAll('p')]
                 .map(p=>[...p.querySelectorAll('img+img')])
-                .filter(images => images.length > 1)
+                .filter(images => images.length>0)
                 .map(images => [images[0].previousElementSibling, ...images])
         }
     },
