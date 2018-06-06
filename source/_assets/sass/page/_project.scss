@@ -10,7 +10,7 @@
     @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
   }
   .carousel {
-    @apply .relative .z-20;
+    @apply .relative .z-20 .mb-8;
     margin-left: -16rem;
     width: 100vw;
     .VueCarousel-inner {

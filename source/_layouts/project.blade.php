@@ -12,8 +12,10 @@
         @slot('title')
             {{ $page->title }}
         @endslot
-        <div class="mt-6">
-            @yield('projectContent')
+        <div>
+            <carousels-wrapper class="mt-6">
+                @yield('projectContent')
+            </carousels-wrapper>
         </div>
     @endcomponent
 @endsection
