@@ -9,6 +9,9 @@
     @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
     @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
   }
+  img+em { //image legend
+    @apply .font-sans .text-base .roman .leading-none .block;
+  }
   .carousel {
     @apply .relative .z-20 .mb-8;
     margin-left: -16rem;
