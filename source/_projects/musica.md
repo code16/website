@@ -18,7 +18,7 @@ Panier
 ![Panier sélection](/assets/img/musica_panier_selection.png)
 Panier sélection
 ![Panier programmation](/assets/img/musica_programmation.png)
-Panier programmation
+Panier programmationf
 
 Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum co
 

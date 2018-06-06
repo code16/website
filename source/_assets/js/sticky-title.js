@@ -169,6 +169,6 @@ const directive =  {
 const noop = ()=>{};
 
 export default function(Vue, { breakpoint=0 }={}) {
-    Vue.directive('sticky-title', window.innerWidth > breakpoint ? directive : noop);
+    Vue.directive('sticky-title', window.innerWidth >= breakpoint ? directive : noop);
 }
 

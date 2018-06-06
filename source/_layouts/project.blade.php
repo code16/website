@@ -12,7 +12,7 @@
         @slot('title')
             {{ $page->title }}
         @endslot
-        <div>
+        <div class="content">
             <stacker class="mt-6" :breakpoint="768">
                 @yield('projectContent')
             </stacker>

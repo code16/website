@@ -1,13 +1,23 @@
 .project {
+  .content {
+    a {
+      @apply .bg-brand-cyan .text-brand-cyan-darker .px-2;
+      &:hover {
+        @apply .text-brand-brown .no-underline;
+      }
+    }
+  }
   p {
     @apply .mb-8;
     @screen lg { @apply .max-w-md; }
     @screen xl { @apply .max-w-lg; }
   }
-  img {
-    @screen md { max-width:calc(config('maxWidth.md') - 10rem);  }
-    @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
-    @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
+  p, .stack-top, .carousel {
+    img {
+      @screen md { max-width:calc(config('maxWidth.sm'));  }
+      @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
+      @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
+    }
   }
   .legend, img+em { //image legend
     @apply .font-sans .text-base .roman .block .text-grey-darker;
@@ -24,7 +34,7 @@
       @screen lg { @apply .max-w-xl; }
       @screen xl { @apply .max-w-2xl; }
       margin-left: 16rem;
-      margin-right: 4rem;
+      margin-right: 2rem;
     }
   }
   .stack {

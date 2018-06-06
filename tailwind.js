@@ -130,6 +130,7 @@ let colors = {
 
     'brand-brown': '#282224',
     'brand-cyan': '#61FFE3',
+    'brand-cyan-darker': '#27927F',
     'brand-white': '#D4D4D4'
 }
 
