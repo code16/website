@@ -6,7 +6,7 @@
             <carousel :per-page="1">
                 <slide v-for="(slide,i) in slides" :key="i">
                     <div v-html="slide.image.outerHTML"></div>
-                    <div class="legend absolute pin-b w-full leading-normal " style="background: rgba(0,0,0,.75)">{{slide.legend}}</div>
+                    <div class="legend leading-normal pl-2" style="background: rgba(0,0,0,.5)">{{slide.legend}}</div>
                 </slide>
             </carousel>
         </div>
