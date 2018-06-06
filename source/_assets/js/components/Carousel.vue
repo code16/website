@@ -2,7 +2,7 @@
     <carousel class="carousel" :per-page="1" :pagination-enabled="false" ref="carousel">
         <slide class="slide" v-for="(slide, i) in slides" :key="i" :data-index="i" @slideClick="handleSlideClick">
             <div v-html="slide.image.outerHTML"></div>
-            <span>{{slide.legend}}</span>
+            <span class="legend">{{slide.legend}}</span>
         </slide>
     </carousel>
 </template>

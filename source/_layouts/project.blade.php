@@ -13,9 +13,9 @@
             {{ $page->title }}
         @endslot
         <div>
-            <carousels-wrapper class="mt-6">
+            <stacker class="mt-6" :breakpoint="768">
                 @yield('projectContent')
-            </carousels-wrapper>
+            </stacker>
         </div>
     @endcomponent
 @endsection

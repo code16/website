@@ -7,10 +7,18 @@
 <script>
     import Vue from 'vue';
     import CarouselComp from './Carousel';
+    import StackComp from './Stack';
 
     const Carousel = Vue.extend(CarouselComp);
+    const Stack = Vue.extend(StackComp);
 
     export default {
+        props: {
+            breakpoint:{
+                type: Number,
+                default: 0
+            }
+        },
         methods: {
             adjacentImages() {
                 return [...this.$el.querySelectorAll('p')]
@@ -24,27 +32,41 @@
                     ? nextSibling.textContent
                     : ''
             },
-            createSlide(image) {
-                return {
+            createSlides(images) {
+                return images.map(image => ({
                     image,
                     legend: this.getLegend(image)
-                }
+                }))
             },
-            mount() {
+            mountCarousels() {
                 this.adjacentImages()
-                    .map(images => images.map(this.createSlide))
+                    .map(this.createSlides)
                     .forEach(slides => {
-                        let carousel = new Carousel({
+                        let paragraph = slides[0].image.parentElement;
+                        new Carousel({
                             propsData: { slides },
                             parent: this
-                        }).$mount().$el;
+                        }).$mount(paragraph);
+                    });
+            },
+            mountStacks() {
+                this.adjacentImages()
+                    .map(this.createSlides)
+                    .forEach(slides => {
                         let paragraph = slides[0].image.parentElement;
-                        paragraph.parentElement.replaceChild(carousel, paragraph);
+                        new Stack({
+                            propsData: { slides },
+                            parent: this
+                        }).$mount(paragraph);
                     });
             }
         },
         mounted() {
-            this.mount();
+            if(window.innerWidth > this.breakpoint) {
+                this.mountCarousels();
+            } else {
+                this.mountStacks();
+            }
         }
     }
 </script>
