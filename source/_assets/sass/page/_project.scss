@@ -5,9 +5,15 @@
     @screen xl { @apply .max-w-lg; }
   }
   img {
-    @screen md { max-width:calc(config('maxWidth.md') - 6rem);  }
+    @screen md { max-width:calc(config('maxWidth.md') - 10rem);  }
     @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
     @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
+  }
+  .legend, img+em { //image legend
+    @apply .font-sans .text-base .roman .block .text-grey-darker;
+  }
+  .carousel, .stack {
+    @apply .mb-8;
   }
   .carousel {
     @apply .relative .z-20;
@@ -19,6 +25,11 @@
       @screen xl { @apply .max-w-2xl; }
       margin-left: 16rem;
       margin-right: 4rem;
+    }
+  }
+  .stack {
+    .legend {
+      @apply .text-white;
     }
   }
 }
