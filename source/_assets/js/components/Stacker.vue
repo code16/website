@@ -19,6 +19,12 @@
                 default: 0
             }
         },
+        data() {
+            return {
+                stacks: [],
+                currentComponent: null
+            }
+        },
         methods: {
             adjacentImages() {
                 return [...this.$el.querySelectorAll('p')]
@@ -38,35 +44,39 @@
                     legend: this.getLegend(image)
                 }))
             },
-            mountCarousels() {
-                this.adjacentImages()
-                    .map(this.createSlides)
-                    .forEach(slides => {
-                        let paragraph = slides[0].image.parentElement;
-                        new Carousel({
-                            propsData: { slides },
-                            parent: this
-                        }).$mount(paragraph);
-                    });
+            mount(Component) {
+                if(this.currentComponent === Component) {
+                    return;
+                }
+                this.stacks = this.stacks.map(({ el, slides, component }) => {
+                    component.$destroy();
+                    component = new Component({
+                        propsData: { slides },
+                        parent: this
+                    }).$mount(el);
+                    return { el: component.$el, slides, component };
+                });
+                this.currentComponent = Component;
             },
-            mountStacks() {
-                this.adjacentImages()
-                    .map(this.createSlides)
-                    .forEach(slides => {
-                        let paragraph = slides[0].image.parentElement;
-                        new Stack({
-                            propsData: { slides },
-                            parent: this
-                        }).$mount(paragraph);
-                    });
+            update() {
+                if(window.innerWidth > this.breakpoint) {
+                    this.mount(Carousel)
+                } else {
+                    this.mount(Stack)
+                }
             }
         },
         mounted() {
-            if(window.innerWidth > this.breakpoint) {
-                this.mountCarousels();
-            } else {
-                this.mountStacks();
-            }
+            this.stacks = this.adjacentImages().map(images => ({
+                el: images[0].parentElement,
+                slides: this.createSlides(images),
+                component: new Vue()
+            }));
+            this.update();
+            window.addEventListener('resize', this.update);
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.update);
         }
     }
 </script>
