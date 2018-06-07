@@ -12,7 +12,7 @@
 </head>
 <body class="{{ $background??false ? "bg-$background" : '' }} {{ $bodyClass??'' }}">
     <div class="p-8 sm:p-16">
-        <div id="app" class="container">
+        <div id="app" class="container" :class="{'mobile':isMobile}">
             <header class="mb-16">
                 <a href="/" class="hover:no-underline">
                     <h1 class="uppercase tracking-wider text-4xl {{ $headerClass??'' }} text-right pb-6 px-2 pt-2 w-64 z-10" v-sticky-title="{ paddingTop:64 }">Code 16</h1>

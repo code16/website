@@ -59,7 +59,7 @@
                 this.currentComponent = Component;
             },
             update() {
-                if(window.innerWidth > this.breakpoint) {
+                if(window.innerWidth >= this.breakpoint) {
                     this.mount(Carousel)
                 } else {
                     this.mount(Stack)

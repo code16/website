@@ -1,9 +1,41 @@
+//noinspection ALL
+@mixin image-sizes($extra:null) {
+  $extra: if($extra, "+ #{$extra}", '');
+  @screen md { max-width:calc(config('maxWidth.sm') #{$extra});  }
+  @screen lg { max-width:calc(config('maxWidth.lg') - 6rem #{$extra}); }
+  @screen xl { max-width:calc(config('maxWidth.xl') - 2rem #{$extra});  }
+}
+
+@mixin carousel-margin($margin) {
+  margin-left: -$margin;
+  .VueCarousel-inner {
+    margin-left: $margin;
+  }
+}
+
+@mixin carousel-opaque-slides {
+  .slide {
+    .slide-image-container {
+      background: white;
+    }
+    img {
+      opacity: .5;
+      transition: opacity 500ms ease;
+    }
+    &.VueCarousel-slide-active {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 .project {
   .content {
     a {
       @apply .bg-brand-cyan .text-brand-cyan-darker .px-2;
       &:hover {
-        @apply .text-brand-brown .no-underline;
+        @apply .bg-brand-brown .text-white .no-underline;
       }
     }
   }
@@ -14,9 +46,7 @@
   }
   p, .stack-top, .carousel {
     img {
-      @screen md { max-width:calc(config('maxWidth.sm'));  }
-      @screen lg { max-width:calc(config('maxWidth.lg') - 6rem); }
-      @screen xl { max-width:calc(config('maxWidth.xl') - 2rem);  }
+      @include image-sizes;
     }
   }
   .legend, img+em { //image legend
@@ -25,21 +55,33 @@
   .carousel, .stack {
     @apply .mb-8;
   }
+
   .carousel {
-    @apply .relative .z-20;
-    margin-left: -16rem;
-    width: 100vw;
+    @apply .relative .z-20 .w-screen;
+    @include carousel-margin(16rem);
+    //@include carousel-opaque-slides;
+
     .VueCarousel-inner {
-      @screen md { @apply .max-w-lg; }
-      @screen lg { @apply .max-w-xl; }
-      @screen xl { @apply .max-w-2xl; }
-      margin-left: 16rem;
-      margin-right: 2rem;
+      @include image-sizes($extra: 3.5rem);
+    }
+    .VueCarousel-slide-active {
+      img {
+        @apply .shadow-md-darker;
+      }
+      .legend {
+        @apply .font-bold;
+      }
     }
   }
   .stack {
     .legend {
       @apply .text-white;
     }
+  }
+}
+
+.mobile {
+  .carousel {
+    @include carousel-margin(4rem);
   }
 }
