@@ -47,6 +47,7 @@
   p, .stack-top, .carousel {
     img {
       @include image-sizes;
+      @apply .shadow-md-darker;
     }
   }
   .legend, img+em { //image legend
@@ -63,6 +64,11 @@
 
     .VueCarousel-inner {
       @include image-sizes($extra: 3.5rem);
+    }
+    .slide {
+      img {
+        @apply .shadow-none;
+      }
     }
     .VueCarousel-slide-active {
       img {
