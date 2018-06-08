@@ -27,6 +27,20 @@
             handleSlideClick({ index }) {
                 this.$refs.carousel.goToPage(Number(index));
             }
+        },
+        mounted() {
+            // prevent scrolling on
+            let { onDrag } = this.$refs.carousel;
+            this.$refs.carousel.onDrag = e => {
+                this.prevent = false;
+                e.stopImmediatePropagation = () => this.prevent = true;
+                onDrag(e);
+            };
+            this.$el.querySelector('.VueCarousel-wrapper').addEventListener('touchmove', e => {
+                if(this.prevent) {
+                    e.preventDefault();
+                }
+            })
         }
     }
 </script>
