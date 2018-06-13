@@ -7,7 +7,7 @@
 
     <title>Code 16</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 </head>
 <body class="{{ $background??false ? "bg-$background" : '' }} {{ $bodyClass??'' }}">

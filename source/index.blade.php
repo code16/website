@@ -58,9 +58,9 @@
             @endcomponent
             @component('_partials.paragraph')
                 Et par ailleurs, nous avons développé et nous maintenons plusieurs projets, parmi lesquels&nbsp;:
-                <br>• Le <a href="https://github.com/code16/sharp">framework de gestion de contenu Sharp</a>,
+                <br>• <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
                 qui sert d'outil d'administration pour bon nombre de nos projets&nbsp;;
-                <br>• L'<a href="https://github.com/code16/metrics">outil d'analyse Metrics</a>
+                <br>• <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
                 permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
                 de la législation.
             @endcomponent
@@ -89,7 +89,7 @@
                 ont été de véritables défis techniques. Nous avons réalisé leur site internet principal,
                 redéveloppé entièrement un outil CRM sur mesure, conçu et développé le système web de location
                 de matériel scénique (à venir fin 2018), ou encore une plateforme intranet intégrant de nombreux
-                outils à partir de données externes — le tout relié par un système de compte Single Sign On personnalisé,
+                outils à partir de données externes — le tout relié par un système de comptes <em>Single Sign On</em> personnalisé,
                 et des liens de synchronisation via API.
                 <br>> <a href="/projet/agence-culturelle-grand-est">Consulter les détails du projet Acacia de refonte du site internet.</a>
                 <br>> <a href="">Consulter les détails du projet CRM Beatus.</a>
@@ -151,13 +151,5 @@
                 qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
             @endcomponent
         @endcomponent
-
-            <ul class="my-6 list-reset">
-                @foreach($projects as $project)
-                    <li>
-                        <a href="{{ $project->getUrl() }}">Projet {{ $project->title }}</a>
-                    </li>
-                @endforeach
-            </ul>
     </div>
 @endsection
