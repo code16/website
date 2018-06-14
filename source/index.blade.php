@@ -79,7 +79,7 @@
                 Notre champ d'action est vaste&nbsp;: sites internet
                 avec click and collect et synchronisation des comptes fidélité, applications mobile iOS
                 et Android, plateforme de newsletters, intranet.
-                <br>> <a href="">Cliquez ici pour consulter les détails du projet.</a>
+                <br>> <a href="/p/ek-france">Cliquez ici pour consulter les détails du projet.</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -91,8 +91,8 @@
                 de matériel scénique (à venir fin 2018), ou encore une plateforme intranet intégrant de nombreux
                 outils à partir de données externes — le tout relié par un système de comptes <em>Single Sign On</em> personnalisé,
                 et des liens de synchronisation via API.
-                <br>> <a href="/projet/agence-culturelle-grand-est">Consulter les détails du projet Acacia de refonte du site internet.</a>
-                <br>> <a href="">Consulter les détails du projet CRM Beatus.</a>
+                <br>> <a href="/p/agence-culturelle-grand-est">Consulter les détails du projet Acacia de refonte du site internet.</a>
+                <br>> <a href="/p/beatus">Consulter les détails du projet CRM Beatus.</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -101,7 +101,7 @@
                 Le <a href="http://www.domainedelatrigaliere.com/">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les guidant à travers la forêt de
                 1200 hectares et en leur présentant ses nombreux points d'intérêt.
-                <br>> <a href="">Consulter les détails du projet</a>
+                <br>> <a href="/p/trigaliere">Consulter les détails du projet</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')

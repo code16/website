@@ -5,7 +5,7 @@ return [
     'production' => false,
     'collections' => [
         'projects' => [
-            'path' => 'projet',
+            'path' => 'p',
         ]
     ],
 ];
