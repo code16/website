@@ -1,7 +1,7 @@
 @extends('_layouts.master',[
     'background'=>'white',
     'bodyClass'=>"project $page->bodyClass",
-    'headerClass'=>'bg-black text-white'
+    'headerClass'=>'bg-black text-brand-white'
 ])
 
 @section('content')

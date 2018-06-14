@@ -1,10 +1,11 @@
 @extends('_layouts.master', [
     'background' => 'brand-brown',
-    'headerClass' => 'text-brand-brown bg-white'
+    'bodyClass' => 'home',
+    'headerClass' => 'text-brand-brown bg-brand-white'
 ])
 
 @section('content')
-    <div class="text-white">
+    <div class="text-brand-white">
         @component('_partials.section', ['large'=>true])
             @component('_partials.paragraph')
                 Nous concevons depuis 2007 des sites internet et des applications mobiles à partir
@@ -58,11 +59,17 @@
             @endcomponent
             @component('_partials.paragraph')
                 Et par ailleurs, nous avons développé et nous maintenons plusieurs projets, parmi lesquels&nbsp;:
-                <br>• <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
-                qui sert d'outil d'administration pour bon nombre de nos projets&nbsp;;
-                <br>• <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
-                permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
-                de la législation.
+                <ul>
+                    <li>
+                        <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
+                        qui sert d'outil d'administration pour bon nombre de nos projets&nbsp;;
+                    </li>
+                    <li>
+                        <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
+                        permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
+                        de la législation.
+                    </li>
+                </ul>
             @endcomponent
         @endcomponent
 
@@ -140,11 +147,19 @@
             @endslot
             @component('_partials.paragraph')
                 Nous sommes trois développeurs à temps complet en interne&nbsp;:
-                <br>• <a href="mailto:philippe@code16.fr">Philippe Lonchampt</a> est de fondateur de Code 16 (anciennement nommé Développlan),
-                le gérant de l'entreprise et le développeur principal de plusieurs projets.
-                <br>• <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de Laravel.
-                <br>• <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
-                et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
+                <ul>
+                    <li>
+                        <a href="mailto:philippe@code16.fr">Philippe Lonchampt</a> est de fondateur de Code 16 (anciennement nommé Développlan),
+                        le gérant de l'entreprise et le développeur principal de plusieurs projets.
+                    </li>
+                    <li>
+                        <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de Laravel.
+                    </li>
+                    <li>
+                        <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
+                        et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
+                    </li>
+                </ul>
             @endcomponent
             @component('_partials.paragraph')
                 Évidemment, lorsque le projet le requiert, nous savons nous entourer de compétences externes,

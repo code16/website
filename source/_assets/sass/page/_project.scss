@@ -33,9 +33,9 @@
 .project {
   .content {
     a {
-      @apply .bg-brand-cyan .text-brand-cyan-darker .px-2;
+      @apply .bg-brand-cyan-lighter .text-brand-cyan-darker .px-1 .inline-block .leading-tight;
       &:hover {
-        @apply .bg-brand-brown .text-white .no-underline;
+        //@apply .bg-brand-brown .text-white .no-underline;
       }
     }
   }

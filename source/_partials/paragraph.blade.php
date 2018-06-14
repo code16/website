@@ -1,6 +1,6 @@
-<div class="">
+<div>
     @if($title??false)
-        <h3 class="mb-3 text-xl">{{ $title }}</h3>
+        <h3 class="mb-4 mt-12 text-xl">{{ $title }}</h3>
     @endif
-    <p>{{ $slot }}</p>
+    <div class="paragraph">{{ $slot }}</div>
 </div>

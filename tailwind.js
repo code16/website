@@ -129,9 +129,11 @@ let colors = {
     // 'pink-lightest': '#ffebef',
 
     'brand-brown': '#282224',
+    'brand-cyan-lighter': '#B7FFF2',
     'brand-cyan': '#61FFE3',
-    'brand-cyan-darker': '#27927F',
-    'brand-white': '#D4D4D4'
+    'brand-cyan-darker': '#2C7467',
+    'brand-white': '#EBEBEB',
+    'brand-white-darker': '#B1AFAF'
 }
 
 module.exports = {
