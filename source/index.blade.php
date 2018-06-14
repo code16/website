@@ -26,7 +26,7 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    Nous accordons une très grande importance au code
+                    Nous accordons une (très) grande importance au code
                 @endslot
                 Notre métier est de comprendre le besoin d'un client, et de le convertir en code.
             @endcomponent
@@ -36,7 +36,7 @@
                 que de projets Open source), concis (pour qu'il reste compréhensible dans le temps, et
                 qu'il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
                 accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
-                à l'écriture, et limiter au maximum les régressions au fil du temps).
+                à l'écriture, et limiter au maximum les régressions au fil des versions).
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -79,7 +79,7 @@
                 Notre champ d'action est vaste&nbsp;: sites internet
                 avec click and collect et synchronisation des comptes fidélité, applications mobile iOS
                 et Android, plateforme de newsletters, intranet.
-                <br>> <a href="/p/ek-france">Cliquez ici pour consulter les détails du projet.</a>
+                <br><a href="/p/ek-france">Projet EK France</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -91,8 +91,8 @@
                 de matériel scénique (à venir fin 2018), ou encore une plateforme intranet intégrant de nombreux
                 outils à partir de données externes — le tout relié par un système de comptes <em>Single Sign On</em> personnalisé,
                 et des liens de synchronisation via API.
-                <br>> <a href="/p/agence-culturelle-grand-est">Consulter les détails du projet Acacia de refonte du site internet.</a>
-                <br>> <a href="/p/beatus">Consulter les détails du projet CRM Beatus.</a>
+                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : refonte du site internet.</a>
+                <br><a href="/p/beatus">Projet CRM Beatus.</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -101,7 +101,7 @@
                 Le <a href="http://www.domainedelatrigaliere.com/">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les guidant à travers la forêt de
                 1200 hectares et en leur présentant ses nombreux points d'intérêt.
-                <br>> <a href="/p/trigaliere">Consulter les détails du projet</a>
+                <br><a href="/p/trigaliere">Projet Trig.</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -113,13 +113,13 @@
                 Le site multilingue du <a href="https://maillon.eu">théâtre Le Maillon</a>,
                 qui présente, en respectant l'univers graphique de ce lieu emblématique de la ville, les spectacles de la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
-                <br>> <a href="">Consulter les détails du projet Maillon</a>
+                <br><a href="">Projet Maillon</a>
             @endcomponent
             @component('_partials.paragraph')
                 Le site du <a href="http://www.festivalmusica.org/">festival international de musique contemporaine Musica</a>,
                 également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographie des très nombreux
                 artistes ayant paticipé au festival, répertoire des œuvres jouées).
-                <br>> <a href="">Consulter les détails du projet Musica</a>
+                <br><a href="">Projet Musica</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
