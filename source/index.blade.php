@@ -51,18 +51,18 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Nous sommes impliqués dans l’Open-source
+                    Nous sommes impliqués dans l’Open source
                 @endslot
                 Nous faisons massivement appel à des projets Open source dans nos réalisations, et nous
                 contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
                 une amélioration pourrait être apportée, que ce soit un bug ou une nouvelle fonctionnalité.
             @endcomponent
             @component('_partials.paragraph')
-                Et par ailleurs, nous avons développé et nous maintenons plusieurs projets, parmi lesquels&nbsp;:
+                D'autre part nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
                 <ul>
                     <li>
                         <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
-                        qui sert d'outil d'administration pour bon nombre de nos projets&nbsp;;
+                        qui sert d'outil d'administration pour bon nombre de nos projets.
                     </li>
                     <li>
                         <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
@@ -98,17 +98,17 @@
                 de matériel scénique (à venir fin 2018), ou encore une plateforme intranet intégrant de nombreux
                 outils à partir de données externes — le tout relié par un système de comptes <em>Single Sign On</em> personnalisé,
                 et des liens de synchronisation via API.
-                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : refonte du site internet.</a>
-                <br><a href="/p/beatus">Projet CRM Beatus.</a>
+                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : refonte du site internet</a>
+                <br><a href="/p/beatus">Projet CRM Beatus</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
                     Application mobile touristique
                 @endslot
                 Le <a href="http://www.domainedelatrigaliere.com/">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
-                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les guidant à travers la forêt de
-                1200 hectares et en leur présentant ses nombreux points d'intérêt.
-                <br><a href="/p/trigaliere">Projet Trig.</a>
+                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
+                nombreux points d'intérêt de sa forêt de 1200 hectares.
+                <br><a href="/p/trigaliere">Projet Trig</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -118,26 +118,27 @@
             @endcomponent
             @component('_partials.paragraph')
                 Le site multilingue du <a href="https://maillon.eu">théâtre Le Maillon</a>,
-                qui présente, en respectant l'univers graphique de ce lieu emblématique de la ville, les spectacles de la saison et
+                qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
                 <br><a href="">Projet Maillon</a>
             @endcomponent
             @component('_partials.paragraph')
                 Le site du <a href="http://www.festivalmusica.org/">festival international de musique contemporaine Musica</a>,
-                également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographie des très nombreux
-                artistes ayant paticipé au festival, répertoire des œuvres jouées).
+                également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographies des très nombreux
+                artistes ayant paticipé au festival, et répertoire des œuvres jouées).
                 <br><a href="">Projet Musica</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    D'autres projets
+                    D'autres références
                 @endslot
-                Parmi les autres projets de plus petite taille, ou plus anciens, citons les sites internet avec commande ou
-                prise de réservation des librairies <a href="http://quaidesbrumes.com">Quai des Brumes</a> et
-                <a href="https://librairie-amateur.com/">la Librairie de l'Amateur</a>&nbsp;; le site d'une revue
+                Parmi les autres projets de plus petite taille ou plus anciens, citons les sites internet avec commande ou
+                prise de réservation des excellentes librairies <a href="http://quaidesbrumes.com">Quai des Brumes</a> et
+                <a href="https://librairie-amateur.com/">la Librairie de l'Amateur</a>&nbsp; le site d'une revue
                 pour le compte de l'Université de Strasbourg, avec des outils de commentaire et de prise de note&nbsp;:
-                <a href="https://revue-radar.fr/">Radar</a>&nbsp;;
-                ou encore le site internet et un CRM dédié pour le compte du <a href="http://ciav-meisenthal.fr/">Centre international d'Art Verrier de Meisenthal</a>.
+                <a href="https://revue-radar.fr/">Radar</a>&nbsp;
+                ou encore le site internet et un CRM dédié pour le compte
+                du <a href="http://ciav-meisenthal.fr/">Centre international d'Art Verrier de Meisenthal</a>.
             @endcomponent
         @endcomponent
 
@@ -153,7 +154,7 @@
                         le gérant de l'entreprise et le développeur principal de plusieurs projets.
                     </li>
                     <li>
-                        <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de Laravel.
+                        <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel en particulier.
                     </li>
                     <li>
                         <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
@@ -162,7 +163,7 @@
                 </ul>
             @endcomponent
             @component('_partials.paragraph')
-                Évidemment, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
+                Bien entendu, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
                 qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
             @endcomponent
         @endcomponent
