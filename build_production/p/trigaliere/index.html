@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code 16</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css?id=50191fa1e1d86cc26a5a">
+</head>
+<body class="bg-white project ">
+    <div class="p-8 sm:p-16">
+        <div id="app" class="container" :class="{'mobile':isMobile}">
+            <header class="mb-16">
+                <a href="/" class="hover:no-underline">
+                    <h1 class="uppercase tracking-wider text-4xl bg-black text-brand-white text-right pb-6 px-2 pt-2 w-64 z-10" v-sticky-title="{ paddingTop:64 }">Code 16</h1>
+                </a>
+            </header>
+                <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                    <div class="mb-4 md:mb-16" :class="{'md:pl-16':!isMobile}">
+                <h2 class="tracking-widest text-uppercase uppercase inline-block"
+                    v-sticky-title:section="{&quot;container&quot;:&quot;.relative&quot;,&quot;paddingTop&quot;:64,&quot;startOffset&quot;:-130,&quot;endOffset&quot;:20,&quot;relativeAnchorX&quot;:40}"
+                >
+                    Trigalière
+                </h2>
+            </div>
+                <div class="max-w-xl" :class="{'md:ml-48':!isMobile}">
+            <div class="content">
+            <stacker class="mt-6" :breakpoint="768">
+                <p><strong>Application mobile d'aide touristique : géolocalisation, points d'intérêt, favoris, synchronisation de contenu.</strong></p>
+<p>Le Domaine de la Trigalière est vaste : 1200 hectares de forêt, au sein de laquelle sont disséminées une dizaine de maisons que les visiteurs peuvent louer. Ils peuvent ensuite profiter de la forêt pour s'y promener, y découvrir sa faune et sa flore, participer à des activités sportives ou culturelles, ou encore visiter l'arboretum du Chêne. Le but de l'application mobile que nous avons développée est d'orienter les hôtes vers tous ces points d'intérêt, à l'aide d'une carte du domaine sur laquelle il est géolocalisé, au milieu de tous les points d'intérêts.</p>
+<p><img src="/assets/img/trig/map.png" alt="Carte" />
+La carte est une extraction personnalisée d'Open Street Maps.
+<img src="/assets/img/trig/quickview.png" alt="Apercu" />
+Cliquer sur un POI ouvre un apercu, sur mobile.
+<img src="/assets/img/trig/poi.png" alt="POI" />
+La page d'un POI dont le contenu est relativement libre, et peut inclure des photos et des vidéos.
+<img src="/assets/img/trig/filters.png" alt="Filtres" />
+L'utilisateur peut filtrer les POI par intérêt.
+<img src="/assets/img/trig/code.png" alt="Code" />
+Certaines parties du Domaine proposent des cartels sur lesquels des codes sont inscrits, affichant une fiche sur l'application.</p>
+<p>Tout le contenu est administré sur une application Laravel / Sharp. L'application y accède au moyen d'une API dédiée, mais comme 80% du domaine est sans réseau, l'application enregistre en local toutes les informations, puis synchronise les mises à jour au besoin lorsqu'elle retrouve du réseau.</p>
+<p>Trig fonctionne sur smartphone et tablette, et existe en version <a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a> et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>.</p>            </stacker>
+        </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+
+    <script src="/assets/js/main.js?id=b8166721e0c03fed6b35"></script>
+</body>
+</html>
