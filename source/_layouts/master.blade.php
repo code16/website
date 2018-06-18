@@ -9,6 +9,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/main.css') }}">
+
+    <style>
+        @yield('style')
+    </style>
 </head>
 <body class="{{ $background??false ? "bg-$background" : '' }} {{ $bodyClass??'' }}">
     <div class="p-8 sm:p-16">

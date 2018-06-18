@@ -19,3 +19,14 @@
         </div>
     @endcomponent
 @endsection
+
+@section('style')
+    @if($page->carouselWidth ?? false)
+        @php($widths = is_array($page->carouselWidth) ? $page->carouselWidth : [1=>$page->carouselWidth])
+        @foreach($widths as $nth => $width)
+            .carousel:nth-of-type({{ $nth }}) .VueCarousel-inner {
+                max-width: {{ $width }} !important;
+            }
+        @endforeach
+    @endif
+@endsection

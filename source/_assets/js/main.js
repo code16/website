@@ -15,6 +15,7 @@ new Vue({
     },
     computed: {
         isMobile() {
+            // return false;
             return isMobile;
         }
     }

@@ -2,7 +2,7 @@
 extends: _layouts.project
 section: projectContent
 title: Trigalière
-
+carouselWidth: 30rem
 ---
 
 **Application mobile d'aide touristique : géolocalisation, points d'intérêt, favoris, synchronisation de contenu.**

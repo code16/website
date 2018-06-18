@@ -1,9 +1,14 @@
 //noinspection ALL
-@mixin image-sizes($extra:null) {
-  $extra: if($extra, "+ #{$extra}", '');
-  @screen md { max-width:calc(config('maxWidth.sm') #{$extra});  }
-  @screen lg { max-width:calc(config('maxWidth.lg') - 6rem #{$extra}); }
-  @screen xl { max-width:calc(config('maxWidth.xl') - 2rem #{$extra});  }
+@mixin image-sizes($extra:0.1px) {
+  @screen md { max-width:calc(config('maxWidth.sm') + #{$extra}); }
+  @screen lg { max-width:calc(config('maxWidth.md') - 6rem + #{$extra}); }
+  @media (min-width: 1048px) {
+    max-width:calc(config('maxWidth.lg') - 6rem + #{$extra});
+  }
+  @screen xl { max-width:calc(config('maxWidth.xl') - 6rem + #{$extra}); }
+  @media (min-width: 1300px) {
+    max-width:calc(config('maxWidth.xl') - 2rem + #{$extra});
+  }
 }
 
 @mixin carousel-margin($margin) {
@@ -47,7 +52,7 @@
   p, .stack-top, .carousel {
     img {
       @include image-sizes;
-      @apply .shadow-md-darker;
+      @apply .shadow-md-brand;
     }
   }
   .legend, img+em { //image legend
@@ -63,16 +68,22 @@
     //@include carousel-opaque-slides;
 
     .VueCarousel-inner {
-      @include image-sizes($extra: 3.5rem);
+      @include image-sizes(3.5rem);
     }
     .slide {
       img {
         @apply .shadow-none;
+        border: 1px solid rgba(0,0,0,.1);
       }
     }
+
+    .legend {
+      margin-right: 3.5rem;
+    }
+
     .VueCarousel-slide-active {
       img {
-        @apply .shadow-md-darker;
+        @apply .shadow-md-brand;
       }
       .legend {
         @apply .font-bold;
