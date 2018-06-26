@@ -171,7 +171,6 @@
             SCM Gotham<br>
             24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
             Philippe Lonchampt : <a href="mailto:philippe@code16.fr">philippe@code16.fr</a>
-
         @endcomponent
     </div>
 @endsection
