@@ -15,7 +15,7 @@
                 technologies <a href="https://laravel.com">Laravel</a> et <a href="https://vuejs.org/">Vue.js</a>.
             @endcomponent
             @component('_partials.paragraph')
-                Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
+                Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
                 problème qui pas forcément standard, tout en bénéficiant d’outils qui les rendent
                 autonomes au quotidien.
             @endcomponent
@@ -29,10 +29,12 @@
                 @slot('title')
                     Nous accordons une (très) grande importance au code
                 @endslot
-                Notre métier est de comprendre le besoin d'un client, et de le convertir en code.
+                Notre métier est de comprendre le besoin d'un client, de la traduire en spécifications
+                partagées de part et d'autre et de le convertir finalement en code : c'est sur cela que
+                nous concentrons tous nos efforts.
             @endcomponent
             @component('_partials.paragraph')
-                L'expérience nous a montré que ce code, pour qu'il soit fiable et qu'il puisse s'adapter
+                L'expérience nous montre que ce code, pour qu'il soit fiable et qu'il puisse s'adapter
                 aux besoins futurs, doit être maîtrisé (ce qui nous pousse à ne dépendre
                 que de projets Open source), concis (pour qu'il reste compréhensible dans le temps, et
                 qu'il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
@@ -43,9 +45,9 @@
                 @slot('title')
                     Nos clients sont des partenaires
                 @endslot
-                Plutôt que de multiplier les petits projets et les contacts, nous cherchons
-                à créer des partenariats avec nos clients, pour travailler avec eux sur le long terme,
-                afin d’assurer à nos logiciels une maintenance continue. Ainsi, nous sommes fiers de travailler
+                Plutôt que de multiplier les petits projets et les contacts, nous cherchons
+                à créer des partenariats avec nos clients pour travailler avec eux sur le long terme,
+                afin d’assurer à nos logiciels une maintenance continue. Ainsi, nous sommes fiers de travailler
                 depuis de nombreuses années avec Ek France, l'Agence culturelle Grand Est
                 ou le théâtre Le Maillon, pour citer quelques exemples.
             @endcomponent
@@ -53,21 +55,21 @@
                 @slot('title')
                     Nous sommes impliqués dans l’Open source
                 @endslot
-                Nous faisons massivement appel à des projets Open source dans nos réalisations, et nous
-                contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
-                une amélioration pourrait être apportée, que ce soit un bug ou une nouvelle fonctionnalité.
+                Nous faisons massivement (et uniquement) appel à des projets Open source dans nos réalisations,
+                et nous contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
+                une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l'ajout d'une nouvelle fonctionnalité.
             @endcomponent
             @component('_partials.paragraph')
-                D'autre part nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
+                Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
             @endcomponent
             @component('_partials.paragraph')
-                    <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
-                    qui sert d'outil d'administration pour bon nombre de nos projets.
+                <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
+                qui sert d'outil d'administration pour bon nombre de nos projets.
             @endcomponent
             @component('_partials.paragraph')
-                    <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
-                    permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
-                    de la législation.
+                <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
+                permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
+                de la législation.
             @endcomponent
         @endcomponent
 
