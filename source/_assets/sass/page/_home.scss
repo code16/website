@@ -1,0 +1,12 @@
+.home {
+  h2, h3, h4, h5, h6 {
+    @apply .text-white;
+  }
+
+  a[href^=http]:not([href*=github]) {
+    @apply .font-normal .text-white .border-brand-white-darker .border-b .inline-block .leading-none;
+    &:hover {
+      @apply .border-none;
+    }
+  }
+}

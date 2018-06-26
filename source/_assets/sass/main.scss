@@ -1,0 +1,43 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+@import "page/sharp";
+@import "page/project";
+@import "page/home";
+
+@import "components/stack";
+
+html, body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+body {
+  @apply .font-sans;
+}
+
+a {
+  @apply .text-brand-cyan .no-underline;
+
+  &:hover {
+    @apply .underline;
+  }
+}
+
+p, .paragraph {
+  @apply .mb-4 .font-serif .text-xl;
+}
+
+ul {
+  @apply .mt-2;
+}
+
+
+.sticky-title-object {
+  transition: transform 100ms ease-in-out;
+}
+
+[v-cloak] {
+  @apply .hidden;
+}
