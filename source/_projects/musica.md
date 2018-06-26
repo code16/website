@@ -2,23 +2,30 @@
 extends: _layouts.project
 section: projectContent
 title: Musica
+
 ---
 
-**Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.**
+**Site de présentation du festival Musica et billetterie en ligne.**
 
-Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
+Le festival Musica est un festival international de musique contemporaine qi a lieu chaque année à Strasbourg. Nous avons conçu [son site internet](http://www.festivalmusica.org/) qui propose de juin à octobre une présentation détaillée de l'édition en cours ou à venir, ainsi qu'une billetterie sur mesure. Le reste de l'année le site est plus institionnel, même si le festival s'en sert pour des événements ponctuels (médiation culturelles par exemple).
 
-![Accueil](/assets/img/musica_home.png)
-*Accueil*
+![Accueil](/assets/img/musica/home.jpg)
+La page d'accueil à l'annonce de l'édition, avec le *teaser* mis en avant
+![Programme](/assets/img/musica/shows.jpg)
+La présentation des manifestations du festival
+![Spectacle](/assets/img/musica/show.jpg)
+Une page spectacle, qui peut proposer de nombreux éléments joints (photos, vidéos, biographies d'artistes, ...)
 
-Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum co
+La billetterie est un développement spécifique, développée en Vue.js, dont l'objectif premier était de simplifier la prise de commande.
 
-![Panier](/assets/img/musica_panier.png)
-Panier
-![Panier sélection](/assets/img/musica_panier_selection.png)
-Panier sélection
-![Panier programmation](/assets/img/musica_programmation.png)
-Panier programmationf
+![Panier](/assets/img/musica/cart.jpg)
+Le panier est une application Vue.js
+![Spectacles](/assets/img/musica/cart_shows.jpg)
+Le choix d'un spectacle à ajouter au panier
 
-Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum co
+Les administrateurs du site sont totalement autonomes via l'outil de back-office complet construit à partir de notre projet Open-source [Sharp](https://github.com/code16/sharp). Tout y est regroupé, des spectacles aux biographies des artistes, en passant par la configuration de la billetterie, les quotas et les commandes.
 
+![Spectacles](/assets/img/musica/sharp_shows.jpg)
+Une vision de tous les spectacles d'une édition
+![Spectacle](/assets/img/musica/sharp_show.jpg)
+Le formulaire de modification d'un spectacle

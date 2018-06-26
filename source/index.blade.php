@@ -59,17 +59,15 @@
             @endcomponent
             @component('_partials.paragraph')
                 D'autre part nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
-                <ul>
-                    <li>
-                        <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
-                        qui sert d'outil d'administration pour bon nombre de nos projets.
-                    </li>
-                    <li>
-                        <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
-                        permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
-                        de la législation.
-                    </li>
-                </ul>
+            @endcomponent
+            @component('_partials.paragraph')
+                    <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
+                    qui sert d'outil d'administration pour bon nombre de nos projets.
+            @endcomponent
+            @component('_partials.paragraph')
+                    <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
+                    permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
+                    de la législation.
             @endcomponent
         @endcomponent
 
@@ -120,13 +118,13 @@
                 Le site multilingue du <a href="https://maillon.eu">théâtre Le Maillon</a>,
                 qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
-                <br><a href="">Projet Maillon</a>
+                <br><a href="/p/maillon">Projet Maillon</a>
             @endcomponent
             @component('_partials.paragraph')
                 Le site du <a href="http://www.festivalmusica.org/">festival international de musique contemporaine Musica</a>,
                 également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographies des très nombreux
                 artistes ayant paticipé au festival, et répertoire des œuvres jouées).
-                <br><a href="">Projet Musica</a>
+                <br><a href="/p/musica">Projet festival Musica</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -148,24 +146,32 @@
             @endslot
             @component('_partials.paragraph')
                 Nous sommes trois développeurs à temps complet en interne&nbsp;:
-                <ul>
-                    <li>
-                        <a href="mailto:philippe@code16.fr">Philippe Lonchampt</a> est de fondateur de Code 16 (anciennement nommé Développlan),
-                        le gérant de l'entreprise et le développeur principal de plusieurs projets.
-                    </li>
-                    <li>
-                        <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel en particulier.
-                    </li>
-                    <li>
-                        <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
-                        et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
-                    </li>
-                </ul>
+            @endcomponent
+            @component('_partials.paragraph')
+                <a href="mailto:philippe@code16.fr">Philippe Lonchampt</a> est de fondateur de Code 16 (anciennement nommé Développlan),
+                le gérant de l'entreprise et le développeur principal de plusieurs projets.
+            @endcomponent
+            @component('_partials.paragraph')
+                <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel en particulier.
+            @endcomponent
+            @component('_partials.paragraph')
+                <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
+                et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
                 Bien entendu, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
                 qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
             @endcomponent
+        @endcomponent
+    </div>
+
+    <div class="text-brand-white">
+        @component('_partials.section', ['large'=>true])
+            Code 16<br>
+            SCM Gotham<br>
+            24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
+            Philippe Lonchampt : <a href="mailto:philippe@code16.fr">philippe@code16.fr</a>
+
         @endcomponent
     </div>
 @endsection
