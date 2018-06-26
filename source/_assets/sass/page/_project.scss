@@ -67,6 +67,10 @@
     @include carousel-margin(16rem);
     //@include carousel-opaque-slides;
 
+    &.carousel--initial {
+      @apply .z-0;
+    }
+
     .VueCarousel-inner {
       @include image-sizes(3.5rem);
     }

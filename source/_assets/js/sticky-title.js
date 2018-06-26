@@ -1,3 +1,5 @@
+import debounce from 'lodash/debounce';
+
 function setTransform(el, value) {
     el.style.transform = value;
     ['webkit','ms', 'Moz', 'O'].forEach(vendor => {
@@ -54,7 +56,7 @@ const defaultProps = {
 function handleScroll(el) {
     let {
         initialRect,
-        hasContainer,
+        container,
         containerRect,
         placeholder,
         props: {
@@ -70,11 +72,12 @@ function handleScroll(el) {
     let scrollY = window.pageYOffset;
     let dy = scrollY - (initialRect.y - paddingTop + startOffset);
 
+    // console.log(el, dy);
     if((isSticky||isFirstScroll) && dy<duration) {
         setStatic(el, { state:el._stickyTitleState });
     }
     if(dy>duration) {
-        if(hasContainer) {
+        if(!!container) {
             if ((!touchTop || isFirstScroll) && scrollY < containerRect.y-paddingTop) {
                 if(isSticky) {
                     transform(el, getTransformData(el._stickyTitleState, { dy }));
@@ -93,7 +96,7 @@ function handleScroll(el) {
         }
     }
 
-    if(hasContainer) {
+    if(!!container) {
         let containerBottom = containerRect.y+containerRect.height;
         let titleBottom = initialRect.width+paddingTop;
         if((!touchBottom || isFirstScroll) && scrollY > containerBottom-titleBottom) {
@@ -137,27 +140,61 @@ function findAncestor(el, cls) {
     return el;
 }
 
+function updateRects(el) {
+    let { container, isFirstScroll, idle } = el._stickyTitleState;
+    if(!idle) {
+        return
+    }
+    if(!!container) {
+        el._stickyTitleState.containerRect = getRect(container);
+    }
+    if(!!isFirstScroll) {
+        // elapse some times after browser automatic scroll
+        setTimeout(()=>{
+            el._stickyTitleState.initialRect = getRect(el);
+            handleScroll(el);
+            el._stickyTitleState.ready = true;
+        }, 50);
+    }
+}
+
 const directive =  {
     inserted(el, { value={} }) {
         el._stickyTitleState = {
+            ready: false,
             initialRect: getRect(el),
             props: { ...defaultProps, ...value },
             placeholder: createPlaceholder(el),
-            hasContainer: false
+            container: null,
+            isFirstScroll: true,
+            touchBottom: null,
+            touchTop: null,
+            idle: true
         };
         if(value.container) {
             let container = findAncestor(el, value.container.slice(1));
             if(container) {
-                el._stickyTitleState.hasContainer = true;
+                el._stickyTitleState.container = container;
                 el._stickyTitleState.containerRect = getRect(container);
             }
         }
-        //debugger;
-        //console.log(el._stickyTitleState);
+
+        let idle = debounce(() => el._stickyTitleState.idle = true, 200);
+
+        document.addEventListener('DOMContentLoaded', ()=>{
+            console.log('dom loaded');
+            el._stickyTitleScrollListener();
+        });
+
         el._stickyTitleScrollListener = () => {
-            handleScroll(el);
+            idle();
+            updateRects(el);
+            if(el._stickyTitleState.ready) {
+                handleScroll(el);
+            }
+            el._stickyTitleState.idle = false;
         };
-        el.parentNode.appendChild(el._stickyTitleState.placeholder);
+        el.parentElement.appendChild(el._stickyTitleState.placeholder);
         window.addEventListener('scroll', el._stickyTitleScrollListener);
     },
     unbind(el) {
@@ -165,6 +202,8 @@ const directive =  {
         window.removeEventListener('scroll', el._stickyTitleScrollListener);
     }
 };
+
+
 
 const noop = ()=>{};
 
