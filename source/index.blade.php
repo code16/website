@@ -16,7 +16,7 @@
             @endcomponent
             @component('_partials.paragraph')
                 Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
-                problème qui pas forcément standard, tout en bénéficiant d’outils qui les rendent
+                problème qui n'est pas forcément standard, tout en bénéficiant d’outils qui les rendent
                 autonomes au quotidien.
             @endcomponent
         @endcomponent
