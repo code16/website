@@ -154,10 +154,10 @@
                 le gérant de l'entreprise et le développeur principal de plusieurs projets.
             @endcomponent
             @component('_partials.paragraph')
-                <a href="mailto:remi@code16.fr">Rémi Collin</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel en particulier.
+                <a href="mailto:arnaud@code16.fr">Arnaud Becher</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel.
             @endcomponent
             @component('_partials.paragraph')
-                <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>&nbsp;, à la fois sur les sites
+                <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>, à la fois sur les sites
                 et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
