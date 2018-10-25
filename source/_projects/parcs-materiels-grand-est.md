@@ -23,6 +23,8 @@ La section compte regroupe toutes les fonctions de demandes de location, de suiv
 Une page de compte structure (un membre peut être relié à plusieurs structures) 
 ![Demande](/assets/img/ekip/6.png)
 Un panier en cours, pour lequel les dates n'ont pas encore été indiquées
+![Choix](/assets/img/ekip/7.png)
+Réception d'une commande modifiée par le gestionnaire, avec les choix possibles
 ![Location](/assets/img/ekip/5.png)
 Une commande en cours
 
