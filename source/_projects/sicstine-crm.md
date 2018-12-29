@@ -23,6 +23,13 @@ Par exemple, la mise au panier d'un spectacle, sur le site internet, pourrait d�
 \- ou encore : combien d'acheteurs de tel spectacle avaient à un moment de leur achat tel autre au panier ?  
 \- ou même : combien de personnes ont envisagé l'achat de tel spectacle, mais ont abandonné leur panier ?
 
+![Billetterie](/assets/img/sicstine/crm.png)
+
+1. Le développeur du site internet ou de toute autre application permettant la prise de billets intègre Sicstine dans le code.
+2. Le visiteur navigue sur le site ou l'app, consulte des pages, passe commande, ... Toutes les actions jugées pertinentes sopnt remontées dans Sicstine.
+3. L'administrateur consulte dans Sicstine toutes les données de comportement, en tire des ensembles et lance des actions de communication adaptées. 
+
+---
 
 ## Que faire de ces données ?
 

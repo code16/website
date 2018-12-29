@@ -3429,6 +3429,25 @@ button,
   color: #22292f;
 }
 
+.page-sicstine .heroicon-component-fill {
+  fill: currentColor;
+  color: #fff;
+}
+
+.page-sicstine .heroicon-component-accent {
+  fill: currentColor;
+  color: #61ffe3;
+}
+
+.page-sicstine .heroicon-shadows {
+  display: none;
+}
+
+.page-sicstine .heroicon-outline {
+  fill: currentColor;
+  color: #22292f;
+}
+
 .project .content a {
   background-color: #b7fff2;
   color: #2c7467;

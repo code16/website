@@ -12,6 +12,14 @@ Première grande brique de Sicstine, le module billetterie dématérialisée, qu
 
 Une fois tout ceci mis en place, l'application reliée (le site internet, l'app mobile, ...) s'y connecte et présente les choses au public de la manière de son choix. On pourrait par exemple avoir tout à la fois un mode panier libre sur le site, une solution axée sur les recommandations sur une app mobile, ou encore un mode direct d'achat à l'unité sur une borne "dernière minute" : l'important est de comprendre que rien n'est imposé sur la forme, tous ces systèmes sont techniquement rattachés à Sicstine en arrière plan.
 
+![Billetterie](/assets/img/sicstine/ticketing.png)
+
+1. Le développeur du site internet ou de toute autre application permettant la prise de billets intègre Sicstine dans le code.
+2. L'administrateur saisit dans Sicstine les informations de la billetterie.
+3. Le client passe commande, via le site ou un autre moyen, en lien direct avec Sicstine. 
+
+---
+
 ## Génération de billets
 Une fois la transaction terminée, Sicstine génère des QR codes sécurisés de billetterie dématérialisée, et permet à l'application de les transmettre de la manière la plus adaptée ; par exemple un lien de téléchargement d'un PDF à imprimer sur le site, un code "Wallet" sur smartphone, ...
 

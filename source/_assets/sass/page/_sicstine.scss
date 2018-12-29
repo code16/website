@@ -1,0 +1,12 @@
+.page-sicstine {
+  .heroicon-component-fill {
+    @apply .fill-current text-white;
+  }
+  .heroicon-component-accent {
+    @apply .fill-current text-brand-cyan;
+  }
+  .heroicon-shadows { display: none; }
+  .heroicon-outline {
+    @apply .fill-current text-black;
+  }
+}
