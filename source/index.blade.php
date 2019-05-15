@@ -63,7 +63,7 @@
                 Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
             @endcomponent
             @component('_partials.paragraph')
-                <a href="http://sharp.code16.fr">Le framework de gestion de contenu Sharp</a>,
+                <a href="https://sharp.code16.fr/">Le framework de gestion de contenu Sharp</a>,
                 qui sert d'outil d'administration pour bon nombre de nos projets.
             @endcomponent
             @component('_partials.paragraph')
