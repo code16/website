@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'production' => false,
+    'production' => true,
     'baseUrl' => '',
     'collections' => [
         'projects' => [
