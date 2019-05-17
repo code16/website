@@ -3,10 +3,11 @@
     @apply .text-white;
   }
 
-  a[href^=http]:not([href*=github]) {
+  a.regular {
     @apply .font-normal .text-white .border-brand-white-darker .border-b .inline-block .leading-none;
+
     &:hover {
-      @apply .border-none;
+      @apply .border-none .no-underline;
     }
   }
 }

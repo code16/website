@@ -12,7 +12,8 @@
                 de technologies open-source, avec une approche d’artisan&nbsp;: un développement sur-mesure
                 qui permet d’avoir la main à tous les niveaux.
                 Ces dernières années, notre expertise s’est principalement portée sur les
-                technologies <a href="https://laravel.com">Laravel</a> et <a href="https://vuejs.org/">Vue.js</a>.
+                technologies <a href="https://laravel.com" class="regular">Laravel</a>
+                et <a href="https://vuejs.org/" class="regular">Vue.js</a>.
             @endcomponent
             @component('_partials.paragraph')
                 Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
@@ -176,9 +177,10 @@
     <div class="text-brand-white">
         @component('_partials.section', ['large'=>true])
             Code 16<br>
-            SCM Gotham<br>
+            <a href="http://http://www.gothamscm.com/">SCM Gotham</a><br>
             24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-            Philippe Lonchampt : <a href="mailto:philippe@code16.fr">philippe@code16.fr</a>
+            Philippe Lonchampt : <a href="mailto:philippe@code16.fr">philippe@code16.fr</a><br>
+            <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16">Medium</a>
         @endcomponent
     </div>
 @endsection
