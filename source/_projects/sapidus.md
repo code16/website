@@ -15,7 +15,7 @@ La page d'accueil personnalisable propose de retrouver les dernières données d
 
 Calendrier, l'un des modules, permet de lister les événements publics de tous les collaborateurs de l'Agence, repris depuis leur serveur Exchange, afin par exemple de rapidement trouver une date pour une réunion.
 
-![Calendrier](/assets/img/sapidus/calendar.png)
+![Calendrier](/assets/img/sapidus/calendars.png)
 
 Le module Documents fonctionne comme un explorateur de fichiers en ligne, avec une gestion fine des droits d'accès en fonction des groupes, et un moteur de recherche dédié.
 

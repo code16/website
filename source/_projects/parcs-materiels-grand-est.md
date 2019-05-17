@@ -32,7 +32,9 @@ Le système de location est relié via une API au logiciel [Locasyst](http://www
 
 Le site utilise grandement le [framework de gestion de contenu Sharp](https://github.com/code16/sharp) pour permettre aux administrateurs de notamment gérer les locations, d'échanger des messages avec les clients, de suivre les commandes et leurs éventuelles erreurs, ... L'idée étant que tout puisse être analysé et réalisé depuis cette interface. 
 
-![Sharp](/assets/img/ekip/sharp.png)
-*Le tableau de bord de Sharp, avec les différentes entités à gauche qui permettent à l'administrateur de gérer tout le système*
+![Sharp](/assets/img/ekip/sharp-home.png)
+Le tableau de bord de Sharp, avec les différentes entités de gestion à gauche
+![Statistiques](/assets/img/ekip/sharp-stats.png)
+L'administrateur a accès à de nombreux indicateurs statistiques, exportables.
 
 Le projet est très riche de fonctionnalités, mais il laisse pour autant une grande autonomie aux administrateurs pour traiter les nombreux cas spécifiques à ce domaine. Le site est relié via API à un autre projet que nous avons développé pour l'Agence culturelle, le [CRM Beatus](/p/beatus), afin d'y remonter des données et contenus à des fins d'analyse statistique.
