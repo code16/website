@@ -8,7 +8,7 @@
     <title>Code 16</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('css/main.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
     <style>
         @yield('style')
@@ -26,6 +26,6 @@
         </div>
     </div>
 
-    <script src="{{ mix('js/main.js') }}"></script>
+    <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </body>
 </html>
