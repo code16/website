@@ -3548,7 +3548,7 @@ button,
   color: #fff;
 }
 
-.home a[href^=http]:not([href*=github]) {
+.home a.regular {
   font-weight: 400;
   color: #fff;
   border-color: #b1afaf;
@@ -3557,8 +3557,9 @@ button,
   line-height: 1;
 }
 
-.home a[href^=http]:not([href*=github]):hover {
+.home a.regular:hover {
   border-style: none;
+  text-decoration: none;
 }
 
 .stack {
@@ -3577,7 +3578,6 @@ html,
 body {
   min-height: 100%;
   line-height: 1.5;
-  background: red;
 }
 
 body {

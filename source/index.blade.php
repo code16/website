@@ -64,8 +64,8 @@
                 Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
             @endcomponent
             @component('_partials.paragraph')
-                <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
-                    qui sert d'outil d'administration pour bon nombre de nos projets (voir <a href="https://sharp.code16.fr">le site dédié</a>).
+                <a href="https://sharp.code16.fr">Le framework de gestion de contenu Sharp</a>,
+                    qui sert d'outil d'administration pour bon nombre de nos projets.
             @endcomponent
             @component('_partials.paragraph')
                 <a href="https://github.com/code16/formoj">Le générateur de formulaires Formoj</a>
@@ -87,7 +87,7 @@
                     E-commerce et applications mobiles
                 @endslot
                 Nous travaillons depuis des années avec Ek France, le groupement des magasins
-                <a href="https://ambianceetstyles.com">Ambiance & Styles</a> et <a href="https://www.culinarion.com">Culinarion</a>.
+                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
                 Notre champ d'action est vaste&nbsp;: sites internet
                 avec click and collect et synchronisation des comptes fidélité, applications mobile iOS
                 et Android, plateforme de newsletters, intranet.
@@ -97,7 +97,7 @@
                 @slot('title')
                     Agence culturelle Grand Est
                 @endslot
-                L'<a href="https://culturegrandest.fr">Agence culturelle Grand Est</a> nous a confié au fil du temps de nombreux projets, dont certains
+                L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a> nous a confié au fil du temps de nombreux projets, dont certains
                 ont été de véritables défis techniques. Nous avons réalisé leur site internet principal,
                 redéveloppé entièrement un outil CRM sur mesure, conçu et développé le système web de location
                 de matériel scénique, ou encore une plateforme intranet intégrant de nombreux
@@ -112,7 +112,7 @@
                 @slot('title')
                     Application mobile touristique
                 @endslot
-                Le <a href="http://www.domainedelatrigaliere.com/">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
+                Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
                 nombreux points d'intérêt de sa forêt de 1200 hectares.
                 <br><a href="/p/trigaliere">Projet Trig</a>
@@ -124,13 +124,13 @@
                 Deux projets entrent dans cette catégorie&nbsp;:
             @endcomponent
             @component('_partials.paragraph')
-                Le site multilingue du <a href="https://maillon.eu">théâtre Le Maillon</a>,
+                Le site multilingue du <a href="https://maillon.eu" class="regular">théâtre Le Maillon</a>,
                 qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
                 <br><a href="/p/maillon">Projet Maillon</a>
             @endcomponent
             @component('_partials.paragraph')
-                Le site du <a href="http://www.festivalmusica.org/">festival international de musique contemporaine Musica</a>,
+                Le site du <a href="http://www.festivalmusica.org/" class="regular">festival international de musique contemporaine Musica</a>,
                 également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographies des très nombreux
                 artistes ayant paticipé au festival, et répertoire des œuvres jouées).
                 <br><a href="/p/musica">Projet festival Musica</a>
@@ -140,12 +140,12 @@
                     D'autres références
                 @endslot
                 Parmi les autres projets de plus petite taille ou plus anciens, citons les sites internet avec commande ou
-                prise de réservation des excellentes librairies <a href="http://quaidesbrumes.com">Quai des Brumes</a> et
-                <a href="https://librairie-amateur.com/">la Librairie de l'Amateur</a>&nbsp; le site d'une revue
+                prise de réservation des excellentes librairies <a href="http://quaidesbrumes.com" class="regular">Quai des Brumes</a> et
+                <a href="https://librairie-amateur.com/" class="regular">la Librairie de l'Amateur</a>&nbsp; le site d'une revue
                 pour le compte de l'Université de Strasbourg, avec des outils de commentaire et de prise de note&nbsp;:
-                <a href="https://revue-radar.fr/">Radar</a>&nbsp;
+                <a href="https://revue-radar.fr/" class="regular">Radar</a>&nbsp;
                 ou encore le site internet et un CRM dédié pour le compte
-                du <a href="http://ciav-meisenthal.fr/">Centre international d'Art Verrier de Meisenthal</a>.
+                du <a href="http://ciav-meisenthal.fr/" class="regular">Centre international d'Art Verrier de Meisenthal</a>.
             @endcomponent
         @endcomponent
 
@@ -177,10 +177,10 @@
     <div class="text-brand-white">
         @component('_partials.section', ['large'=>true])
             Code 16<br>
-            <a href="http://http://www.gothamscm.com/">SCM Gotham</a><br>
+            <a href="http://http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
             24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-            Philippe Lonchampt : <a href="mailto:philippe@code16.fr">philippe@code16.fr</a><br>
-            <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16">Medium</a>
+            Philippe Lonchampt : <a href="mailto:philippe@code16.fr" class="regular">philippe@code16.fr</a><br>
+            <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16" class="regular">Medium</a>
         @endcomponent
     </div>
 @endsection
