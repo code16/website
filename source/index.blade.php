@@ -63,8 +63,12 @@
                 Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
             @endcomponent
             @component('_partials.paragraph')
-                <a href="https://github.com/code16/sharp">Le framework de gestion de contenu Sharp</a>,
+                <a href="https://sharp.code16.fr/">Le framework de gestion de contenu Sharp</a>,
                 qui sert d'outil d'administration pour bon nombre de nos projets.
+            @endcomponent
+            @component('_partials.paragraph')
+                <a href="https://github.com/code16/formoj">Le générateur de formulaires Formoj</a>
+                qui propose une solution simple pour créer, afficher et administrer des formulaires sur un site.
             @endcomponent
             @component('_partials.paragraph')
                 <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
@@ -100,7 +104,8 @@
                 et des liens de synchronisation via API.
                 <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : refonte du site internet</a>
                 <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
-                <br><a href="/p/beatus">Projet CRM Beatus</a>
+                <br><a href="/p/beatus">Projet Beatus : CRM et centralisation de données</a>
+                <br><a href="/p/sapidus">Projet Sapidus : outils intranet</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
