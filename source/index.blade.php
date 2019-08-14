@@ -1,5 +1,5 @@
 @extends('_layouts.master', [
-    'background' => 'brand-brown',
+    'background' => 'brand-darkblue',
     'bodyClass' => 'home',
     'headerClass' => 'text-brand-brown bg-brand-white'
 ])
@@ -8,6 +8,9 @@
     <div class="text-brand-white">
         @component('_partials.section', ['large'=>true])
             @component('_partials.paragraph')
+                @slot('title')
+                    Développement web de qualité
+                @endslot
                 Nous concevons depuis 2007 des sites internet et des applications mobiles à partir
                 de technologies open-source, avec une approche d’artisan&nbsp;: un développement sur-mesure
                 qui permet d’avoir la main à tous les niveaux.
@@ -28,7 +31,7 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    Nous accordons une (très) grande importance au code
+                    Nous accordons une<br>(très) grande importance au code
                 @endslot
                 Notre métier est de comprendre le besoin d'un client, de la traduire en spécifications
                 partagées de part et d'autre et de le convertir finalement en code : c'est sur cela que
@@ -54,7 +57,7 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Nous sommes impliqués dans l’Open source
+                    Nous sommes impliqués<br>dans l’Open source
                 @endslot
                 Nous faisons massivement (et uniquement) appel à des projets Open source dans nos réalisations,
                 et nous contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
@@ -84,7 +87,7 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    E-commerce et applications mobiles
+                    E-commerce<br>et applications mobiles
                 @endslot
                 Nous travaillons depuis des années avec Ek France, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
@@ -95,18 +98,31 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Agence culturelle Grand Est
+                    CRM et outils intranet
                 @endslot
-                L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a> nous a confié au fil du temps de nombreux projets, dont certains
-                ont été de véritables défis techniques. Nous avons réalisé leur site internet principal,
-                redéveloppé entièrement un outil CRM sur mesure, conçu et développé le système web de location
-                de matériel scénique, ou encore une plateforme intranet intégrant de nombreux
-                outils à partir de données externes — le tout relié par un système de comptes <em>Single Sign On</em> personnalisé,
-                et des liens de synchronisation via API.
-                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : refonte du site internet</a>
-                <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
+                L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
+                nous a confié au fil du temps de nombreux projets, reliés entre eux
+                par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
+                <br>Nous avons tout d'abord développé entièrement un outil CRM sur mesure&nbsp;:
                 <br><a href="/p/beatus">Projet Beatus : CRM et centralisation de données</a>
+            @endcomponent
+            @component('_partials.paragraph')
+                Nous avons également écrit une plateforme intranet intégrant de nombreux
+                outils à partir de données externes variées&nbsp;:
                 <br><a href="/p/sapidus">Projet Sapidus : outils intranet</a>
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('title')
+                    Système de gestion de commande,<br>portail internet
+                @endslot
+                Toujours pour l'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
+                nous avons conçu et développé un système web de création de devis et de suivi
+                de location de matériel scénique&nbsp;:
+                <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
+            @endcomponent
+            @component('_partials.paragraph')
+                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus&nbsp;:
+                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : portail internet</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -119,11 +135,8 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Présentation de spectacles, gestion de billetterie
+                    Présentation de spectacles,<br>gestion de billetterie
                 @endslot
-                Deux projets entrent dans cette catégorie&nbsp;:
-            @endcomponent
-            @component('_partials.paragraph')
                 Le site multilingue du <a href="https://maillon.eu" class="regular">théâtre Le Maillon</a>,
                 qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
@@ -154,20 +167,32 @@
                 L'équipe
             @endslot
             @component('_partials.paragraph')
-                Nous sommes trois développeurs à temps complet en interne&nbsp;:
+                @slot('subtitle')
+                    Philippe Lonchampt
+                @endslot
+                Fondateur de Code 16 (anciennement nommé Développlan), gérant de l'entreprise et développeur principal de plusieurs projets.
+                <br><a href="mailto:philippe@code16.fr">email</a>, <a href="https://twitter.com/dvlpp">twitter</a>
             @endcomponent
             @component('_partials.paragraph')
-                <a href="mailto:philippe@code16.fr">Philippe Lonchampt</a> est de fondateur de Code 16 (anciennement nommé Développlan),
-                le gérant de l'entreprise et le développeur principal de plusieurs projets.
+                @slot('subtitle')
+                    Arnaud Becher
+                @endslot
+                Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel, il intervient sur tous les projets.
             @endcomponent
             @component('_partials.paragraph')
-                <a href="mailto:arnaud@code16.fr">Arnaud Becher</a> est un développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel.
+                @slot('subtitle')
+                    Antoine Guingand
+                @endslot
+                Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
-                <a href="mailto:antoine@code16.fr">Antoine Guingand</a> est le reponsable du côté <em>front</em>, à la fois sur les sites
-                et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
+                @slot('subtitle')
+                    Pierre Billaud
+                @endslot
+                Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
             @endcomponent
             @component('_partials.paragraph')
+                —<br>
                 Bien entendu, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
                 qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
             @endcomponent
@@ -177,7 +202,7 @@
     <div class="text-brand-white">
         @component('_partials.section', ['large'=>true])
             Code 16<br>
-            <a href="http://http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
+            <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
             24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
             Philippe Lonchampt : <a href="mailto:philippe@code16.fr" class="regular">philippe@code16.fr</a><br>
             <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16" class="regular">Medium</a>

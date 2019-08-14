@@ -31,4 +31,4 @@ Le moteur de recherche, développé à la fois côté front et côté back avec 
 La plateforme technique mise en place autorise le multi-domaine, afin de partager l'outil de gestion et certaines données (les pages, les actualités, les tags) entre différents sites de l'Agence, dont celui dédié au cinéma : https://tournagesgrandest.fr.
 Courant 2018 et 2019 le développement continue pour intégrer petit à petit les sites satellites de l'Agence : les formations, les ressources dédiées à un domaine culturel donné, ...
 
-Code 16 travaille sur d'autres projets avec l'Agence culturelle Grand Est : [Beatus, un CRM dédié[(/p/beatus)] ; Sapidus, un intranet complet ; ou encore le nouveau [site de location de Matériel scénique](/p/parcs-materiels-grand-est).   
+Code 16 travaille sur d'autres projets avec l'Agence culturelle Grand Est : [Beatus, un CRM dédié](/p/beatus) ; [Sapidus, un intranet complet](/p/sapidus) ; ou encore le nouveau [site de location de Matériel scénique](/p/parcs-materiels-grand-est).   
