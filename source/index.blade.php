@@ -126,8 +126,12 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Application mobile touristique
+                    Applications cartographiques
                 @endslot
+                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production&nbsp;:
+                <br><a href="/p/treto">Projet Treto</a>
+            @endcomponent
+            @component('_partials.paragraph')
                 Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
                 nombreux points d'intérêt de sa forêt de 1200 hectares.
