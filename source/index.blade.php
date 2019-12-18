@@ -126,8 +126,12 @@
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Application mobile touristique
+                    Applications cartographiques
                 @endslot
+                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production&nbsp;:
+                <br><a href="/p/treto">Projet Treto&nbsp;: annuaire du spectacle vivant en Grand Est</a>
+            @endcomponent
+            @component('_partials.paragraph')
                 Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
                 nombreux points d'intérêt de sa forêt de 1200 hectares.
@@ -168,26 +172,38 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Philippe Lonchampt
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('philippelonchampt@gmail.com') }}?d=retro" alt="">
+                        <span>Philippe Lonchampt</span>
+                    </div>
                 @endslot
                 Fondateur de Code 16 (anciennement nommé Développlan), gérant de l'entreprise et développeur principal de plusieurs projets.
                 <br><a href="mailto:philippe@code16.fr">email</a>, <a href="https://twitter.com/dvlpp">twitter</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Arnaud Becher
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('arnaud.becher@gmail.com') }}?d=retro" alt="">
+                        <span>Arnaud Becher</span>
+                    </div>
                 @endslot
                 Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel, il intervient sur tous les projets.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Antoine Guingand
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('guingand.antoine@gmail.com') }}?d=retro" alt="">
+                        <span>Antoine Guingand</span>
+                    </div>
                 @endslot
                 Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Pierre Billaud
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
+                        <span>Pierre Billaud</span>
+                    </div>
                 @endslot
                 Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
             @endcomponent
