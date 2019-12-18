@@ -22,11 +22,13 @@
 
 @section('style')
     @if($page->carouselWidth ?? false)
-        @php($widths = is_array($page->carouselWidth) ? $page->carouselWidth : [1=>$page->carouselWidth])
+        @php($widths = is_array($page->carouselWidth) ? $page->carouselWidth : [$page->carouselWidth])
         @foreach($widths as $nth => $width)
-            .carousel:nth-of-type({{ $nth }}) .VueCarousel-inner {
-                max-width: {{ $width }} !important;
-            }
+            @if($width !== 'auto')
+                .carousel:nth-of-type({{ $nth + 1 }}) .VueCarousel-inner {
+                    max-width: {{ $width }} !important;
+                }
+            @endif
         @endforeach
     @endif
 @endsection
