@@ -172,26 +172,38 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Philippe Lonchampt
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('philippelonchampt@gmail.com') }}?d=retro" alt="">
+                        <span>Philippe Lonchampt</span>
+                    </div>
                 @endslot
                 Fondateur de Code 16 (anciennement nommé Développlan), gérant de l'entreprise et développeur principal de plusieurs projets.
                 <br><a href="mailto:philippe@code16.fr">email</a>, <a href="https://twitter.com/dvlpp">twitter</a>
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Arnaud Becher
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('arnaud.becher@gmail.com') }}?d=retro" alt="">
+                        <span>Arnaud Becher</span>
+                    </div>
                 @endslot
                 Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel, il intervient sur tous les projets.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Antoine Guingand
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('antoine.guingand@wanadoo.fr') }}?d=retro" alt="">
+                        <span>Antoine Guingand</span>
+                    </div>
                 @endslot
                 Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Pierre Billaud
+                    <div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
+                        <span>Pierre Billaud</span>
+                    </div>
                 @endslot
                 Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
             @endcomponent
