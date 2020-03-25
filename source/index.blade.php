@@ -193,7 +193,7 @@
             @component('_partials.paragraph')
                 @slot('subtitle')
                     <div class="flex items-center mb-2">
-                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('antoine.guingand@wanadoo.fr') }}?d=retro" alt="">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('guingand.antoine@gmail.com') }}?d=retro" alt="">
                         <span>Antoine Guingand</span>
                     </div>
                 @endslot

@@ -2,7 +2,7 @@
 extends: _layouts.project
 section: projectContent
 title: Treto
-
+carouselWidth: ['auto', 30rem]
 ---
 
 **Plateforme du spectacle vivant du Grand Est**
