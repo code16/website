@@ -88,13 +88,13 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    E-commerce<br>et applications mobiles
+                    E-commerce
                 @endslot
                 Nous travaillons depuis des années avec Ek France, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
                 Notre champ d'action est vaste&nbsp;: sites internet
-                avec click and collect et synchronisation des comptes fidélité, applications mobile iOS
-                et Android, plateforme de newsletters, intranet.
+                avec <em>marketplace</em>, click and collect et synchronisation des comptes fidélité, 
+                applications mobile iOS et Android, plateforme de newsletters, intranet.
                 <br><a href="/p/ek-france">Projet EK France</a>
             @endcomponent
             @component('_partials.paragraph')
