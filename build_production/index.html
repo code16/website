@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Code 16</title>
+    <title>Code 16, développement Laravel et Vue.js</title>
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
     <link rel="stylesheet" href="/assets/build/css/main.css?id=36b3e90228fdf1e0d3eb">
@@ -14,7 +14,14 @@
             </style>
 </head>
 <body class="bg-brand-darkblue home">
-    <div class="p-8 sm:p-16">
+            <div class="lang-selector container absolute w-full text-right">
+            <span class="mr-3">
+                <a href="/" class="text-white">fr</a>
+                <span class="text-white">|</span>
+                <a href="/en" class="underline">en</a>
+            </span>
+        </div>
+        <div class="p-8 sm:p-16">
         <div id="app" class="container" :class="{'mobile':isMobile}">
             <header class="mb-16">
                 <a href="/" class="hover:no-underline">

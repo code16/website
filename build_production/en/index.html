@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code 16, développement Laravel et Vue.js</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=36b3e90228fdf1e0d3eb">
+
+    <style>
+            </style>
+</head>
+<body class="bg-brand-darkblue home">
+            <div class="lang-selector container absolute w-full text-right">
+            <span class="mr-3">
+                <a href="/" class="underline">fr</a>
+                <span class="text-white">|</span>
+                <a href="/en" class="text-white">en</a>
+            </span>
+        </div>
+        <div class="p-8 sm:p-16">
+        <div id="app" class="container" :class="{'mobile':isMobile}">
+            <header class="mb-16">
+                <a href="/" class="hover:no-underline">
+                    <h1 class="uppercase tracking-wider text-4xl text-brand-brown bg-brand-white text-right pb-6 px-2 pt-2 w-64 z-10" v-sticky-title="{ paddingTop:64 }">Code 16</h1>
+                </a>
+            </header>
+                <div class="text-brand-white">
+        <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                <div class="lg:max-w-md xl:max-w-lg" :class="{'md:ml-48':!isMobile}">
+            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">Quality web development</h3>
+            <div class="paragraph">We build since 2007 websites and mobile apps based on open source technologies,
+                with an "artisan" state of mind: a tailor-made development that allows control at all levels.
+                We have mainly focused on <a href="https://laravel.com" class="regular">Laravel</a>
+                and <a href="https://vuejs.org/" class="regular">Vue.js</a> in recent years.</div>
+</div>            <div>
+            <div class="paragraph">Our customers have one thing in common: they want a solution adapted to a 
+                problem that is not necessarily standard, while benefiting from tools that make 
+                them autonomous on a daily basis.</div>
+</div>            <div>
+            <div class="paragraph">We are located in Strasbourg, a city on the eastern border of France, 
+                but we can of course work remotely.</div>
+</div>
+        </div>
+    </div>
+</div>
+        <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                    <div class="mb-4 md:mb-16" :class="{'md:pl-16':!isMobile}">
+                <h2 class="tracking-widest text-uppercase uppercase inline-block"
+                    v-sticky-title:section="{&quot;container&quot;:&quot;.relative&quot;,&quot;paddingTop&quot;:64,&quot;startOffset&quot;:-280,&quot;endOffset&quot;:20,&quot;relativeAnchorX&quot;:40}"
+                >
+                    Our approach
+                </h2>
+            </div>
+                <div class="lg:max-w-md xl:max-w-lg" :class="{'md:ml-48':!isMobile}">
+            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">We attach great<br>importance to the code</h3>
+            <div class="paragraph">Our job is to understand a client's need, translate it into shared 
+                specifications on both sides and ultimately convert it into code: 
+                that's what we focus all our efforts on.</div>
+</div>            <div>
+            <div class="paragraph">Experience shows us that this code, to be reliable and able to adapt to future needs, 
+                must be mastered (which implies to depend only on open source projects), 
+                concise (so that it remains understandable over time, and that it is simple to replace 
+                if a new need is expressed), and systematically accompanied by an automated suite of unit 
+                and functional tests (used at first write stage and even more after, to limit as much as possible regressions 
+                over the versions).</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">Our clients are partners</h3>
+            <div class="paragraph">Rather than multiplying small projects and contacts, we seek to create partnerships 
+                with our clients to work with them over the long term, in order to ensure 
+                continuous maintenance to our software.</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">We are involved<br>in open source</h3>
+            <div class="paragraph">We massively use open source projects in our work, and we regularly contribute to the 
+                code of these projects when we find some part where an improvement could be made, 
+                whether by fixing a bug or adding a new functionality.</div>
+</div>            <div>
+            <div class="paragraph">In the same spirit, we developed and maintain several open source projects, among which:</div>
+</div>            <div>
+            <div class="paragraph"><a href="https://sharp.code16.fr">Sharp, a content management framework</a>,
+                which is used in many projects (ours or not).</div>
+</div>            <div>
+            <div class="paragraph"><a href="https://github.com/code16/formoj">Formoj, a form generator</a>
+                which is a simple solution to create, display and manage forms in any website.</div>
+</div>
+        </div>
+    </div>
+</div>
+        <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                    <div class="mb-4 md:mb-16" :class="{'md:pl-16':!isMobile}">
+                <h2 class="tracking-widest text-uppercase uppercase inline-block"
+                    v-sticky-title:section="{&quot;container&quot;:&quot;.relative&quot;,&quot;paddingTop&quot;:64,&quot;startOffset&quot;:-280,&quot;endOffset&quot;:20,&quot;relativeAnchorX&quot;:40}"
+                >
+                    Projects
+                </h2>
+            </div>
+                <div class="lg:max-w-md xl:max-w-lg" :class="{'md:ml-48':!isMobile}">
+            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">E-commerce</h3>
+            <div class="paragraph">We have been working for years with Ek France, which groups 150+ stores 
+                (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
+                <a href="https://www.culinarion.com">Culinarion</a>). 
+                Our field of action is vast: websites with a marketplace click and collect plateform
+                and synchronization of fidelity accounts, iOS and Android mobile applications, 
+                newsletters platform, intranet tools.</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">CRM and intranet tools</h3>
+            <div class="paragraph">The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
+                (the regional entity in charge of cultural development) asked us to work on several projects,
+                linked together by a personalized <em>Single Sign On</em> account system and API synchronizations. 
+                First of all, we fully developed a dedicated custom CRM, named Beatus, linked to all other tools
+                to gather data for all contacts.</div>
+</div>            <div>
+            <div class="paragraph">We also built an intranet platform, Sapidus, which integrates many internal tools
+                like calendar and resource management, news feed, packages and letters tracking, ...</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">Order management system,<br>web portal</h3>
+            <div class="paragraph">Still for the <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
+                we designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating advanced quotes and monitoring orders 
+                in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.</div>
+</div>            <div>
+            <div class="paragraph">As well as the <a href="https://culturegrandest.fr">main web portal</a>, with a very diverse content
+                distributed over several domains, like <a href="https://tournagesgrandest.fr/">cinema</a> for instance.</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">Cartographic apps</h3>
+            <div class="paragraph">We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
+                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...</div>
+</div>            <div>
+            <div class="paragraph">The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, 
+                which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
+                asked us to create Trig, a mobile app 
+                (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a> 
+                et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>) 
+                to guide guests across the domain.</div>
+</div>            <div>
+            <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">Ticketing system,<br>shows presentation</h3>
+            <div class="paragraph">The <a href="https://maillon.eu">Maillon theater</a> website presents, 
+                in its very own graphic design universe, the full season program as well as a 
+                custom online ticketing system and account management.</div>
+</div>            <div>
+            <div class="paragraph">The <a href="http://www.festivalmusica.org/">website of Musica</a>,
+                an international music festival, also contains a full ticketing system, 
+                and a resource database for artist biographies and all pieces played in the festival since 1984.</div>
+</div>
+        </div>
+    </div>
+</div>
+        <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                    <div class="mb-4 md:mb-16" :class="{'md:pl-16':!isMobile}">
+                <h2 class="tracking-widest text-uppercase uppercase inline-block"
+                    v-sticky-title:section="{&quot;container&quot;:&quot;.relative&quot;,&quot;paddingTop&quot;:64,&quot;startOffset&quot;:-280,&quot;endOffset&quot;:20,&quot;relativeAnchorX&quot;:40}"
+                >
+                    The team
+                </h2>
+            </div>
+                <div class="lg:max-w-md xl:max-w-lg" :class="{'md:ml-48':!isMobile}">
+            <div>
+                <h3 class="mt-4 text-xl"><div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/abae4d6f76cd2160f2737dcc79316fe8?d=retro" alt="">
+                        <span>Philippe Lonchampt</span>
+                    </div></h3>
+        <div class="paragraph">Founder, manager and main developer of several projects.
+                <br><a href="mailto:philippe@code16.fr">email</a>, <a href="https://twitter.com/dvlpp">twitter</a></div>
+</div>            <div>
+                <h3 class="mt-4 text-xl"><div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/a715bc6dd60bc6b5003eed4bbfab73dc?d=retro" alt="">
+                        <span>Arnaud Becher</span>
+                    </div></h3>
+        <div class="paragraph">Backend developer (PHP and Laravel).</div>
+</div>            <div>
+                <h3 class="mt-4 text-xl"><div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/b66ba3c470c8b2f3dd052d1941c10d93?d=retro" alt="">
+                        <span>Antoine Guingand</span>
+                    </div></h3>
+        <div class="paragraph">Front-end developer (mobile apps, Vue.js).</div>
+</div>            <div>
+                <h3 class="mt-4 text-xl"><div class="flex items-center mb-2">
+                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/a8f9de7a3cda9e91267244385e773e94?d=retro" alt="">
+                        <span>Pierre Billaud</span>
+                    </div></h3>
+        <div class="paragraph">Part time student (computer science), work on many projects as a maintainer.</div>
+</div>            <div>
+            <div class="paragraph">—<br>
+                Of course, when the project requires it, we surround ourselves with external skills 
+                (other developers, graphic artists or designers).</div>
+</div>
+        </div>
+    </div>
+</div>    </div>
+
+    <div class="text-brand-white">
+        <div class="pb-12 md:pb-32">
+    <div class="relative" v-cloak>
+                <div class="lg:max-w-md xl:max-w-lg" :class="{'md:ml-48':!isMobile}">
+            Code 16<br>
+            <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
+            24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
+            Philippe Lonchampt: <a href="mailto:philippe@code16.fr" class="regular">philippe@code16.fr</a><br>
+            <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16" class="regular">Medium</a>
+        </div>
+    </div>
+</div>    </div>
+        </div>
+    </div>
+
+    <script src="/assets/build/js/main.js?id=2c603f89e5e82bbb009c"></script>
+</body>
+</html>

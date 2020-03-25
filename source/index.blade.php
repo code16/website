@@ -1,5 +1,6 @@
 @extends('_layouts.master', [
     'background' => 'brand-darkblue',
+    'lang' => 'fr',
     'bodyClass' => 'home',
     'headerClass' => 'text-brand-brown bg-brand-white'
 ])
