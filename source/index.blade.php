@@ -98,6 +98,11 @@
                 <br><a href="/p/ek-france">Projet EK France</a>
             @endcomponent
             @component('_partials.paragraph')
+                Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal, 
+                une boutique événementielle d'objets en verre comprenant notamment leurs célèbres boules de Noël.
+                <br><a href="/p/merkur">Projet Merkur</a>
+            @endcomponent
+            @component('_partials.paragraph')
                 @slot('title')
                     CRM et outils intranet
                 @endslot
