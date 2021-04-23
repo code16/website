@@ -62,24 +62,27 @@
                 @endslot
                 Nous faisons massivement (et uniquement) appel à des projets Open source dans nos réalisations,
                 et nous contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
-                une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l'ajout d'une nouvelle fonctionnalité.
+                une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l’ajout d’une nouvelle fonctionnalité.
             @endcomponent
             @component('_partials.paragraph')
                 Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
             @endcomponent
-            @component('_partials.paragraph')
-                <a href="https://sharp.code16.fr">Le framework de gestion de contenu Sharp</a>,
-                    qui sert d'outil d'administration pour bon nombre de nos projets.
-            @endcomponent
-            @component('_partials.paragraph')
-                <a href="https://github.com/code16/formoj">Le générateur de formulaires Formoj</a>
-                qui propose une solution simple pour créer, afficher et administrer des formulaires sur un site.
-            @endcomponent
-            @component('_partials.paragraph')
-                <a href="https://github.com/code16/metrics">L'outil d'analyse Metrics</a>
-                permet de collecter et d'analyser les comportements des visiteurs de manière fine et en respect
-                de la législation.
-            @endcomponent
+
+            <div class="flex items-center mb-2 paragraph">
+                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/sharp.png" alt="">
+                <span>
+                    <a href="https://sharp.code16.fr">Le framework de gestion de contenu Sharp</a>,
+                    qui sert d’outil d’administration pour bon nombre de nos projets.
+                </span>
+            </div>
+
+            <div class="flex items-center paragraph">
+                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/formoj.png" alt="">
+                <span>
+                    <a href="https://github.com/code16/formoj">Le générateur de formulaires Formoj</a>,
+                    qui propose une solution simple pour créer, afficher et administrer des formulaires sur un site.
+                </span>
+            </div>
         @endcomponent
 
         @component('_partials.section')

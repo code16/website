@@ -67,14 +67,22 @@
             @component('_partials.paragraph')
                 In the same spirit, we developed and maintain several open source projects, among which:
             @endcomponent
-            @component('_partials.paragraph')
-                <a href="https://sharp.code16.fr">Sharp, a content management framework</a>,
-                which is used in many projects (ours or not).
-            @endcomponent
-            @component('_partials.paragraph')
-                <a href="https://github.com/code16/formoj">Formoj, a form generator</a>
-                which is a simple solution to create, display and manage forms in any website.
-            @endcomponent
+
+            <div class="flex items-center mb-2 paragraph">
+                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/sharp.png" alt="">
+                <span>
+                    <a href="https://sharp.code16.fr">Sharp, a content management framework</a>,
+                    which is used in many projects (ours or not).
+                </span>
+            </div>
+
+            <div class="flex items-center paragraph">
+                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/formoj.png" alt="">
+                <span>
+                    <a href="https://github.com/code16/formoj">Formoj, a form generator</a>,
+                    which is a simple solution to create, display and manage forms in any website.
+                </span>
+            </div>
         @endcomponent
 
         @component('_partials.section')
@@ -91,6 +99,11 @@
                 Our field of action is vast: websites with a marketplace click and collect plateform
                 and synchronization of fidelity accounts, iOS and Android mobile applications, 
                 newsletters platform, intranet tools.
+            @endcomponent
+            @component('_partials.paragraph')
+                We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
+                <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects 
+                including their famous Christmas bulbs.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
