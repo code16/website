@@ -34,17 +34,17 @@
                 @slot('title')
                     Nous accordons une<br>(très) grande importance au code
                 @endslot
-                Notre métier est de comprendre le besoin d'un client, de la traduire en spécifications
-                partagées de part et d'autre et de le convertir finalement en code : c'est sur cela que
+                Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
+                partagées de part et d’autre et de le convertir finalement en code : c'est sur cela que
                 nous concentrons tous nos efforts.
             @endcomponent
             @component('_partials.paragraph')
-                L'expérience nous montre que ce code, pour qu'il soit fiable et qu'il puisse s'adapter
+                L’expérience nous montre que ce code, pour qu’il soit fiable et qu’il puisse s’adapter
                 aux besoins futurs, doit être maîtrisé (ce qui nous pousse à ne dépendre
-                que de projets Open source), concis (pour qu'il reste compréhensible dans le temps, et
-                qu'il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
+                que de projets Open source), concis (pour qu’il reste compréhensible dans le temps, et
+                qu’il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
                 accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
-                à l'écriture, et limiter au maximum les régressions au fil des versions).
+                à l’écriture, et limiter au maximum les régressions au fil des versions).
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -93,17 +93,33 @@
                 @slot('title')
                     E-commerce
                 @endslot
-                Nous travaillons depuis des années avec Ek France, le groupement des magasins
+                @slot('subtitle')
+                    Projet EK France
+                @endslot
+                @slot('banner')
+                    assets/img/ek/banner.png
+                @endslot
+                @slot('link')
+                    /p/ek-france
+                @endslot
+                Nous travaillons depuis des années avec EK France, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                Notre champ d'action est vaste&nbsp;: sites internet
-                avec <em>marketplace</em>, click and collect et synchronisation des comptes fidélité, 
-                applications mobile iOS et Android, plateforme de newsletters, intranet.
-                <br><a href="/p/ek-france">Projet EK France</a>
+                Notre champ d’action est vaste&nbsp;: sites internet
+                avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>, 
+                gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Merkur
+                @endslot
+                @slot('thumbnail')
+                    assets/img/merkur/thumb.png
+                @endslot
+                @slot('link')
+                    /p/merkur
+                @endslot
                 Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal, 
-                une boutique événementielle d'objets en verre comprenant notamment leurs célèbres boules de Noël.
-                <br><a href="/p/merkur">Projet Merkur</a>
+                une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -125,7 +141,12 @@
                     Système de gestion de commande,<br>portail internet
                 @endslot
                 Toujours pour l'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
-                nous avons conçu et développé un système web de création de devis et de suivi
+                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour 
+                les nombreuses formations proposées par la structure&nbsp;:
+                <br><a href="/p/cursus">Projet Cursus : gestion de formations</a>
+            @endcomponent
+            @component('_partials.paragraph')
+                Nous avons également conçu et développé un système web de création de devis et de suivi
                 de location de matériel scénique&nbsp;:
                 <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
             @endcomponent
@@ -208,18 +229,9 @@
                 Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
-                @slot('subtitle')
-                    <div class="flex items-center mb-2">
-                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
-                        <span>Pierre Billaud</span>
-                    </div>
-                @endslot
-                Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
-            @endcomponent
-            @component('_partials.paragraph')
                 —<br>
                 Bien entendu, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
-                qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
+                qu’il s’agisse d’autres développeurs, de graphistes ou de designers.
             @endcomponent
         @endcomponent
     </div>
