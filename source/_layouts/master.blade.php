@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
+    <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
+
     <style>
         @yield('style')
     </style>
