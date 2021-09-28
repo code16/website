@@ -7,20 +7,22 @@ title: Ek France
 
 **Sites e-commerce, outils intranet et gestion de comptes clients pour un groupement de 150 magasins de vente au détail.**
 
-Nous travaillons avec EK France depuis de nombreuses années, et sur de multiples sujets. Le premier d'entre eux est le site internet, ou plutôt les sites, dont la version actuelle a été développée en 2016 pour les deux enseignes principales du groupement que sont [Ambiance & Styles](https://ambianceetstyles.com) et [Culinarion](https://www.culinarion.com). Bâtis sur la même plateforme, ces deux sites bénéficient d'un module sur mesure de «&nbsp;Click and Collect&nbsp;» en mode marketplace, étant donné que chaque magasin est indépendant, avec gestion des paiements via Stripe. Les clients et leurs informations fidélité, les stocks articles de chaque magasin, les articles eux-mêmes, leurs photos sont synchronisés depuis le logiciel central du groupement, avec lequel les sites communiquent également pour les prises de commandes.
+Nous travaillons avec EK France depuis de nombreuses années, et sur de multiples sujets. Le premier d’entre eux est le site internet, ou plutôt les sites, dont la version actuelle est développée en 2016 pour les deux enseignes principales du groupement que sont [Ambiance & Styles](https://ambianceetstyles.com) et [Culinarion](https://www.culinarion.com). Bâtis sur la même plateforme, ces deux sites bénéficient d’un module sur mesure de «&nbsp;*Click & Collect*&nbsp;» en mode marketplace, chaque magasin étant indépendant, avec gestion des paiements via Stripe. Un mode «&nbsp;*Ship from Store*&nbsp;» a été ajouté en 2020, basé sur un algorithme d’élection d’un magasin selon le niveau de stocks, la proximité géographique et un système de *scoring* selon l’historique de ses commandes. 
+
+Les clients et leurs informations fidélité, les stocks articles de chaque magasin, les articles eux-mêmes, leurs photos sont synchronisés depuis le logiciel central du groupement, avec lequel les sites communiquent également pour les prises de commandes.
 
 ![Accueil](/assets/img/ek/2019/home-1.png)
-La page d'accueil, telle qu'elle était à Noël 2019
+La page d’accueil, telle qu’elle était à Noël 2019
 ![Accueil 2](/assets/img/ek/2019/home-2.png)
-Partie centrale de la page d'accueil
+Partie centrale de la page d’accueil
 ![Produits](/assets/img/ek/2019/products.png)
 Une liste de produits dynamique, avec ses filtres
-![Produit](/assets/img/ek/2019/product.png)
-La fiche d'un produit
-![Panier](/assets/img/ek/2019/cart.png)
+![Produit](/assets/img/ek/2021/product.png)
+La fiche d’un produit, avec sa disponibilité selon le mode de retrait
+![Panier](/assets/img/ek/2021/cart.png)
 Un panier en cours
 
-Le projet comprend également un système de notifications avec rappels échelonnés évolué pour le Click and Collect, un «&nbsp;store locator&nbsp;» avec géolocalisation, un système de création de tuiles et d'actualités pour animer le contenu commercial, et un moteur de recherche complet prenant en charge la pertinence et un système dynamique de filtres.
+Le projet comprend également un système de notifications avec rappels échelonnés pour le *Click & Collect* et le *Ship from Store*, un «&nbsp;*store locator*&nbsp;» avec géolocalisation, un système de création de tuiles et d’actualités pour animer le contenu commercial, et un moteur de recherche complet prenant en charge la pertinence et un système dynamique de filtres.
 
 ![Culinarion](/assets/img/ek/2019/cu-1.png)
 Le site dans sa version Culinarion
@@ -36,13 +38,11 @@ Un exemple de liste de cadeaux, présentée du côté d'un donateur
 ![Carte cadeau](/assets/img/ek/2019/giftcard.png)
 Formulaire de commande d'une carte cadeau
 
-Les administrateurs du site ont accès à un outil de back-office complet construit à partir de notre projet Open-source [Sharp 4](https://github.com/code16/sharp). Le site utilise par ailleurs [Metrics](https://github.com/code16/metrics), un autre projet Open-source maintenu par Code 16, pour un suivi personnalisé du comportement des visiteurs.
+Les administrateurs du site ont accès à un outil de back-office complet construit à partir de notre projet Open-source [Sharp](https://sharp.code16.fr). Le site utilise par ailleurs [Metrics](https://github.com/code16/metrics), un autre projet Open-source maintenu par Code 16, pour un suivi personnalisé du comportement des visiteurs.
 
-![Sharp - produits](/assets/img/ek/2019/sharp-1.png)
-L'administration des produits dans Sharp
-![Sharp - commandes](/assets/img/ek/2019/sharp-2.png)
+![Sharp - produits](/assets/img/ek/2021/sharp-products.png)
+L’administration des produits dans Sharp
+![Sharp - commandes](/assets/img/ek/2021/sharp-orders.png)
 La liste des commandes, avec leurs actions
-![Sharp - metrics](/assets/img/ek/2019/sharp-3.png)
+![Sharp - metrics](/assets/img/ek/2021/sharp-dashboard.png)
 Un exemple de quelques métriques
-
-Notre prestation comprend aussi l'outil spécifique Platina, un intranet «&nbsp;couteau suisse&nbsp;» pour les magasins du réseau, et même la création et le suivi des campagnes emailings pour le compte des enseignes ou de magasins en particulier.

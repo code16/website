@@ -34,17 +34,17 @@
                 @slot('title')
                     Nous accordons une<br>(très) grande importance au code
                 @endslot
-                Notre métier est de comprendre le besoin d'un client, de la traduire en spécifications
-                partagées de part et d'autre et de le convertir finalement en code : c'est sur cela que
+                Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
+                partagées de part et d’autre et de le convertir finalement en code : c'est sur cela que
                 nous concentrons tous nos efforts.
             @endcomponent
             @component('_partials.paragraph')
-                L'expérience nous montre que ce code, pour qu'il soit fiable et qu'il puisse s'adapter
+                L’expérience nous montre que ce code, pour qu’il soit fiable et qu’il puisse s’adapter
                 aux besoins futurs, doit être maîtrisé (ce qui nous pousse à ne dépendre
-                que de projets Open source), concis (pour qu'il reste compréhensible dans le temps, et
-                qu'il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
+                que de projets Open source), concis (pour qu’il reste compréhensible dans le temps, et
+                qu’il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
                 accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
-                à l'écriture, et limiter au maximum les régressions au fil des versions).
+                à l’écriture, et limiter au maximum les régressions au fil des versions).
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -93,17 +93,33 @@
                 @slot('title')
                     E-commerce
                 @endslot
-                Nous travaillons depuis des années avec Ek France, le groupement des magasins
+                @slot('subtitle')
+                    Projet EK France
+                @endslot
+                @slot('banner')
+                    assets/img/ek/banner.png
+                @endslot
+                @slot('link')
+                    /p/ek-france
+                @endslot
+                Nous travaillons depuis des années avec EK France, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                Notre champ d'action est vaste&nbsp;: sites internet
-                avec <em>marketplace</em>, click and collect et synchronisation des comptes fidélité, 
-                applications mobile iOS et Android, plateforme de newsletters, intranet.
-                <br><a href="/p/ek-france">Projet EK France</a>
+                Notre champ d’action est vaste&nbsp;: sites internet
+                avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>, 
+                gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Merkur
+                @endslot
+                @slot('thumbnail')
+                    assets/img/merkur/thumb.png
+                @endslot
+                @slot('link')
+                    /p/merkur
+                @endslot
                 Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal, 
-                une boutique événementielle d'objets en verre comprenant notamment leurs célèbres boules de Noël.
-                <br><a href="/p/merkur">Projet Merkur</a>
+                une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -112,39 +128,105 @@
                 L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
                 par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
-                <br>Nous avons tout d'abord développé entièrement un outil CRM sur mesure&nbsp;:
-                <br><a href="/p/beatus">Projet Beatus : CRM et centralisation de données</a>
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Beatus
+                @endslot
+                @slot('thumbnail')
+                    assets/img/beatus/thumb.png
+                @endslot
+                @slot('link')
+                    /p/beatus
+                @endslot
+                Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure, 
+                pour centraliser les contacts de l'Agence et de proposer des outils adaptés de gestion.
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Sapidus
+                @endslot
+                @slot('link')
+                    /p/sapidus
+                @endslot
                 Nous avons également écrit une plateforme intranet intégrant de nombreux
-                outils à partir de données externes variées&nbsp;:
-                <br><a href="/p/sapidus">Projet Sapidus : outils intranet</a>
+                outils à partir de données externes variées.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Système de gestion de commande,<br>portail internet
+                    Système de gestion de commande,<br>portails internet
+                @endslot
+                @slot('subtitle')
+                    Projet Cursus
+                @endslot
+                @slot('banner')
+                    assets/img/cursus/banner.png
+                @endslot
+                @slot('link')
+                    /p/cursus
                 @endslot
                 Toujours pour l'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
-                nous avons conçu et développé un système web de création de devis et de suivi
-                de location de matériel scénique&nbsp;:
-                <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
+                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
+                les nombreuses formations proposées par la structure.
             @endcomponent
             @component('_partials.paragraph')
-                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus&nbsp;:
-                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : portail internet</a>
+                @slot('subtitle')
+                    Projet Ekip
+                @endslot
+                @slot('thumbnail')
+                    assets/img/ekip/thumb.png
+                @endslot
+                @slot('link')
+                    /p/parcs-materiels-grand-est
+                @endslot
+                Nous avons également conçu et développé un système web de création de devis et de suivi
+                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
+                étroite avec le logiciel de gestion de stock déjà en place.
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Acacia
+                @endslot
+                @slot('thumbnail')
+                    assets/img/aca/thumb.png
+                @endslot
+                @slot('link')
+                    /p/agence-culturelle-grand-est
+                @endslot
+                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus 
+                et porte d’entrée vers tous les sites et applications.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
                     Applications cartographiques
                 @endslot
-                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production&nbsp;:
-                <br><a href="/p/treto">Projet Treto&nbsp;: annuaire du spectacle vivant en Grand Est</a>
+                @slot('subtitle')
+                    Projet Treto
+                @endslot
+                @slot('banner')
+                    assets/img/treto/banner.png
+                @endslot
+                @slot('link')
+                    /p/treto
+                @endslot
+                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, 
+                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
+                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
+                calendriers de spectacle...
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Trig
+                @endslot
+                @slot('thumbnail')
+                    assets/img/trig/thumb.png
+                @endslot
+                @slot('link')
+                    /p/trig
+                @endslot
                 Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
-                nombreux points d'intérêt de sa forêt de 1200 hectares.
-                <br><a href="/p/trigaliere">Projet Trig</a>
+                nombreux points d’intérêt de sa forêt de 1200 hectares.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
@@ -208,18 +290,9 @@
                 Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
             @endcomponent
             @component('_partials.paragraph')
-                @slot('subtitle')
-                    <div class="flex items-center mb-2">
-                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
-                        <span>Pierre Billaud</span>
-                    </div>
-                @endslot
-                Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
-            @endcomponent
-            @component('_partials.paragraph')
                 —<br>
                 Bien entendu, lorsque le projet le requiert, nous savons nous entourer de compétences externes,
-                qu'il s'agisse d'autres développeurs, de graphistes ou de designers.
+                qu’il s’agisse d’autres développeurs, de graphistes ou de designers.
             @endcomponent
         @endcomponent
     </div>
