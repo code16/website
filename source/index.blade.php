@@ -177,7 +177,7 @@
                     assets/img/ekip/thumb.png
                 @endslot
                 @slot('link')
-                    /p/ekip
+                    /p/parcs-materiels-grand-est
                 @endslot
                 Nous avons également conçu et développé un système web de création de devis et de suivi
                 de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
@@ -191,7 +191,7 @@
                     assets/img/aca/thumb.png
                 @endslot
                 @slot('link')
-                    /p/acacia
+                    /p/agence-culturelle-grand-est
                 @endslot
                 Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus 
                 et porte d’entrée vers tous les sites et applications.
