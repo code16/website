@@ -128,44 +128,105 @@
                 L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
                 par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
-                <br>Nous avons tout d'abord développé entièrement un outil CRM sur mesure&nbsp;:
-                <br><a href="/p/beatus">Projet Beatus : CRM et centralisation de données</a>
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Beatus
+                @endslot
+                @slot('thumbnail')
+                    assets/img/beatus/thumb.png
+                @endslot
+                @slot('link')
+                    /p/beatus
+                @endslot
+                Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure, 
+                pour centraliser les contacts de l'Agence et de proposer des outils adaptés de gestion.
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Sapidus
+                @endslot
+                @slot('link')
+                    /p/sapidus
+                @endslot
                 Nous avons également écrit une plateforme intranet intégrant de nombreux
-                outils à partir de données externes variées&nbsp;:
-                <br><a href="/p/sapidus">Projet Sapidus : outils intranet</a>
+                outils à partir de données externes variées.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Système de gestion de commande,<br>portail internet
+                    Système de gestion de commande,<br>portails internet
+                @endslot
+                @slot('subtitle')
+                    Projet Cursus
+                @endslot
+                @slot('banner')
+                    assets/img/cursus/banner.png
+                @endslot
+                @slot('link')
+                    /p/cursus
                 @endslot
                 Toujours pour l'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
-                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour 
-                les nombreuses formations proposées par la structure&nbsp;:
-                <br><a href="/p/cursus">Projet Cursus : gestion de formations</a>
+                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
+                les nombreuses formations proposées par la structure.
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Ekip
+                @endslot
+                @slot('thumbnail')
+                    assets/img/ekip/thumb.png
+                @endslot
+                @slot('link')
+                    /p/ekip
+                @endslot
                 Nous avons également conçu et développé un système web de création de devis et de suivi
-                de location de matériel scénique&nbsp;:
-                <br><a href="/p/parcs-materiels-grand-est">Projet Ekip : site multi-dépôts de location de matériel scénique</a>
+                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
+                étroite avec le logiciel de gestion de stock déjà en place.
             @endcomponent
             @component('_partials.paragraph')
-                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus&nbsp;:
-                <br><a href="/p/agence-culturelle-grand-est">Projet Acacia : portail internet</a>
+                @slot('subtitle')
+                    Projet Acacia
+                @endslot
+                @slot('thumbnail')
+                    assets/img/aca/thumb.png
+                @endslot
+                @slot('link')
+                    /p/acacia
+                @endslot
+                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus 
+                et porte d’entrée vers tous les sites et applications.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
                     Applications cartographiques
                 @endslot
-                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production&nbsp;:
-                <br><a href="/p/treto">Projet Treto&nbsp;: annuaire du spectacle vivant en Grand Est</a>
+                @slot('subtitle')
+                    Projet Treto
+                @endslot
+                @slot('banner')
+                    assets/img/treto/banner.png
+                @endslot
+                @slot('link')
+                    /p/treto
+                @endslot
+                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, 
+                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
+                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
+                calendriers de spectacle...
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Trig
+                @endslot
+                @slot('thumbnail')
+                    assets/img/trig/thumb.png
+                @endslot
+                @slot('link')
+                    /p/trig
+                @endslot
                 Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
-                nombreux points d'intérêt de sa forêt de 1200 hectares.
-                <br><a href="/p/trigaliere">Projet Trig</a>
+                nombreux points d’intérêt de sa forêt de 1200 hectares.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')

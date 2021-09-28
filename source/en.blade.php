@@ -93,52 +93,81 @@
                 @slot('title')
                     E-commerce
                 @endslot
-                We have been working for years with Ek France, which groups 150+ stores 
+                @slot('banner')
+                    assets/img/ek/banner.png
+                @endslot
+                We have been working for years with EK France, which groups 150+ stores
                 (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
-                <a href="https://www.culinarion.com">Culinarion</a>). 
-                Our field of action is vast: websites with a marketplace click and collect plateform
-                and synchronization of fidelity accounts, iOS and Android mobile applications, 
-                newsletters platform, intranet tools.
+                <a href="https://www.culinarion.com">Culinarion</a>).
+                The main project is the platform tant powers both websites, with a full marketplace: 
+                Click & Collect and Ship from Store, online payment with multiple accounts, delivery systems,
+                synchronization of fidelity accounts... The websites also handle gift card orders 
+                and wish list management.
             @endcomponent
+
             @component('_partials.paragraph')
+                @slot('thumbnail')
+                    assets/img/merkur/thumb.png
+                @endslot
                 We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
-                <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects 
+                <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
                 including their famous Christmas bulbs.
             @endcomponent
+
             @component('_partials.paragraph')
                 @slot('title')
                     CRM and intranet tools
                 @endslot
+                @slot('thumbnail')
+                    assets/img/beatus/thumb.png
+                @endslot
                 The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 (the regional entity in charge of cultural development) asked us to work on several projects,
-                linked together by a personalized <em>Single Sign On</em> account system and API synchronizations. 
-                First of all, we fully developed a dedicated custom CRM, named Beatus, linked to all other tools
+                linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
+                First of all, we fully developed a dedicated custom CRM, linked to all other tools
                 to gather data for all contacts.
             @endcomponent
+            
             @component('_partials.paragraph')
                 We also built an intranet platform, Sapidus, which integrates many internal tools
                 like calendar and resource management, news feed, packages and letters tracking, ...
             @endcomponent
+
             @component('_partials.paragraph')
                 @slot('title')
                     Order management system,<br>web portal
                 @endslot
-                Still for the <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
-                we designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating advanced quotes and monitoring orders 
-                in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system. 
+                @slot('banner')
+                    assets/img/cursus/banner.png
+                @endslot
+                We designed and built <a href="https://culturegrandest.fr/cursus/formations">Cursus</a>, a course platform
+                with a quite complex ordering system and all the management tooling.
             @endcomponent
             @component('_partials.paragraph')
-                As well as the <a href="https://culturegrandest.fr">main web portal</a>, with a very diverse content
-                distributed over several domains, like <a href="https://tournagesgrandest.fr/">cinema</a> for instance.
+                @slot('thumbnail')
+                    assets/img/ekip/thumb.png
+                @endslot
+                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating 
+                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
+            @endcomponent
+            @component('_partials.paragraph')
+                The <a href="https://culturegrandest.fr">main web portal</a> if the Agence culturelle Grand Est is another of our projects, 
+                with a very diverse content distributed over several domains, like <a href="https://tournagesgrandest.fr/">cinema</a> for instance.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('title')
-                    Cartographic apps
+                        Cartographic apps
+                @endslot
+                @slot('banner')
+                    assets/img/treto/banner.png
                 @endslot
                 We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
                 for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
             @endcomponent
             @component('_partials.paragraph')
+                @slot('thumbnail')
+                    assets/img/trig/thumb.png
+                @endslot
                 The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, 
                 which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
                 asked us to create Trig, a mobile app 
