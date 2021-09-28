@@ -223,15 +223,6 @@
                 Front-end developer (mobile apps, Vue.js).
             @endcomponent
             @component('_partials.paragraph')
-                @slot('subtitle')
-                    <div class="flex items-center mb-2">
-                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
-                        <span>Pierre Billaud</span>
-                    </div>
-                @endslot
-                Part time student (computer science), work on many projects as a maintainer.
-            @endcomponent
-            @component('_partials.paragraph')
                 —<br>
                 Of course, when the project requires it, we surround ourselves with external skills 
                 (other developers, graphic artists or designers).
