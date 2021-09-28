@@ -96,12 +96,12 @@
                 Nous travaillons depuis des années avec Ek France, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
                 Notre champ d'action est vaste&nbsp;: sites internet
-                avec <em>marketplace</em>, click and collect et synchronisation des comptes fidélité, 
+                avec <em>marketplace</em>, click and collect et synchronisation des comptes fidélité,
                 applications mobile iOS et Android, plateforme de newsletters, intranet.
                 <br><a href="/p/ek-france">Projet EK France</a>
             @endcomponent
             @component('_partials.paragraph')
-                Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal, 
+                Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal,
                 une boutique événementielle d'objets en verre comprenant notamment leurs célèbres boules de Noël.
                 <br><a href="/p/merkur">Projet Merkur</a>
             @endcomponent
@@ -206,15 +206,6 @@
                     </div>
                 @endslot
                 Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('subtitle')
-                    <div class="flex items-center mb-2">
-                        <img class="mr-2 h-12 w-12 rounded-full" src="https://gravatar.com/avatar/{{ md5('pi.billaud@gmail.com') }}?d=retro" alt="">
-                        <span>Pierre Billaud</span>
-                    </div>
-                @endslot
-                Présent en alternance pendant ses 3 ans d'école d'ingénieur, il intervient de plus en plus sur les projets en tant que développeur <em>back</em>.
             @endcomponent
             @component('_partials.paragraph')
                 —<br>
