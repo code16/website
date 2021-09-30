@@ -94,7 +94,7 @@
                     E-commerce
                 @endslot
                 @slot('banner')
-                    assets/img/ek/banner.png
+                    /assets/img/ek/banner.png
                 @endslot
                 We have been working for years with EK France, which groups 150+ stores
                 (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
@@ -107,7 +107,7 @@
 
             @component('_partials.paragraph')
                 @slot('thumbnail')
-                    assets/img/merkur/thumb.png
+                    /assets/img/merkur/thumb.png
                 @endslot
                 We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
                 <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
@@ -119,7 +119,7 @@
                     CRM and intranet tools
                 @endslot
                 @slot('thumbnail')
-                    assets/img/beatus/thumb.png
+                    /assets/img/beatus/thumb.png
                 @endslot
                 The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 (the regional entity in charge of cultural development) asked us to work on several projects,
@@ -138,14 +138,14 @@
                     Order management system,<br>web portal
                 @endslot
                 @slot('banner')
-                    assets/img/cursus/banner.png
+                    /assets/img/cursus/banner.png
                 @endslot
                 We designed and built <a href="https://culturegrandest.fr/cursus/formations">Cursus</a>, a course platform
                 with a quite complex ordering system and all the management tooling.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('thumbnail')
-                    assets/img/ekip/thumb.png
+                    /assets/img/ekip/thumb.png
                 @endslot
                 We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating 
                 advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
@@ -159,14 +159,14 @@
                         Cartographic apps
                 @endslot
                 @slot('banner')
-                    assets/img/treto/banner.png
+                    /assets/img/treto/banner.png
                 @endslot
                 We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
                 for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
             @endcomponent
             @component('_partials.paragraph')
                 @slot('thumbnail')
-                    assets/img/trig/thumb.png
+                    /assets/img/trig/thumb.png
                 @endslot
                 The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, 
                 which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
