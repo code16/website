@@ -87,14 +87,23 @@
 
         @component('_partials.section')
             @slot('title')
-                Les projets
+                E-commerce
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    E-commerce
+                    Projets e-commerce et systèmes de gestion de commande
                 @endslot
+                Le terme e-commerce est ici entendu au sens large, puisque cette sélection regroupe des systèmes
+                de vente en ligne avec livraison et des sites de commande ou réservation, avec paiement en ligne ou différé. 
+                Tous les projets sont bâtis sur une plateforme technique dédiée, adaptée au besoin exprimé, 
+                et sont le plus souvent relié aux systèmes externes pré-existants (stocks, gestion commerciale, fidélité...).
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
                 @slot('subtitle')
                     Projet EK France
+                @endslot
+                @slot('date')
+                    depuis 2015
                 @endslot
                 @slot('banner')
                     assets/img/ek/banner.png
@@ -102,15 +111,35 @@
                 @slot('link')
                     /p/ek-france
                 @endslot
-                Nous travaillons depuis des années avec EK France, le groupement des magasins
+                Nous travaillons depuis des années avec <span class="text-brand-cyan-lighter">EK France</span>, le groupement des magasins
                 <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
                 Notre champ d’action est vaste&nbsp;: sites internet
                 avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>, 
                 gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
             @endcomponent
-            @component('_partials.paragraph')
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Cursus
+                @endslot
+                @slot('date')
+                    depuis 2021
+                @endslot
+                @slot('banner')
+                    assets/img/cursus/banner.png
+                @endslot
+                @slot('link')
+                    /p/cursus
+                @endslot
+                Pour <span class="text-brand-cyan-lighter">l‘Agence culturelle Grand Est</span>,
+                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
+                les nombreuses formations proposées par la structure.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
                 @slot('subtitle')
                     Projet Merkur
+                @endslot
+                @slot('date')
+                    depuis 2020
                 @endslot
                 @slot('thumbnail')
                     assets/img/merkur/thumb.png
@@ -118,27 +147,203 @@
                 @slot('link')
                     /p/merkur
                 @endslot
-                Nous avons mis en place, pour le compte du Centre international d'Art Verrier de Meisenthal, 
+                Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international d'Art Verrier de Meisenthal</span>, 
                 une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
             @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                    CRM et outils intranet
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Maktaba
                 @endslot
-                L'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
-                nous a confié au fil du temps de nombreux projets, reliés entre eux
-                par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
+                @slot('date')
+                    depuis 2020
+                @endslot
+                @slot('thumbnail')
+                    assets/img/maktaba/thumb.png
+                @endslot
+                @slot('web')
+                    https://quaidesbrumes.com/
+                @endslot
+                Développement d'un site de vente en ligne et de génération de bons cadeaux pour 
+                la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
+                de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un 
+                système de conception et d'expédition de newsletters.
             @endcomponent
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Ekip
+                @endslot
+                @slot('date')
+                    depuis 2017
+                @endslot
+                @slot('thumbnail')
+                    assets/img/ekip/thumb.png
+                @endslot
+                @slot('link')
+                    /p/parcs-materiels-grand-est
+                @endslot
+                Nous avons conçu et développé un système web de création de devis et de suivi
+                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
+                étroite avec le logiciel de gestion de stock déjà en place.
+            @endcomponent
+        @endcomponent
+        @component('_partials.section')
+            @slot('title')
+                Sites de contenu
+            @endslot
+            @component('_partials.paragraph')
+                @slot('title')
+                    Portails internet et sites de contenu
+                @endslot
+                Ces projets assez divers ont tous étés développés sur mesure, le plus souvent dès la conception de la maquette graphique,
+                et sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Syzito
+                @endslot
+                @slot('date')
+                    depuis 2021
+                @endslot
+                @slot('banner')
+                    assets/img/syzito/banner.jpg
+                @endslot
+                @slot('web')
+                    https://jeparticipe.cfdt.fr/
+                @endslot
+                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CDFT</span>, présentant tous les débats et webinaires 
+                proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
+                proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est intégrée
+                dans Sharp.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Symfonia
+                @endslot
+                @slot('date')
+                    depuis 2021
+                @endslot
+                @slot('banner')
+                    assets/img/symfonia/banner.jpg
+                @endslot
+                @slot('web')
+                    https://www.pactedupouvoirdevivre.fr/
+                @endslot
+                    Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de 
+                    60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté, le soutien aux migrants, 
+                    l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
+                @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Acacia
+                @endslot
+                @slot('date')
+                    depuis 2016
+                @endslot
+                @slot('thumbnail')
+                    assets/img/aca/thumb.png
+                @endslot
+                @slot('web')
+                    https://culturegrandest.fr
+                @endslot
+                Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
+                et porte d’entrée vers tous les sites et applications de l'agence ; la gestion de contenu, développée
+                avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Maillon
+                @endslot
+                @slot('date')
+                    depuis 2014
+                @endslot
+                Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,
+                qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
+                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
+                @slot('thumbnail')
+                    assets/img/maillon/thumb.png
+                @endslot
+                @slot('web')
+                    https://maillon.eu
+                @endslot
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Projet Musica
+                @endslot
+                @slot('date')
+                    depuis 2017
+                @endslot
+                Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
+                accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
+                @slot('thumbnail')
+                    assets/img/musica/thumb.png
+                @endslot
+                @slot('web')
+                    https://festivalmusica.fr
+                @endslot
+            @endcomponent
+        @endcomponent
+        @component('_partials.section')
+            @slot('title')
+                Applications et outils
+            @endslot
+            @component('_partials.paragraph')
+                @slot('title')
+                    Applications, CRM et outils intranet
+                @endslot
+                Ces projets correspondent à des applications particulières, parfois adossées à des sites de contenu plus classiques. 
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Treto
+                @endslot
+                @slot('banner')
+                    assets/img/treto/banner.png
+                @endslot
+                @slot('date')
+                    depuis 2019
+                @endslot
+                @slot('link')
+                    /p/treto
+                @endslot
+                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est,
+                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
+                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
+                calendriers de spectacle...
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
+                    Projet Trig
+                @endslot
+                @slot('thumbnail')
+                    assets/img/trig/thumb.png
+                @endslot
+                @slot('date')
+                    depuis 2018
+                @endslot
+                @slot('link')
+                    /p/trig
+                @endslot
+                Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de campagne,
+                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
+                nombreux points d’intérêt de sa forêt de 1200 hectares.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true], ['separator' => true])
                 @slot('subtitle')
                     Projet Beatus
                 @endslot
                 @slot('thumbnail')
                     assets/img/beatus/thumb.png
                 @endslot
+                @slot('date')
+                    depuis 2015
+                @endslot
                 @slot('link')
                     /p/beatus
                 @endslot
+                L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
+                nous a confié au fil du temps de nombreux projets, reliés entre eux
+                par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API. 
                 Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure, 
                 pour centraliser les contacts de l'Agence et de proposer des outils adaptés de gestion.
             @endcomponent
@@ -149,111 +354,22 @@
                 @slot('link')
                     /p/sapidus
                 @endslot
+                @slot('date')
+                    depuis 2016
+                @endslot
                 Nous avons également écrit une plateforme intranet intégrant de nombreux
                 outils à partir de données externes variées.
             @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                    Système de gestion de commande,<br>portails internet
-                @endslot
-                @slot('subtitle')
-                    Projet Cursus
-                @endslot
-                @slot('banner')
-                    assets/img/cursus/banner.png
-                @endslot
-                @slot('link')
-                    /p/cursus
-                @endslot
-                Toujours pour l'<a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>,
-                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
-                les nombreuses formations proposées par la structure.
-            @endcomponent
+        @endcomponent
+        @component('_partials.section')
             @component('_partials.paragraph')
                 @slot('subtitle')
-                    Projet Ekip
-                @endslot
-                @slot('thumbnail')
-                    assets/img/ekip/thumb.png
-                @endslot
-                @slot('link')
-                    /p/parcs-materiels-grand-est
-                @endslot
-                Nous avons également conçu et développé un système web de création de devis et de suivi
-                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
-                étroite avec le logiciel de gestion de stock déjà en place.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('subtitle')
-                    Projet Acacia
-                @endslot
-                @slot('thumbnail')
-                    assets/img/aca/thumb.png
-                @endslot
-                @slot('link')
-                    /p/agence-culturelle-grand-est
-                @endslot
-                Ainsi que le portail principal de l'Agence, chargé de nombreux et divers contenus 
-                et porte d’entrée vers tous les sites et applications.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                    Applications cartographiques
-                @endslot
-                @slot('subtitle')
-                    Projet Treto
-                @endslot
-                @slot('banner')
-                    assets/img/treto/banner.png
-                @endslot
-                @slot('link')
-                    /p/treto
-                @endslot
-                Nous avons conçu et construit la <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a> dans le Grand Est, 
-                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
-                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
-                calendriers de spectacle...
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('subtitle')
-                    Projet Trig
-                @endslot
-                @slot('thumbnail')
-                    assets/img/trig/thumb.png
-                @endslot
-                @slot('link')
-                    /p/trig
-                @endslot
-                Le <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, qui loue des belles maisons de campagne,
-                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les orientant vers les
-                nombreux points d’intérêt de sa forêt de 1200 hectares.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                    Présentation de spectacles,<br>gestion de billetterie
-                @endslot
-                Le site multilingue du <a href="https://maillon.eu" class="regular">théâtre Le Maillon</a>,
-                qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de la saison et
-                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie entièrement pensée et développée sur mesure.
-                <br><a href="/p/maillon">Projet Maillon</a>
-            @endcomponent
-            @component('_partials.paragraph')
-                Le site du <a href="http://www.festivalmusica.org/" class="regular">festival international de musique contemporaine Musica</a>,
-                également accompagné de son système de billetterie dédié, ainsi que ses bases de ressources (biographies des très nombreux
-                artistes ayant paticipé au festival, et répertoire des œuvres jouées).
-                <br><a href="/p/musica">Projet festival Musica</a>
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
                     D'autres références
                 @endslot
-                Parmi les autres projets de plus petite taille ou plus anciens, citons les sites internet avec commande ou
-                prise de réservation des excellentes librairies <a href="http://quaidesbrumes.com" class="regular">Quai des Brumes</a> et
-                <a href="https://librairie-amateur.com/" class="regular">la Librairie de l'Amateur</a>&nbsp; le site d'une revue
-                pour le compte de l'Université de Strasbourg, avec des outils de commentaire et de prise de note&nbsp;:
-                <a href="https://revue-radar.fr/" class="regular">Radar</a>&nbsp;
-                ou encore le site internet et un CRM dédié pour le compte
-                du <a href="http://ciav-meisenthal.fr/" class="regular">Centre international d'Art Verrier de Meisenthal</a>.
+                Parmi les autres projets de plus petite taille ou plus anciens, citons le site internet avec 
+                prise de réservation de l’excellente <a href="https://librairie-amateur.com/" class="regular">Librairie de l'Amateur</a>, 
+                le site de la <a href="https://revue-radar.fr/" class="regular">revue Radar</a> pour le compte de l'Université de Strasbourg, avec des outils de commentaire et de prise de note,
+                ou encore le site internet et un CRM dédié pour le compte du <a href="http://ciav-meisenthal.fr/" class="regular">Centre international d'Art Verrier de Meisenthal</a>.
             @endcomponent
         @endcomponent
 
@@ -287,7 +403,7 @@
                         <span>Antoine Guingand</span>
                     </div>
                 @endslot
-                Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js.
+                Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
             @endcomponent
             @component('_partials.paragraph')
                 —<br>
