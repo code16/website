@@ -10,14 +10,11 @@
         @component('_partials.section', ['large'=>true])
             @component('_partials.paragraph')
                 @slot('title')
-                    Développement web de qualité
+                    Nous développons<br>des applications web de qualité
                 @endslot
-                Nous concevons depuis 2007 des sites internet et des applications mobiles à partir
+                Nous concevons des sites internet et des applications mobiles à partir
                 de technologies open-source, avec une approche d’artisan&nbsp;: un développement sur-mesure
                 qui permet d’avoir la main à tous les niveaux.
-                Ces dernières années, notre expertise s’est principalement portée sur les
-                technologies <a href="https://laravel.com" class="regular">Laravel</a>
-                et <a href="https://vuejs.org/" class="regular">Vue.js</a>.
             @endcomponent
             @component('_partials.paragraph')
                 Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
@@ -47,13 +44,18 @@
                 à l’écriture, et limiter au maximum les régressions au fil des versions).
             @endcomponent
             @component('_partials.paragraph')
+                Ces dernières années, notre expertise s’est principalement portée sur les
+                technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
+                autour d’outils comme Algolia, AWS, Laravel Forge / Envoyer.
+            @endcomponent
+            @component('_partials.paragraph')
                 @slot('title')
                     Nos clients sont des partenaires
                 @endslot
                 Plutôt que de multiplier les petits projets et les contacts, nous cherchons
                 à créer des partenariats avec nos clients pour travailler avec eux sur le long terme,
                 afin d’assurer à nos logiciels une maintenance continue. Ainsi, nous sommes fiers de travailler
-                depuis de nombreuses années avec Ek France, l'Agence culturelle Grand Est
+                depuis des années avec Ek France, l’Agence culturelle Grand Est
                 ou le théâtre Le Maillon, pour citer quelques exemples.
             @endcomponent
             @component('_partials.paragraph')
@@ -91,11 +93,11 @@
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    Projets e-commerce et systèmes de gestion de commande
+                    Sites e-commerce<br>et systèmes de gestion de commande
                 @endslot
                 Le terme e-commerce est ici entendu au sens large, puisque cette sélection regroupe des systèmes
                 de vente en ligne avec livraison et des sites de commande ou réservation, avec paiement en ligne ou différé. 
-                Tous les projets sont bâtis sur une plateforme technique dédiée, adaptée au besoin exprimé, 
+                Tous les projets sont bâtis sur une plateforme technique dédiée adaptée au besoin exprimé, 
                 et sont le plus souvent relié aux systèmes externes pré-existants (stocks, gestion commerciale, fidélité...).
             @endcomponent
             @component('_partials.paragraph', ['separator' => true])
@@ -285,7 +287,7 @@
         @endcomponent
         @component('_partials.section')
             @slot('title')
-                Applications et outils
+                Apps et outils
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
@@ -356,6 +358,9 @@
                 @endslot
                 @slot('date')
                     depuis 2016
+                @endslot
+                @slot('thumbnail')
+                    assets/img/sapidus/thumb.png
                 @endslot
                 Nous avons également écrit une plateforme intranet intégrant de nombreux
                 outils à partir de données externes variées.
