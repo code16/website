@@ -212,7 +212,7 @@
                 @slot('web')
                     https://jeparticipe.cfdt.fr/
                 @endslot
-                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CDFT</span>, présentant tous les débats et webinaires 
+                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>, présentant tous les débats et webinaires 
                 proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
                 proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est intégrée
                 dans Sharp.
