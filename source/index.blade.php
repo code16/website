@@ -67,24 +67,28 @@
                 une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l’ajout d’une nouvelle fonctionnalité.
             @endcomponent
             @component('_partials.paragraph')
-                Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source, parmi lesquels&nbsp;:
+                Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source ; 
+                parmi eux, citons le framework de gestion de contenu Sharp :
             @endcomponent
 
-            <div class="flex items-center mb-2 paragraph">
-                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/sharp.png" alt="">
-                <span>
-                    <a href="https://sharp.code16.fr">Le framework de gestion de contenu Sharp</a>,
-                    qui sert d’outil d’administration pour bon nombre de nos projets.
-                </span>
-            </div>
-
-            <div class="flex items-center paragraph">
-                <img class="mr-4 h-16 w-16 rounded" src="assets/img/opensource/formoj.png" alt="">
-                <span>
-                    <a href="https://github.com/code16/formoj">Le générateur de formulaires Formoj</a>,
-                    qui propose une solution simple pour créer, afficher et administrer des formulaires sur un site.
-                </span>
-            </div>
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Sharp for Laravel
+                @endslot
+                @slot('date')
+                    depuis 2017
+                @endslot
+                @slot('banner')
+                    assets/img/sharp/banner.png
+                @endslot
+                @slot('web')
+                    https://sharp.code16.fr
+                @endslot
+                Sharp est une plateforme de développement d’espaces de gestion de contenu et de données, 
+                généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil 
+                agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que 
+                d’administrer des commandes, des produits ou des inscriptions par exemple. 
+            @endcomponent
         @endcomponent
 
         @component('_partials.section')
@@ -201,6 +205,24 @@
             @endcomponent
             @component('_partials.paragraph', ['separator' => true])
                 @slot('subtitle')
+                    Projet Toshi
+                @endslot
+                @slot('date')
+                    depuis 2022
+                @endslot
+                @slot('banner')
+                    assets/img/toshi/banner.png
+                @endslot
+                @slot('web')
+                    https://www.peugeot-invest.com/
+                @endslot
+                Développement complet du site bilingue <span class="text-brand-cyan-lighter">Peugeot Invest</span>, 
+                qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet 
+                des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues. 
+                La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est administrable.
+            @endcomponent
+            @component('_partials.paragraph', ['separator' => true])
+                @slot('subtitle')
                     Projet Syzito
                 @endslot
                 @slot('date')
@@ -230,10 +252,10 @@
                 @slot('web')
                     https://www.pactedupouvoirdevivre.fr/
                 @endslot
-                    Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de 
-                    60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté, le soutien aux migrants, 
-                    l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
-                @endcomponent
+                Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de 
+                60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté, le soutien aux migrants, 
+                l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
+            @endcomponent
             @component('_partials.paragraph', ['separator' => true])
                 @slot('subtitle')
                     Projet Acacia
