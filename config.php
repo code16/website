@@ -6,6 +6,9 @@ return [
     'collections' => [
         'projects' => [
             'path' => 'p',
+        ],
+        'posts' => [
+            'path' => 'posts',
         ]
     ],
 ];
