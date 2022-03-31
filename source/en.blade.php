@@ -65,33 +65,35 @@
                 whether by fixing a bug or adding a new functionality.
             @endcomponent
             @component('_partials.paragraph')
-                In the same spirit, we developed and maintain several open source projects, among which:
+                In the same spirit, we developed and maintain several open source projects, among which we should mention the content management framework Sharp:
             @endcomponent
 
-            <div class="flex items-center mb-2 paragraph">
-                <img class="mr-4 h-16 w-16 rounded" src="/assets/img/opensource/sharp.png" alt="">
-                <span>
-                    <a href="https://sharp.code16.fr">Sharp, a content management framework</a>,
-                    which is used in many projects (ours or not).
-                </span>
-            </div>
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Sharp for Laravel
+                @endslot
+                @slot('date')
+                    since 2017
+                @endslot
+                @slot('banner')
+                    ../assets/img/sharp/banner.png
+                @endslot
+                Sharp is a content management framework built for Laravel, a toolset which provides help to build a CMS section in a website. 
+                We use it in many projects. Go to <a href="https://sharp.code16.fr">sharp.code16.fr</a> to learn more.
+            @endcomponent
 
-            <div class="flex items-center paragraph">
-                <img class="mr-4 h-16 w-16 rounded" src="/assets/img/opensource/formoj.png" alt="">
-                <span>
-                    <a href="https://github.com/code16/formoj">Formoj, a form generator</a>,
-                    which is a simple solution to create, display and manage forms in any website.
-                </span>
-            </div>
         @endcomponent
 
         @component('_partials.section')
             @slot('title')
-                Projects
+                E-commerce
             @endslot
             @component('_partials.paragraph')
                 @slot('title')
-                    E-commerce
+                    E-commerce and ordering systems
+                @endslot
+                @slot('subtitle')
+                    EK France
                 @endslot
                 @slot('banner')
                     /assets/img/ek/banner.png
@@ -106,6 +108,24 @@
             @endcomponent
 
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Cursus, a course ordering website
+                @endslot
+                @slot('date')
+                    since 2021
+                @endslot
+                @slot('banner')
+                    ../assets/img/cursus/banner.png
+                @endslot
+                This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a> 
+                handles course registration via a complex process depending on various course options and registrant type.
+                <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management. 
+            @endcomponent
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Merkur, a high trafic event shop
+                @endslot
                 @slot('thumbnail')
                     /assets/img/merkur/thumb.png
                 @endslot
@@ -115,8 +135,90 @@
             @endcomponent
 
             @component('_partials.paragraph')
-                @slot('title')
-                    CRM and intranet tools
+                @slot('subtitle')
+                    Ekip, a rental service
+                @endslot
+                @slot('thumbnail')
+                    /assets/img/ekip/thumb.png
+                @endslot
+                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
+                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
+            @endcomponent
+        @endcomponent
+
+        @component('_partials.section')
+            @slot('title')
+                Content websites 
+            @endslot
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    peugeot-invest.com
+                @endslot
+                @slot('banner')
+                    /assets/img/toshi/banner.png
+                @endslot
+                This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
+                various and numerous content types, including dataviz.
+            @endcomponent
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    jeparticipe.cfdt.fr
+                @endslot
+                @slot('banner')
+                    /assets/img/syzito/banner.jpg
+                @endslot
+                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
+            @endcomponent
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    pactedupouvoirdevivre.fr
+                @endslot
+                @slot('banner')
+                    /assets/img/symfonia/banner.jpg
+                @endslot
+                <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection 
+                of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
+            @endcomponent
+
+        @endcomponent
+
+
+        @component('_partials.section')
+            @slot('title')
+                Apps / tools
+            @endslot
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Treto, a cartographic website
+                @endslot
+                @slot('banner')
+                    /assets/img/treto/banner.png
+                @endslot
+                We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
+                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
+            @endcomponent
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Trig, a cartographic iOS / Android app
+                @endslot
+                @slot('thumbnail')
+                    /assets/img/trig/thumb.png
+                @endslot
+                The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
+                which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
+                asked us to create Trig, a mobile app
+                (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
+                et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
+                to guide guests across the domain.
+            @endcomponent
+
+            @component('_partials.paragraph')
+                @slot('subtitle')
+                    Beatus CRM
                 @endslot
                 @slot('thumbnail')
                     /assets/img/beatus/thumb.png
@@ -127,68 +229,17 @@
                 First of all, we fully developed a dedicated custom CRM, linked to all other tools
                 to gather data for all contacts.
             @endcomponent
-            
+
             @component('_partials.paragraph')
+                @slot('subtitle')
+                    Sapidus
+                @endslot
                 We also built an intranet platform, Sapidus, which integrates many internal tools
                 like calendar and resource management, news feed, packages and letters tracking, ...
             @endcomponent
 
-            @component('_partials.paragraph')
-                @slot('title')
-                    Order management system,<br>web portal
-                @endslot
-                @slot('banner')
-                    /assets/img/cursus/banner.png
-                @endslot
-                We designed and built <a href="https://culturegrandest.fr/cursus/formations">Cursus</a>, a course platform
-                with a quite complex ordering system and all the management tooling.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('thumbnail')
-                    /assets/img/ekip/thumb.png
-                @endslot
-                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating 
-                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
-            @endcomponent
-            @component('_partials.paragraph')
-                The <a href="https://culturegrandest.fr">main web portal</a> if the Agence culturelle Grand Est is another of our projects, 
-                with a very diverse content distributed over several domains, like <a href="https://tournagesgrandest.fr/">cinema</a> for instance.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                        Cartographic apps
-                @endslot
-                @slot('banner')
-                    /assets/img/treto/banner.png
-                @endslot
-                We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
-                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('thumbnail')
-                    /assets/img/trig/thumb.png
-                @endslot
-                The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>, 
-                which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
-                asked us to create Trig, a mobile app 
-                (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a> 
-                et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>) 
-                to guide guests across the domain.
-            @endcomponent
-            @component('_partials.paragraph')
-                @slot('title')
-                    Ticketing system,<br>shows presentation
-                @endslot
-                The <a href="https://maillon.eu">Maillon theater</a> website presents, 
-                in its very own graphic design universe, the full season program as well as a 
-                custom online ticketing system and account management.
-            @endcomponent
-            @component('_partials.paragraph')
-                The <a href="http://www.festivalmusica.org/">website of Musica</a>,
-                an international music festival, also contains a full ticketing system, 
-                and a resource database for artist biographies and all pieces played in the festival since 1984.
-            @endcomponent
         @endcomponent
+            
 
         @component('_partials.section')
             @slot('title')
