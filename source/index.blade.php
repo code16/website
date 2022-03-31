@@ -136,7 +136,7 @@
                 @slot('link')
                     /p/cursus
                 @endslot
-                Pour <span class="text-brand-cyan-lighter">l‘Agence culturelle Grand Est</span>,
+                Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
                 nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
                 les nombreuses formations proposées par la structure.
             @endcomponent
@@ -369,7 +369,7 @@
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
                 par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API. 
                 Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure, 
-                pour centraliser les contacts de l'Agence et de proposer des outils adaptés de gestion.
+                pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion.
             @endcomponent
             @component('_partials.paragraph')
                 @slot('subtitle')
