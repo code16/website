@@ -10,6 +10,14 @@ mix.jigsaw()
     .sass('source/_assets/sass/main.scss', 'css')
     .options({
         processCssUrls: false,
-        postCss: [tailwindcss('./tailwind.config.js')]
+        postCss: [tailwindcss('./tailwind.config.js')],
+        terser: {
+            terserOptions: {
+                format: {
+                    comments: false,
+                },
+            },
+            extractComments: false,
+        },
     })
     .version();
