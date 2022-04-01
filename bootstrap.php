@@ -1,5 +1,6 @@
 <?php
 
+use App\Listeners\ApplySyntaxHighlighting;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
@@ -15,3 +16,9 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+//$container['markdownParser']->code_block_content_func = function ($code, $language) {
+//    return (new \Highlight\Highlighter())->highlight($language ?? 'plaintext', $code)->value;
+//};
+
+$events->afterBuild(ApplySyntaxHighlighting::class);
