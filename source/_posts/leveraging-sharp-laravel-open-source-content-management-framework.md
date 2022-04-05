@@ -1,6 +1,6 @@
 ---
 extends: _layouts.post
-section: postContent
+section: content
 ---
 
 # Leveraging Sharp, an open source content management framework, in a Laravel project

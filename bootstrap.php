@@ -1,7 +1,5 @@
 <?php
 
-use App\Listeners\ApplySyntaxHighlighting;
-use TightenCo\Jigsaw\Jigsaw;
 use Torchlight\Jigsaw\TorchlightExtension;
 
 /** @var $container \Illuminate\Container\Container */

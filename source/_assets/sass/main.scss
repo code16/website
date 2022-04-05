@@ -1,14 +1,13 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-//@import "page/sharp";
-//@import "page/sicstine";
 @import "page/project";
 @import "page/home";
 
 @import "components/stack";
 @import "components/code";
+@import "components/logo";
 
 html, body {
   min-height: 100%;
@@ -17,23 +16,32 @@ html, body {
 }
 
 body {
-  @apply .font-sans;
+  background-color: var(--body-bg-color, #071735);
+  color: var(--body-color, #EBEBEB);
+  @apply font-sans;
+}
+
+.light {
+  --body-bg-color: white;
+  --body-color: #22292f;
+  --logo-bg-color: #22292f;
+  --logo-color: #EBEBEB;
 }
 
 a {
-  @apply .text-brand-cyan .no-underline;
+  @apply text-brand-cyan no-underline;
 
   &:hover {
-    @apply .underline;
+    @apply underline;
   }
 }
 
 p, .paragraph {
-  @apply .mb-4 .font-serif .text-xl;
+  @apply mb-4 font-serif text-xl;
 }
 
 ul {
-  @apply .mt-2;
+  @apply mt-2;
 }
 
 
@@ -42,5 +50,5 @@ ul {
 }
 
 [v-cloak] {
-  @apply .hidden;
+  display: none!important;
 }

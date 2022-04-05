@@ -38,37 +38,37 @@
 .project {
   .content {
     a {
-      @apply .bg-brand-cyan-lighter .text-brand-cyan-darker .px-1 .inline-block .leading-tight;
+      @apply bg-brand-cyan-lighter text-brand-cyan-darker px-1 inline-block leading-tight;
       &:hover {
-        //@apply .bg-brand-brown .text-white .no-underline;
+        //@apply bg-brand-brown text-white no-underline;
       }
     }
   }
   p {
-    @apply .mb-8;
-    @screen lg { @apply .max-w-md; }
-    @screen xl { @apply .max-w-lg; }
+    @apply mb-8;
+    @screen lg { @apply max-w-md; }
+    @screen xl { @apply max-w-lg; }
   }
   p, .stack-top, .carousel {
     img {
       @include image-sizes;
-      @apply .shadow-md-brand;
+      @apply shadow-md-brand;
     }
   }
   .legend, img+em { //image legend
-    @apply .font-sans .text-base .roman .block .text-grey-darker;
+    @apply font-sans text-base not-italic block text-grey-darker;
   }
   .carousel, .stack {
-    @apply .mb-8;
+    @apply mb-8;
   }
 
   .carousel {
-    @apply .relative .z-20 .w-screen;
+    @apply relative z-20 w-screen;
     @include carousel-margin(16rem);
     //@include carousel-opaque-slides;
 
     &.carousel--initial {
-      @apply .z-0;
+      @apply z-0;
     }
 
     .VueCarousel-inner {
@@ -76,7 +76,7 @@
     }
     .slide {
       img {
-        @apply .shadow-none;
+        @apply shadow-none;
         border: 1px solid rgba(0,0,0,.1);
       }
     }
@@ -87,16 +87,16 @@
 
     .VueCarousel-slide-active {
       img {
-        @apply .shadow-md-brand;
+        @apply shadow-md-brand;
       }
       .legend {
-        @apply .font-bold;
+        @apply font-bold;
       }
     }
   }
   .stack {
     .legend {
-      @apply .text-white;
+      @apply text-white;
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 extends: _layouts.project
-section: projectContent
+section: content
 bodyClass: page-sharp
 title: Sharp
 ---
