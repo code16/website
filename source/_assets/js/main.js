@@ -8,6 +8,10 @@ const isMobile = new MobileDetect(window.navigator.userAgent).mobile();
 
 Vue.use(stickyTitle, { breakpoint: !isMobile ? 768: Infinity });
 
+document.querySelectorAll('pre').forEach(pre => {
+    pre.setAttribute('v-pre', '');
+});
+
 new Vue({
     el:'#app',
     components: {
