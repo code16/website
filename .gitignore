@@ -8,6 +8,8 @@
 npm-debug.log
 yarn-error.log
 .DS_Store
+torchlight_cache
+.env
 
 # Optional ignores
 # /build_staging/

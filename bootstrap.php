@@ -2,6 +2,7 @@
 
 use App\Listeners\ApplySyntaxHighlighting;
 use TightenCo\Jigsaw\Jigsaw;
+use Torchlight\Jigsaw\TorchlightExtension;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -21,4 +22,4 @@ use TightenCo\Jigsaw\Jigsaw;
 //    return (new \Highlight\Highlighter())->highlight($language ?? 'plaintext', $code)->value;
 //};
 
-$events->afterBuild(ApplySyntaxHighlighting::class);
+TorchlightExtension::make($container, $events)->boot();
