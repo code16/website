@@ -1,3 +1,6 @@
+@props([
+    'page' => \Illuminate\Container\Container::getInstance()->get('pageData')->page,
+])
 <!doctype html>
 <html lang="{{ $lang ?? 'fr' }}">
     <head>
@@ -7,16 +10,23 @@
 
         <title>Code 16, développement Laravel et Vue.js</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:300,400" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        @if(!$page->production)
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                const content = null;
+                tailwind.config = {!!
+                    \Illuminate\Support\Str::match('/module\.exports = (.*)/s', file_get_contents(__DIR__ . '/../tailwind.config.js'))
+                !!}
+            </script>
+        @endif
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
 
         {{ $head ?? null }}
     </head>
-    <body {{ $attributes }}
-{{--    class="{{ $background??false ? "bg-$background" : '' }} {{ $bodyClass??'' }}"--}}
-    >
+    <body {{ $attributes }}>
         @if($lang ?? null)
             <div class="lang-selector container absolute w-full text-right">
                 <span class="mr-3">
@@ -30,7 +40,11 @@
             <div id="app" class="container" :class="{'mobile':isMobile}">
                 <header class="mb-16">
                     <a href="/" class="hover:no-underline">
-                        <h1 class="logo uppercase tracking-wider text-4xl text-right pb-6 px-2 pt-2 w-64 z-10" v-sticky-title="{ paddingTop:64 }">Code 16</h1>
+                        <h1 class="logo uppercase font-bold text-4xl text-right leading-none tracking-wider pb-8 px-2 pt-4 w-64 z-10"
+                            v-sticky-title="{ paddingTop:64 }"
+                        >
+                            Code 16
+                        </h1>
                     </a>
                 </header>
                 {{ $slot }}

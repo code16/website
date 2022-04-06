@@ -124,11 +124,8 @@
 
                 Nous travaillons depuis des années avec <span class="text-brand-cyan-lighter">EK France</span>, le
                 groupement des magasins
-                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a>
-                et
-                <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                Notre champ d’action est vaste&nbsp;: sites internet
-                avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
+                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
+                Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
                 gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
             </x-project>
 
