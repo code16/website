@@ -98,60 +98,62 @@
                 E-commerce and ordering systems
             </h3>
 
-            <x-project>
-                <x-slot name="title">
-                    EK France
-                </x-slot>
+            <x-project-list>
+                <x-project>
+                    <x-slot name="title">
+                        EK France
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/ek/banner.png"></x-slot>
+                    <x-slot name="banner" src="assets/img/ek/banner.png"></x-slot>
 
-                We have been working for years with EK France, which groups 150+ stores
-                (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
-                <a href="https://www.culinarion.com">Culinarion</a>).
-                The main project is the platform tant powers both websites, with a full marketplace:
-                Click & Collect and Ship from Store, online payment with multiple accounts, delivery systems,
-                synchronization of fidelity accounts... The websites also handle gift card orders
-                and wish list management.
-            </x-project>
+                    We have been working for years with EK France, which groups 150+ stores
+                    (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
+                    <a href="https://www.culinarion.com">Culinarion</a>).
+                    The main project is the platform tant powers both websites, with a full marketplace:
+                    Click & Collect and Ship from Store, online payment with multiple accounts, delivery systems,
+                    synchronization of fidelity accounts... The websites also handle gift card orders
+                    and wish list management.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Projet Cursus
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Projet Cursus
+                    </x-slot>
 
-                <x-slot name="date">
-                    since 2021
-                </x-slot>
+                    <x-slot name="date">
+                        since 2021
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/cursus/banner.png"></x-slot>
+                    <x-slot name="banner" src="assets/img/cursus/banner.png"></x-slot>
 
-                This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a>
-                handles course registration via a complex process depending on various course options and registrant type.
-                <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management.
-            </x-project>
+                    This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a>
+                    handles course registration via a complex process depending on various course options and registrant type.
+                    <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Merkur, a high trafic event shop
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Merkur, a high trafic event shop
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/merkur/thumb.png"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/merkur/thumb.png"></x-slot>
 
-                We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
-                <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
-                including their famous Christmas bulbs.
-            </x-project>
+                    We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
+                    <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
+                    including their famous Christmas bulbs.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Ekip, a rental service
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Ekip, a rental service
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/ekip/thumb.png"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/ekip/thumb.png"></x-slot>
 
-                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
-                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
-            </x-project>
+                    We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
+                    advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
+                </x-project>
+            </x-project-list>
         </x-section>
 
         <x-section>
@@ -159,37 +161,39 @@
                 Content websites
             </x-slot>
 
-            <x-project>
-                <x-slot name="title">
-                    peugeot-invest.com
-                </x-slot>
+            <x-project-list>
+                <x-project>
+                    <x-slot name="title">
+                        peugeot-invest.com
+                    </x-slot>
 
-                <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
+                    <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
 
-                This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
-                various and numerous content types, including dataviz.
-            </x-project>
+                    This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
+                    various and numerous content types, including dataviz.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    jeparticipe.cfdt.fr
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        jeparticipe.cfdt.fr
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/syzito/banner.jpg"></x-slot>
+                    <x-slot name="banner" src="assets/img/syzito/banner.jpg"></x-slot>
 
-                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
-            </x-project>
+                    <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    pactedupouvoirdevivre.fr
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        pactedupouvoirdevivre.fr
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/symfonia/banner.jpg"></x-slot>
+                    <x-slot name="banner" src="assets/img/symfonia/banner.jpg"></x-slot>
 
-                <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection
-                of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
-            </x-project>
+                    <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection
+                    of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
+                </x-project>
+            </x-project-list>
         </x-section>
 
         <x-section>
@@ -197,55 +201,57 @@
                 Apps / tools
             </x-slot>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Treto, a cartographic website
-                </x-slot>
+            <x-project-list>
+                <x-project separator>
+                    <x-slot name="title">
+                        Treto, a cartographic website
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/treto/banner.png"></x-slot>
+                    <x-slot name="banner" src="assets/img/treto/banner.png"></x-slot>
 
-                We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
-                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
-            </x-project>
+                    We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
+                    for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Trig, a cartographic iOS / Android app
-                </x-slot>
-                <x-slot name="thumbnail" src="assets/img/trig/thumb.png"></x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Trig, a cartographic iOS / Android app
+                    </x-slot>
+                    <x-slot name="thumbnail" src="assets/img/trig/thumb.png"></x-slot>
 
-                The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
-                which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
-                asked us to create Trig, a mobile app
-                (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
-                et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
-                to guide guests across the domain.
-            </x-project>
+                    The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
+                    which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
+                    asked us to create Trig, a mobile app
+                    (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
+                    et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
+                    to guide guests across the domain.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Beatus CRM
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Beatus CRM
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/beatus/thumb.png"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/beatus/thumb.png"></x-slot>
 
-                The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
-                (the regional entity in charge of cultural development) asked us to work on several projects,
-                linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
-                First of all, we fully developed a dedicated custom CRM, linked to all other tools
-                to gather data for all contacts.
-            </x-project>
+                    The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
+                    (the regional entity in charge of cultural development) asked us to work on several projects,
+                    linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
+                    First of all, we fully developed a dedicated custom CRM, linked to all other tools
+                    to gather data for all contacts.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Sapidus
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Sapidus
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/sapidus/thumb.png"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/sapidus/thumb.png"></x-slot>
 
-                We also built an intranet platform, Sapidus, which integrates many internal tools
-                like calendar and resource management, news feed, packages and letters tracking, ...
-            </x-project>
+                    We also built an intranet platform, Sapidus, which integrates many internal tools
+                    like calendar and resource management, news feed, packages and letters tracking, ...
+                </x-project>
+            </x-project-list>
         </x-section>
 
         <x-section>

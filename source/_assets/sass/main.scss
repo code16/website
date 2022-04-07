@@ -4,12 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "page/project";
-@import "page/home";
+@import 'typography';
 
 @import "components/stack";
 @import "components/code";
 @import "components/logo";
+
+@import "page/project";
+@import "page/home";
 
 html, body {
   min-height: 100%;
@@ -39,7 +41,9 @@ a {
 }
 
 p, .paragraph {
-  @apply mb-4 font-serif text-xl;
+  @apply mb-4 font-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 ul {

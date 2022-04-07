@@ -1,4 +1,5 @@
 @props([
+    'lang' => null,
     'page' => \Illuminate\Container\Container::getInstance()->get('pageData')->page,
 ])
 <!doctype html>
@@ -12,15 +13,15 @@
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
-        @if(!$page->production)
-            <script src="https://cdn.tailwindcss.com"></script>
-            <script>
-                const content = null;
-                tailwind.config = {!!
-                    \Illuminate\Support\Str::match('/module\.exports = (.*)/s', file_get_contents(__DIR__ . '/../tailwind.config.js'))
-                !!}
-            </script>
-        @endif
+{{--        @if(!$page->production)--}}
+{{--            <script src="https://cdn.tailwindcss.com"></script>--}}
+{{--            <script>--}}
+{{--                const content = null;--}}
+{{--                tailwind.config = {!!--}}
+{{--                    \Illuminate\Support\Str::match('/module\.exports = (.*)/s', file_get_contents(__DIR__ . '/../tailwind.config.js'))--}}
+{{--                !!}--}}
+{{--            </script>--}}
+{{--        @endif--}}
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
 
@@ -39,13 +40,7 @@
         <div class="p-8 sm:p-16">
             <div id="app" class="container" :class="{'mobile':isMobile}">
                 <header class="mb-16">
-                    <a href="/" class="hover:no-underline">
-                        <h1 class="logo uppercase font-bold text-4xl text-right leading-none tracking-wider pb-8 px-2 pt-4 w-64 z-10"
-                            v-sticky-title="{ paddingTop:64 }"
-                        >
-                            Code 16
-                        </h1>
-                    </a>
+                    <x-logo />
                 </header>
                 {{ $slot }}
             </div>

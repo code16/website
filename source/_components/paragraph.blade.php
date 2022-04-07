@@ -4,9 +4,9 @@
     'subtitle' => null,
 ])
 
-<div class="pb-6 mb-6">
+<div class="mb-8">
     @if($title)
-        <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">
+        <h3 class="mb-8 mt-16 text-xl md:text-3xl lg:text-4xl !leading-tight">
             {{ $title }}
         </h3>
     @endif

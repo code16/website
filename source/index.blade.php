@@ -110,93 +110,95 @@
                 fidélité...).
             </x-paragraph>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet EK France
-                </x-slot>
+            <x-project-list>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet EK France
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2015
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2015
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/ek/banner.png"></x-slot>
-                <x-slot name="link" href="/p/ek-france"></x-slot>
+                    <x-slot name="banner" src="assets/img/ek/banner.png"></x-slot>
+                    <x-slot name="link" href="/p/ek-france"></x-slot>
 
-                Nous travaillons depuis des années avec <span class="text-brand-cyan-lighter">EK France</span>, le
-                groupement des magasins
-                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
-                gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
-            </x-project>
+                    Nous travaillons depuis des années avec <span class="text-brand-cyan-lighter">EK France</span>, le
+                    groupement des magasins
+                    <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
+                    Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
+                    gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Cursus
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Cursus
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2021
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2021
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/cursus/banner.png"></x-slot>
-                <x-slot name="link" href="/p/cursus"></x-slot>
+                    <x-slot name="banner" src="assets/img/cursus/banner.png"></x-slot>
+                    <x-slot name="link" href="/p/cursus"></x-slot>
 
-                Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
-                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
-                les nombreuses formations proposées par la structure.
-            </x-project>
+                    Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
+                    nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
+                    les nombreuses formations proposées par la structure.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Merkur
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Merkur
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2020
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2020
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/merkur/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/merkur"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/merkur/thumb.png"></x-slot>
+                    <x-slot name="link" href="/p/merkur"></x-slot>
 
-                Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
-                    d'Art Verrier de Meisenthal</span>,
-                une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
-            </x-project>
+                    Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
+                        d'Art Verrier de Meisenthal</span>,
+                    une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Maktaba
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Maktaba
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2020
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2020
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/maktaba/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://quaidesbrumes.com/"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/maktaba/thumb.png"></x-slot>
+                    <x-slot name="website_link" href="https://quaidesbrumes.com/"></x-slot>
 
-                Développement d'un site de vente en ligne et de génération de bons cadeaux pour
-                la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
-                de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
-                système de conception et d'expédition de newsletters.
-            </x-project>
+                    Développement d'un site de vente en ligne et de génération de bons cadeaux pour
+                    la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
+                    de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
+                    système de conception et d'expédition de newsletters.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Projet Ekip
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Projet Ekip
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2017
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2017
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/ekip/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/parcs-materiels-grand-est"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/ekip/thumb.png"></x-slot>
+                    <x-slot name="link" href="/p/parcs-materiels-grand-est"></x-slot>
 
-                Nous avons conçu et développé un système web de création de devis et de suivi
-                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
-                étroite avec le logiciel de gestion de stock déjà en place.
-            </x-project>
+                    Nous avons conçu et développé un système web de création de devis et de suivi
+                    de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
+                    étroite avec le logiciel de gestion de stock déjà en place.
+                </x-project>
+            </x-project-list>
         </x-section>
 
         <x-section>
@@ -215,110 +217,112 @@
                 <a href="https://sharp.code16.fr">Sharp</a>.
             </x-paragraph>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Toshi
-                </x-slot>
+            <x-project-list>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Toshi
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2022
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2022
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/toshi/banner.png"></x-slot>
-                <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
+                    <x-slot name="banner" src="assets/img/toshi/banner.png"></x-slot>
+                    <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
 
-                Développement complet du site bilingue <span class="text-brand-cyan-lighter">Peugeot Invest</span>,
-                qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
-                des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
-                La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
-                administrable.
-            </x-project>
+                    Développement complet du site bilingue <span class="text-brand-cyan-lighter">Peugeot Invest</span>,
+                    qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
+                    des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
+                    La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
+                    administrable.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Syzito
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Syzito
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2021
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2021
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/syzito/banner.jpg"></x-slot>
-                <x-slot name="website_link" href="https://jeparticipe.cfdt.fr/"></x-slot>
+                    <x-slot name="banner" src="assets/img/syzito/banner.jpg"></x-slot>
+                    <x-slot name="website_link" href="https://jeparticipe.cfdt.fr/"></x-slot>
 
-                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
-                présentant tous les débats et webinaires
-                proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
-                proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
-                intégrée
-                dans Sharp.
-            </x-project>
+                    Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
+                    présentant tous les débats et webinaires
+                    proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
+                    proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
+                    intégrée
+                    dans Sharp.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Symfonia
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Symfonia
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2021
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2021
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/symfonia/banner.jpg"></x-slot>
-                <x-slot name="website_link" href="https://www.pactedupouvoirdevivre.fr/"></x-slot>
+                    <x-slot name="banner" src="assets/img/symfonia/banner.jpg"></x-slot>
+                    <x-slot name="website_link" href="https://www.pactedupouvoirdevivre.fr/"></x-slot>
 
-                Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de
-                60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
-                le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
-            </x-project>
+                    Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de
+                    60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
+                    le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Acacia
-                </x-slot>
-                <x-slot name="date">
-                    depuis 2016
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Acacia
+                    </x-slot>
+                    <x-slot name="date">
+                        depuis 2016
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/aca/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://culturegrandest.fr"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/aca/thumb.png"></x-slot>
+                    <x-slot name="website_link" href="https://culturegrandest.fr"></x-slot>
 
-                Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
-                et porte d’entrée vers tous les sites et applications de l'agence ; la gestion de contenu, développée
-                avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
-            </x-project>
+                    Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
+                    et porte d’entrée vers tous les sites et applications de l'agence ; la gestion de contenu, développée
+                    avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Maillon
-                </x-slot>
-                <x-slot name="date">
-                    depuis 2014
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Maillon
+                    </x-slot>
+                    <x-slot name="date">
+                        depuis 2014
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/maillon/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://maillon.eu"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/maillon/thumb.png"></x-slot>
+                    <x-slot name="website_link" href="https://maillon.eu"></x-slot>
 
-                Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,
-                qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de
-                la saison et
-                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie
-                entièrement pensée et développée sur mesure.
-            </x-project>
+                    Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,
+                    qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de
+                    la saison et
+                    les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie
+                    entièrement pensée et développée sur mesure.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Projet Musica
-                </x-slot>
-                <x-slot name="date">
-                    depuis 2017
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Projet Musica
+                    </x-slot>
+                    <x-slot name="date">
+                        depuis 2017
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/musica/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://festivalmusica.fr"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/musica/thumb.png"></x-slot>
+                    <x-slot name="website_link" href="https://festivalmusica.fr"></x-slot>
 
-                Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
-                accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
-            </x-project>
+                    Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
+                    accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
+                </x-project>
+            </x-project-list>
         </x-section>
 
         <x-section>
@@ -334,77 +338,80 @@
                 classiques.
             </x-paragraph>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Treto
-                </x-slot>
+            <x-project-list>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Treto
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2019
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2019
+                    </x-slot>
 
-                <x-slot name="banner" src="assets/img/treto/banner.png"></x-slot>
-                <x-slot name="link" href="/p/treto"></x-slot>
+                    <x-slot name="banner" src="assets/img/treto/banner.png"></x-slot>
+                    <x-slot name="link" href="/p/treto"></x-slot>
 
-                Nous avons conçu et construit la
-                <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
-                dans le Grand Est,
-                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
-                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
-                calendriers de spectacle...
-            </x-project>
+                    Nous avons conçu et construit la
+                    <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
+                    dans le Grand Est,
+                    qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
+                    de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
+                    calendriers de spectacle...
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Trig
-                </x-slot>
-                <x-slot name="date">
-                    depuis 2018
-                </x-slot>
-                <x-slot name="thumbnail" src="assets/img/trig/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/trig"></x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Trig
+                    </x-slot>
+                    <x-slot name="date">
+                        depuis 2018
+                    </x-slot>
+                    <x-slot name="thumbnail" src="assets/img/trig/thumb.png"></x-slot>
+                    <x-slot name="link" href="/p/trig"></x-slot>
 
-                Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
-                campagne,
-                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
-                orientant vers les
-                nombreux points d’intérêt de sa forêt de 1200 hectares.
-            </x-project>
+                    Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
+                    campagne,
+                    nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
+                    orientant vers les
+                    nombreux points d’intérêt de sa forêt de 1200 hectares.
+                </x-project>
 
-            <x-project separator>
-                <x-slot name="title">
-                    Projet Beatus
-                </x-slot>
+                <x-project separator>
+                    <x-slot name="title">
+                        Projet Beatus
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2015
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2015
+                    </x-slot>
 
-                <x-slot name="thumbnail" src="assets/img/beatus/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/beatus"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/beatus/thumb.png"></x-slot>
+                    <x-slot name="link" href="/p/beatus"></x-slot>
 
-                L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
-                nous a confié au fil du temps de nombreux projets, reliés entre eux
-                par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
-                Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
-                pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion.
-            </x-project>
+                    L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
+                    nous a confié au fil du temps de nombreux projets, reliés entre eux
+                    par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
+                    Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
+                    pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion.
+                </x-project>
 
-            <x-project>
-                <x-slot name="title">
-                    Projet Sapidus
-                </x-slot>
+                <x-project>
+                    <x-slot name="title">
+                        Projet Sapidus
+                    </x-slot>
 
-                <x-slot name="date">
-                    depuis 2016
-                </x-slot>
+                    <x-slot name="date">
+                        depuis 2016
+                    </x-slot>
 
-                <x-slot name="link" href="/p/sapidus"></x-slot>
-                <x-slot name="thumbnail" src="assets/img/sapidus/thumb.png"></x-slot>
+                    <x-slot name="link" href="/p/sapidus"></x-slot>
+                    <x-slot name="thumbnail" src="assets/img/sapidus/thumb.png"></x-slot>
 
-                Nous avons également écrit une plateforme intranet intégrant de nombreux
-                outils à partir de données externes variées.
-            </x-project>
+                    Nous avons également écrit une plateforme intranet intégrant de nombreux
+                    outils à partir de données externes variées.
+                </x-project>
+            </x-project-list>
+
         </x-section>
 
         <x-section>
