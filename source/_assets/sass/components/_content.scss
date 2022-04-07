@@ -1,0 +1,22 @@
+
+.content {
+  a {
+    @apply inline-block bg-brand-cyan-lighter text-brand-cyan-darker px-1 leading-tight;
+
+    &:hover {
+      @apply bg-brand-brown text-white no-underline;
+    }
+  }
+
+  .legend, img + em {
+    @apply block font-sans text-base not-italic text-grey-darker;
+  }
+
+  p {
+    @apply mb-8;
+  }
+
+  img {
+    box-shadow: var(--content-img-shadow);
+  }
+}

@@ -1,0 +1,24 @@
+
+:root {
+  --image-size: 100%;
+
+  @screen md {
+    --image-size: 30rem;
+  }
+
+  @screen lg {
+    --image-size: 34rem;
+  }
+
+  @media (min-width: 1048px) {
+    --image-size: 44rem;
+  }
+
+  @screen xl {
+    --image-size: 54rem;
+  }
+
+  @media (min-width: 1300px) {
+    --image-size: 58rem;
+  }
+}

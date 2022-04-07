@@ -1,0 +1,41 @@
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  margin-bottom: 2rem;
+  margin-left: calc(var(--inner-margin-left) * -1);
+  z-index: 20;
+  --inner-margin-left: 4rem;
+
+  @screen md {
+    --inner-margin-left: 16rem;
+  }
+
+  img {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    max-width: var(--image-size);
+  }
+
+  .legend {
+    margin-right: 3.5rem;
+  }
+
+  .VueCarousel-inner {
+    margin-left: var(--inner-margin-left);
+    max-width: calc(var(--image-size) + 3.5rem);
+  }
+
+  .VueCarousel-slide-active {
+    img {
+      box-shadow: var(--content-img-shadow);
+    }
+    .legend {
+      font-weight: bold;
+    }
+  }
+
+  &--initial {
+    z-index: 0;
+  }
+}

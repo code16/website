@@ -1,4 +1,5 @@
 @import "fonts";
+@import 'root';
 
 @tailwind base;
 @tailwind components;
@@ -6,9 +7,11 @@
 
 @import 'typography';
 
+@import "components/content";
 @import "components/stack";
 @import "components/code";
 @import "components/logo";
+@import "components/carousel";
 
 @import "page/project";
 @import "page/home";

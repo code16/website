@@ -1,9 +1,8 @@
-const content = require('fast-glob').sync([
-  'source/**/*.{blade.php,md,html,vue}',
-]);
 
 module.exports = {
-  content,
+  content: require('fast-glob').sync([
+    'source/**/*.{blade.php,md,html,vue}',
+  ]),
   theme: {
     colors: {
       'transparent': 'transparent',
@@ -35,9 +34,6 @@ module.exports = {
         'wider': '0.1em',
         'widest': '0.15em',
       },
-      boxShadow: {
-        'md-brand': '0 15px 30px 0 rgba(44,116,103,0.22), 0 5px 15px 0 rgba(44,116,103,0.16)',
-      }
     }
   },
 }
