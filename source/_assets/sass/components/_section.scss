@@ -1,0 +1,7 @@
+
+.section {
+  &__content {
+    max-width: var(--content-max-width);
+    margin-left: var(--content-margin-left);
+  }
+}

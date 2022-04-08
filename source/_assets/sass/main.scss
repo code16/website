@@ -8,10 +8,12 @@
 @import 'typography';
 
 @import "components/content";
+@import "components/paragraph";
 @import "components/stack";
-@import "components/code";
 @import "components/logo";
 @import "components/carousel";
+@import "components/sticky-title";
+@import "components/section";
 
 @import "page/project";
 @import "page/home";
@@ -35,19 +37,6 @@ body {
   --logo-color: #EBEBEB;
 }
 
-a {
-  @apply text-brand-cyan no-underline;
-
-  &:hover {
-    @apply underline;
-  }
-}
-
-p, .paragraph {
-  @apply mb-4 font-serif;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
 
 ul {
   @apply mt-2;

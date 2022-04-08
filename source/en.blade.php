@@ -1,6 +1,11 @@
 
 
 <x-layout class="home" lang="en">
+
+    <h1 class="sr-only">
+        Code 16, Laravel development
+    </h1>
+
     <div class="text-brand-white">
         <x-section large>
             <x-paragraph>
@@ -70,7 +75,7 @@
                 In the same spirit, we developed and maintain several open source projects, among which we should mention the content management framework Sharp:
             </x-paragraph>
 
-            <x-project>
+            <x-project-item>
                 <x-slot name="title">
                     Sharp for Laravel
                 </x-slot>
@@ -86,7 +91,7 @@
                 généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil
                 agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
                 d’administrer des commandes, des produits ou des inscriptions par exemple.
-            </x-project>
+            </x-project-item>
         </x-section>
 
         <x-section>
@@ -99,7 +104,7 @@
             </h3>
 
             <x-project-list>
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         EK France
                     </x-slot>
@@ -113,9 +118,9 @@
                     Click & Collect and Ship from Store, online payment with multiple accounts, delivery systems,
                     synchronization of fidelity accounts... The websites also handle gift card orders
                     and wish list management.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Projet Cursus
                     </x-slot>
@@ -129,9 +134,9 @@
                     This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a>
                     handles course registration via a complex process depending on various course options and registrant type.
                     <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Merkur, a high trafic event shop
                     </x-slot>
@@ -141,9 +146,9 @@
                     We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
                     <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
                     including their famous Christmas bulbs.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Ekip, a rental service
                     </x-slot>
@@ -152,7 +157,7 @@
 
                     We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
                     advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
-                </x-project>
+                </x-project-item>
             </x-project-list>
         </x-section>
 
@@ -162,7 +167,7 @@
             </x-slot>
 
             <x-project-list>
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         peugeot-invest.com
                     </x-slot>
@@ -171,9 +176,9 @@
 
                     This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
                     various and numerous content types, including dataviz.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         jeparticipe.cfdt.fr
                     </x-slot>
@@ -181,9 +186,9 @@
                     <x-slot name="banner" src="assets/img/syzito/banner.jpg"></x-slot>
 
                     <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         pactedupouvoirdevivre.fr
                     </x-slot>
@@ -192,7 +197,7 @@
 
                     <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection
                     of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
-                </x-project>
+                </x-project-item>
             </x-project-list>
         </x-section>
 
@@ -202,7 +207,7 @@
             </x-slot>
 
             <x-project-list>
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Treto, a cartographic website
                     </x-slot>
@@ -211,9 +216,9 @@
 
                     We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
                     for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Trig, a cartographic iOS / Android app
                     </x-slot>
@@ -225,9 +230,9 @@
                     (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
                     et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
                     to guide guests across the domain.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Beatus CRM
                     </x-slot>
@@ -239,9 +244,9 @@
                     linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
                     First of all, we fully developed a dedicated custom CRM, linked to all other tools
                     to gather data for all contacts.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Sapidus
                     </x-slot>
@@ -250,7 +255,7 @@
 
                     We also built an intranet platform, Sapidus, which integrates many internal tools
                     like calendar and resource management, news feed, packages and letters tracking, ...
-                </x-project>
+                </x-project-item>
             </x-project-list>
         </x-section>
 

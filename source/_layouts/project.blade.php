@@ -15,14 +15,15 @@
     </x-slot>
 
     <div class="relative">
-        <x-section.title :options="['startOffset' => -130]">
+        <x-section.title
+            heading-level="h1"
+            :sticky-title-options="['startOffset' => -130]"
+        >
             {{ $page->title }}
         </x-section.title>
 
-        <div class="content max-w-2xl">
-            <stacker class="mt-6" :breakpoint="768">
-                @yield('content')
-            </stacker>
-        </div>
+        <stacker class="content mt-6" :breakpoint="768">
+            @yield('content')
+        </stacker>
     </div>
 </x-layout>

@@ -3,7 +3,7 @@ import stickyTitle from './sticky-title';
 import Stacker from './components/Stacker';
 
 
-Vue.use(stickyTitle, { breakpoint: 768 });
+Vue.use(stickyTitle);
 
 document.querySelectorAll('pre').forEach(pre => {
     pre.setAttribute('v-pre', '');

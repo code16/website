@@ -1,5 +1,10 @@
 
 <x-layout class="home" lang="fr">
+
+    <h1 class="sr-only">
+        Code 16, développement Laravel et Vue.js
+    </h1>
+
     <div class="text-brand-white">
         <x-section large>
             <x-paragraph>
@@ -73,7 +78,7 @@
                 parmi eux, citons le framework de gestion de contenu Sharp :
             </x-paragraph>
 
-            <x-project>
+            <x-project-item>
                 <x-slot name="title">
                     Sharp for Laravel
                 </x-slot>
@@ -89,7 +94,7 @@
                 généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil
                 agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
                 d’administrer des commandes, des produits ou des inscriptions par exemple.
-            </x-project>
+            </x-project-item>
         </x-section>
 
         <x-section>
@@ -111,7 +116,7 @@
             </x-paragraph>
 
             <x-project-list>
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet EK France
                     </x-slot>
@@ -128,9 +133,9 @@
                     <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
                     Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
                     gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Cursus
                     </x-slot>
@@ -145,9 +150,9 @@
                     Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
                     nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
                     les nombreuses formations proposées par la structure.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Merkur
                     </x-slot>
@@ -162,9 +167,9 @@
                     Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
                         d'Art Verrier de Meisenthal</span>,
                     une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Maktaba
                     </x-slot>
@@ -180,9 +185,9 @@
                     la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
                     de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
                     système de conception et d'expédition de newsletters.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Projet Ekip
                     </x-slot>
@@ -197,7 +202,7 @@
                     Nous avons conçu et développé un système web de création de devis et de suivi
                     de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
                     étroite avec le logiciel de gestion de stock déjà en place.
-                </x-project>
+                </x-project-item>
             </x-project-list>
         </x-section>
 
@@ -218,7 +223,7 @@
             </x-paragraph>
 
             <x-project-list>
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Toshi
                     </x-slot>
@@ -235,9 +240,9 @@
                     des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
                     La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
                     administrable.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Syzito
                     </x-slot>
@@ -255,9 +260,9 @@
                     proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
                     intégrée
                     dans Sharp.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Symfonia
                     </x-slot>
@@ -272,9 +277,9 @@
                     Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de
                     60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
                     le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Acacia
                     </x-slot>
@@ -288,9 +293,9 @@
                     Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
                     et porte d’entrée vers tous les sites et applications de l'agence ; la gestion de contenu, développée
                     avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Maillon
                     </x-slot>
@@ -306,9 +311,9 @@
                     la saison et
                     les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie
                     entièrement pensée et développée sur mesure.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Projet Musica
                     </x-slot>
@@ -321,7 +326,7 @@
 
                     Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
                     accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
-                </x-project>
+                </x-project-item>
             </x-project-list>
         </x-section>
 
@@ -339,7 +344,7 @@
             </x-paragraph>
 
             <x-project-list>
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Treto
                     </x-slot>
@@ -357,9 +362,9 @@
                     qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
                     de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
                     calendriers de spectacle...
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Trig
                     </x-slot>
@@ -374,9 +379,9 @@
                     nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
                     orientant vers les
                     nombreux points d’intérêt de sa forêt de 1200 hectares.
-                </x-project>
+                </x-project-item>
 
-                <x-project separator>
+                <x-project-item separator>
                     <x-slot name="title">
                         Projet Beatus
                     </x-slot>
@@ -393,9 +398,9 @@
                     par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
                     Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
                     pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion.
-                </x-project>
+                </x-project-item>
 
-                <x-project>
+                <x-project-item>
                     <x-slot name="title">
                         Projet Sapidus
                     </x-slot>
@@ -409,7 +414,7 @@
 
                     Nous avons également écrit une plateforme intranet intégrant de nombreux
                     outils à partir de données externes variées.
-                </x-project>
+                </x-project-item>
             </x-project-list>
 
         </x-section>
