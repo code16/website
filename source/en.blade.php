@@ -1,6 +1,6 @@
 
 
-<x-layout class="home" lang="en">
+<x-layout home lang="en">
 
     <h1 class="sr-only">
         Code 16, Laravel development

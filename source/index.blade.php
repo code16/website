@@ -1,5 +1,5 @@
 
-<x-layout class="home" lang="fr">
+<x-layout home lang="fr">
 
     <h1 class="sr-only">
         Code 16, développement Laravel et Vue.js
