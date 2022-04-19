@@ -36,7 +36,9 @@
                     <x-logo />
                 </header>
 
-                {{ $slot }}
+                <main>
+                    {{ $slot }}
+                </main>
             </div>
         </div>
 

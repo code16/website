@@ -440,11 +440,12 @@
             <x-slot name="title">
                 L'équipe
             </x-slot>
+
             <x-paragraph>
                 <x-slot name="subtitle">
                     <div class="flex items-center mb-2">
                         <img class="mr-2 h-12 w-12 rounded-full"
-                            src="https://gravatar.com/avatar/{{ md5('philippelonchampt@gmail.com') }}?d=retro" alt="">
+                            src="{{ $page->developers['philippe']->avatar }}" alt="Philippe Lonchampt">
                         <span>Philippe Lonchampt</span>
                     </div>
                 </x-slot>
@@ -452,14 +453,14 @@
                 de plusieurs projets.
                 <br>
                 <a href="mailto:philippe@code16.fr">email</a>,
-                <a href="https://twitter.com/dvlpp">twitter</a>
+                <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
             </x-paragraph>
 
             <x-paragraph>
                 <x-slot name="subtitle">
                     <div class="flex items-center mb-2">
                         <img class="mr-2 h-12 w-12 rounded-full"
-                            src="https://gravatar.com/avatar/{{ md5('arnaud.becher@gmail.com') }}?d=retro" alt="">
+                            src="{{ $page->developers['arnaud']->avatar }}" alt="Arnaud Becher">
                         <span>Arnaud Becher</span>
                     </div>
                 </x-slot>
@@ -471,7 +472,7 @@
                 <x-slot name="subtitle">
                     <div class="flex items-center mb-2">
                         <img class="mr-2 h-12 w-12 rounded-full"
-                            src="https://gravatar.com/avatar/{{ md5('guingand.antoine@gmail.com') }}?d=retro" alt="">
+                            src="{{ $page->developers['antoine']->avatar }}" alt="Antoine Guingand">
                         <span>Antoine Guingand</span>
                     </div>
                 </x-slot>

@@ -163,6 +163,10 @@ const breakpoint = 768;
 
 const directive = {
     inserted(el, { value={} }) {
+        if(!value) {
+            return;
+        }
+
         el._stickyTitleState = {
             ready: false,
             initialRect: getRect(el),
@@ -212,7 +216,7 @@ const directive = {
 
 const noop = ()=>{};
 
-export default function(Vue, { breakpoint=0 }={}) {
+export default function(Vue) {
     Vue.directive('sticky-title', window.innerWidth >= breakpoint ? directive : noop);
 }
 
