@@ -27,17 +27,13 @@
             </div>
 
             <div class="opacity-60 text-sm">
-                <x-info-list>
-                    @if($author = $post->author)
-                        {{ $page->developers[$author]->name }}
-                    @endif
-                    <x-slot name="separator">
-                        <span class="mx-1.5">&bull;</span>
-                    </x-slot>
-                    @if($date = $post->date)
-                        {{ date('M j, Y', $date) }}
-                    @endif
-                </x-info-list>
+                @if($author = $post->author)
+                    <span>{{ $page->developers[$author]->name }}</span>
+                @endif
+                <span class="mx-0.5">&bull;</span>
+                @if($date = $post->date)
+                    <span>{{ date('M j, Y', $date) }}</span>
+                @endif
             </div>
         </div>
     </div>
