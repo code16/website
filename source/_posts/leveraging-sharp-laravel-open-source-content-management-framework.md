@@ -1,6 +1,6 @@
 ---
 title: Leveraging Sharp, an open source content management framework, in a Laravel project
-description: "To state the obvious: content management is hard. For a typical web project, this applies to both sides: it can be difficult to build an adapted tool as a developer, and it is sometimes a pain to use it as a content manager."
+description: "To state the obvious: content management is hard. For a typical web project, this applies to both sides: it can be difficult to build an adapted tool as a developer…"
 thumbnail: /assets/img/sharp/banner.png
 date: 2022-03-31
 author: philippe

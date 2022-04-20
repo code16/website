@@ -19,3 +19,4 @@
 
     <x-post.author-card :page="$page" />
 </x-layout>
+

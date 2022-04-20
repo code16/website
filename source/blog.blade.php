@@ -7,7 +7,10 @@
             Posts
         </h1>
         @foreach($posts as $post)
-            <x-post-item :post="$post" />
+            <x-post-item
+                :post="$post"
+                :page="$page"
+            />
         @endforeach
     </div>
 </x-layout>

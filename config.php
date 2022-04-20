@@ -13,6 +13,7 @@ return [
             'path' => 'posts',
             'extends' => '_layouts.post',
             'section' => 'content',
+            'sort' => ['-date'],
         ]
     ],
     'developers' => [
