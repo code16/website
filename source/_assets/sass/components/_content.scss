@@ -6,6 +6,8 @@
   max-width: var(--content-max-width);
   margin-left: var(--content-margin-left);
 
+  --block-margin-bottom: 1.5rem;
+
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.25;
     font-weight: bold;
@@ -19,17 +21,23 @@
 
   h2 {
     font-size: 1.75rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
   }
 
   h3 {
     font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    margin-bottom: var(--block-margin-bottom);
   }
 
   ol, ul {
     padding-left: 2em;
-    margin-bottom: 2rem;
+    margin-bottom: var(--block-margin-bottom);
   }
 
   ol {
@@ -42,7 +50,7 @@
 
   li {
     padding-left: .25em;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 
     p {
       margin-bottom: 0;
@@ -64,7 +72,7 @@
   }
 
   pre {
-    margin-bottom: 2rem;
+    margin-bottom: var(--block-margin-bottom);
     border-radius: .5rem;
     overflow-x: auto;
     tab-size: 4;
@@ -83,10 +91,6 @@
     .line {
       padding: 0 1.5rem;
     }
-  }
-
-  p {
-    margin-bottom: 2rem;
   }
 
   hr {

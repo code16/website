@@ -18,7 +18,7 @@ resulted in a `400 Bad Request` response:
 
 Fortunately, Laravel provides a great validation feature that lets you validate incoming data including emails, so you’ll be able to contact your customers by email with confidence. Laravel includes a great [“email” rule](https://laravel.com/docs/9.x/validation#rule-email), that is based on a popular [php package](https://github.com/egulias/EmailValidator). With this rule, you can specify different validation strategies.
 
-#### Space character
+### Space character
 
 Apparently RFC specifications allows email to have space characters in them. But with most email providers, it just won’t work. You should not accept those emails (and it probably is a wrong keyboard input). To do so, you need to add “filter” to your email rule:
 
@@ -35,7 +35,7 @@ Now, when an email contains a space character, you’ll get a nice validation er
 
 ![](/assets/img/posts/validating-critical-email-address-in-laravel/thumbnail.png)
 
-#### DNS Check
+### DNS Check
 
 Validation rule also has an interesting “dns” option that will check if there are DNS records that confim the given server accepts emails. This does not give a complete guarantee that the email address exists, but it is better than nothing.
 
