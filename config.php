@@ -6,9 +6,13 @@ return [
     'collections' => [
         'projects' => [
             'path' => 'p',
+            'extends' => '_layouts.project',
+            'section' => 'content',
         ],
         'posts' => [
             'path' => 'posts',
+            'extends' => '_layouts.post',
+            'section' => 'content',
         ]
     ],
     'developers' => [

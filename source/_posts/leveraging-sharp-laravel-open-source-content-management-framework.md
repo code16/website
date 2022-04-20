@@ -1,14 +1,10 @@
 ---
-extends: _layouts.post
-section: content
 title: Leveraging Sharp, an open source content management framework, in a Laravel project
 description: "To state the obvious: content management is hard. For a typical web project, this applies to both sides: it can be difficult to build an adapted tool as a developer, and it is sometimes a pain to use it as a content manager."
 thumbnail: /assets/img/sharp/banner.png
 date: 2022-03-31
 author: philippe
 ---
-
-# Leveraging Sharp, an open source content management framework, in a Laravel project
 
 To state the obvious: content management is hard. For a typical web project, this applies to both sides: it can be difficult to build an adapted tool as a developer, and it is sometimes a pain to use it as a content manager. I think this is why Wordpress, along with smaller projects based on the same idea, were and still are very popular: it’s fairly easy for a developer to adapt to any type of content, and the client may already know the tool and feel comfortable with the interface. But these solutions comes with a lot of drawbacks: a constrained data model, difficulties on maintenance and updates, the need to hijack the UI to match domain data, and… many more, to be honest.
 

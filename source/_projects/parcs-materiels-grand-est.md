@@ -1,6 +1,4 @@
 ---
-extends: _layouts.project
-section: content
 title: Parcs matériels Grand Est
 
 ---
@@ -8,7 +6,7 @@ title: Parcs matériels Grand Est
 **Conception et développement du site internet de location de matériels scénique de 
 l’Agence culturelle Grand Est&nbsp;: https://parcsmaterielsgrandest.fr/**
 
-Cette plateforme web présente les catalogues d’articles de matériel scénique disponibles à la location dans les différents dépôts de l’Agence culturelle Grand Est. 
+Cette plateforme web présente les catalogues d’articles de matériel scénique disponibles à la location dans les différents dépôts de l’Agence culturelle Grand Est.
 
 ![Accueil](/assets/img/ekip/1.png)
 La page d’accueil du site

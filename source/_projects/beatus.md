@@ -1,6 +1,4 @@
 ---
-extends: _layouts.project
-section: content
 title: Beatus CRM
 
 ---
