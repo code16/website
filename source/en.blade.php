@@ -3,7 +3,7 @@
 <x-layout lang="en">
 
     <x-slot name="nav">
-        <x-nav home lang="en" />
+        <x-nav active="home" lang="en" />
     </x-slot>
 
     <h1 class="sr-only">

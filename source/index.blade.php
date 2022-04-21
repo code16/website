@@ -2,7 +2,7 @@
 <x-layout>
 
     <x-slot name="nav">
-        <x-nav home />
+        <x-nav active="home" />
     </x-slot>
 
     <h1 class="sr-only">

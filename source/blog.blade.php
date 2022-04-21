@@ -3,7 +3,7 @@
 
 <x-layout lang="en">
     <x-slot name="nav">
-        <x-nav blog />
+        <x-nav active="blog" />
     </x-slot>
 
     <div class="section__content">

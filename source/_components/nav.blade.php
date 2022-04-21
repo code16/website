@@ -1,18 +1,17 @@
 @props([
-    'home' => false,
-    'blog' => false,
+    'active' => null,
     'lang' => 'fr',
 ])
 
 <div class="nav container absolute pr-3">
     <div class="flex justify-end gap-6">
         <div>
-            <a href="/blog" @class([$blog ? '!text-white' : 'underline'])>
+            <a href="/blog" @class([$active === 'blog' ? '!text-white' : 'underline'])>
                 blog
             </a>
         </div>
         <div>
-            @if($home)
+            @if($active === 'home')
                 <a href="/" @class([$lang === "fr" ? '!text-white' : 'underline'])>
                     fr
                 </a>
