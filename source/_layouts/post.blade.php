@@ -1,6 +1,10 @@
 
 
 <x-layout class="light">
+    <x-slot name="nav">
+        <x-nav />
+    </x-slot>
+
     <section class="content">
         <div class="mb-8">
             <h1 class="!mb-0">

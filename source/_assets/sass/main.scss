@@ -14,6 +14,7 @@
 @import "components/carousel";
 @import "components/sticky-title";
 @import "components/section";
+@import "components/nav";
 
 @import "page/project";
 @import "page/home";
@@ -35,6 +36,7 @@ body {
   --body-color: #22292f;
   --logo-bg-color: #22292f;
   --logo-color: #EBEBEB;
+  --nav-link-color: #2C7467;
 }
 
 

@@ -1,6 +1,10 @@
 
 
-<x-layout home lang="en">
+<x-layout lang="en">
+
+    <x-slot name="nav">
+        <x-nav home lang="en" />
+    </x-slot>
 
     <h1 class="sr-only">
         Code 16, Laravel development

@@ -1,7 +1,11 @@
 
 
 
-<x-layout>
+<x-layout lang="en">
+    <x-slot name="nav">
+        <x-nav blog />
+    </x-slot>
+
     <div class="section__content">
         <h1 class="inline-block text-2xl uppercase tracking-widest mb-12">
             Posts

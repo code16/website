@@ -1,5 +1,9 @@
 
-<x-layout home lang="fr">
+<x-layout>
+
+    <x-slot name="nav">
+        <x-nav home />
+    </x-slot>
 
     <h1 class="sr-only">
         Code 16, développement Laravel et Vue.js

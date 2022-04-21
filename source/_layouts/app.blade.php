@@ -10,25 +10,10 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
-
-        {{ $head }}
     </head>
     <body {{ $attributes->class(['home' => $home]) }}>
 
-        @if($home)
-            <div class="container absolute pr-3">
-                <div class="flex justify-end gap-6">
-                    <div>
-                        <a href="/blog" class="underline">blog</a>
-                    </div>
-                    <div>
-                        <a href="/" class="{{ $lang == "fr" ? "text-white" : "underline" }}">fr</a>
-                        <span class="text-white">|</span>
-                        <a href="/en" class="{{ $lang == "en" ? "text-white" : "underline" }}">en</a>
-                    </div>
-                </div>
-            </div>
-        @endif
+        {{ $nav }}
 
         <div class="p-8 sm:p-16">
             <div id="app" class="container">

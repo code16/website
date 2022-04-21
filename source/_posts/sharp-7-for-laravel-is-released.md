@@ -10,7 +10,7 @@ author: philippe
 
 This new year starts for us with the release of Sharp 7.0, after ~8 weeks of beta, and many bugs fixed in the process. Almost all new features and stuff were presented in the dedicated post written in November, so I encourage you to read this first:
 
-👉 [/posts/sharp-for-laravel-the-age-of-reason](/posts/sharp-for-laravel-the-age-of-reason)
+👉 [Sharp for Laravel: the age of Reason](/posts/sharp-for-laravel-the-age-of-reason)
 
 > To find out more about Sharp 7, [start here](https://sharp.code16.fr/docs/); you’ll find the documentation (note that Sharp 6 documentation is still available), and an online demo; and you can [join us on Discord](https://discord.com/invite/sFBT5c3XZz) to find help or to start a discussion.
 

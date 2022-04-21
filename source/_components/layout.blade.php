@@ -1,8 +1,7 @@
 @props([
-    'home' => false,
     'lang' => null,
     // slots
-    'head' => null,
+    'nav' => null,
 ])
 
 @include('_layouts.app', [
