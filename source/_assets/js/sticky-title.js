@@ -123,6 +123,7 @@ function handleScroll(el) {
 function createPlaceholder(el) {
     let res = document.createElement('div');
     res.setAttribute('style', `display:none;width:${el.offsetWidth}px;height:${el.offsetHeight}px`);
+    res.classList.add('sticky-title__placeholder');
     return res;
 }
 
@@ -158,8 +159,14 @@ function updateRects(el) {
     }
 }
 
-const directive =  {
+const breakpoint = 768;
+
+const directive = {
     inserted(el, { value={} }) {
+        if(!value) {
+            return;
+        }
+
         el._stickyTitleState = {
             ready: false,
             initialRect: getRect(el),
@@ -195,6 +202,8 @@ const directive =  {
             el._stickyTitleState.idle = false;
         };
         el.parentElement.appendChild(el._stickyTitleState.placeholder);
+        el.classList.add('sticky-title');
+
         window.addEventListener('scroll', el._stickyTitleScrollListener);
     },
     unbind(el) {
@@ -207,7 +216,7 @@ const directive =  {
 
 const noop = ()=>{};
 
-export default function(Vue, { breakpoint=0 }={}) {
+export default function(Vue) {
     Vue.directive('sticky-title', window.innerWidth >= breakpoint ? directive : noop);
 }
 

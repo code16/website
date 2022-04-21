@@ -1,13 +1,23 @@
-@tailwind preflight;
+@import "fonts";
+@import 'root';
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-//@import "page/sharp";
-//@import "page/sicstine";
+@import 'typography';
+
+@import "components/content";
+@import "components/paragraph";
+@import "components/stack";
+@import "components/logo";
+@import "components/carousel";
+@import "components/sticky-title";
+@import "components/section";
+@import "components/nav";
+
 @import "page/project";
 @import "page/home";
-
-@import "components/stack";
 
 html, body {
   min-height: 100%;
@@ -16,23 +26,22 @@ html, body {
 }
 
 body {
-  @apply .font-sans;
+  background-color: var(--body-bg-color, #071735);
+  color: var(--body-color, #EBEBEB);
+  @apply font-sans;
 }
 
-a {
-  @apply .text-brand-cyan .no-underline;
-
-  &:hover {
-    @apply .underline;
-  }
+.light {
+  --body-bg-color: white;
+  --body-color: #22292f;
+  --logo-bg-color: #22292f;
+  --logo-color: #EBEBEB;
+  --nav-link-color: #2C7467;
 }
 
-p, .paragraph {
-  @apply .mb-4 .font-serif .text-xl;
-}
 
 ul {
-  @apply .mt-2;
+  @apply mt-2;
 }
 
 
@@ -41,5 +50,5 @@ ul {
 }
 
 [v-cloak] {
-  @apply .hidden;
+  display: none!important;
 }

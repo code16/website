@@ -1,0 +1,12 @@
+
+
+.sticky-title {
+  @media (max-width: 767px) {
+    position: static!important;
+    transform: none!important;
+
+    &__placeholder {
+      display: none!important;
+    }
+  }
+}

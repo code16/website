@@ -1,6 +1,4 @@
 ---
-extends: _layouts.project
-section: projectContent
 title: Merkur
 
 ---

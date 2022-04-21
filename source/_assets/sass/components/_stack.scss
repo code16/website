@@ -1,11 +1,20 @@
 .stack {
-  @apply .mt-12;
+  @apply mt-12;
+  @apply mb-8;
+
   .stack-top {
     img {
       box-shadow: -.5rem -.5rem 0px rgba(0,0,0,.2), -1rem -1rem 0px config('colors.grey-light');
     }
   }
+
+  .legend {
+    color: white;
+  }
+
   .lightbox {
-    img { @apply .block; }
+    img {
+      display: block;
+    }
   }
 }

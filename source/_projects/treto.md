@@ -1,8 +1,6 @@
 ---
-extends: _layouts.project
-section: projectContent
 title: Treto
-carouselWidth: ['auto', 30rem]
+
 ---
 
 **Plateforme du spectacle vivant du Grand Est**
@@ -20,12 +18,16 @@ Une fiche de structure
 
 Nous avons particulièrement travaillé les versions mobile et tablette de l’application, pour rendre son utilisation vraiment adaptée aux petits écrans et au tactile.
 
+<div markdown="1" style="--image-size: 25rem">
+
 ![Carte](/assets/img/treto/xs/map2.png)
 Les critères se replient en mode carte pour laisser l’espace
 ![Critères](/assets/img/treto/xs/criteria.png)
 Valuation d’un critère
 ![Fiche structure](/assets/img/treto/xs/show.png)
 Une fiche de structure
+
+</div>
 
 L’inscription à l’annuaire se fait via une procédure de candidature en deux étapes, avec gestion d’un compte personnel lié à Sola, la plateforme SSO spécialement développée pour tous les projets de l’Agence culturelle.
 
