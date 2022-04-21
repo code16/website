@@ -32,6 +32,9 @@
             </div>
         </div>
 
+        <x-image-dialog />
+
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        @stack('script')
     </body>
 </html>

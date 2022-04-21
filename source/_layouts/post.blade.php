@@ -9,7 +9,7 @@
         <x-nav />
     </x-slot>
 
-    <section class="content">
+    <section class="content" data-image-dialog>
         <div class="mb-8">
             <h1 class="!mb-0">
                 {{ $page->title }}
