@@ -1,5 +1,5 @@
 
-<dialog class="image-dialog p-0" style="max-width: min(1024px, 90vw); max-height: 90vh;">
+<dialog class="image-dialog p-0" style="max-width: min(1400px, 90vw); max-height: 90vh;">
     <img class="max-w-full select-none" style="max-height: inherit">
 </dialog>
 
