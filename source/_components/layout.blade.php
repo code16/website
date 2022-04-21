@@ -1,5 +1,6 @@
 @props([
     'lang' => null,
+    'title' => null,
     // slots
     'nav' => null,
 ])

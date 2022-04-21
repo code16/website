@@ -2,6 +2,10 @@
 
 
 <x-layout lang="en">
+    <x-title>
+        Blog
+    </x-title>
+
     <x-slot name="nav">
         <x-nav active="blog" />
     </x-slot>

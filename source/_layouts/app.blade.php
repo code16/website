@@ -5,13 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Code 16, développement Laravel et Vue.js</title>
+        <title>
+            @if($title)
+                {{ $title }} -
+            @endif
+            Code 16, développement Laravel et Vue.js
+        </title>
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
     </head>
-    <body {{ $attributes->class(['home' => $home]) }}>
+    <body {{ $attributes }}>
 
         {{ $nav }}
 

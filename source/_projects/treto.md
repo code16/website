@@ -9,22 +9,22 @@ title: Treto
 
 L’idée de la plateforme Treto est de réunir en un annuaire augmenté trois grandes catégories de structures : les lieux de création et de diffusion, les équipes artistiques professionnelles et les bureaux de production, sous réserve de répondre à certains critères. L’annuaire est présenté sous forme de carte ou de liste, et propose de filtres divers.
 
-![Carte](/assets/img/treto/map2.png)
+![Carte](/assets/img/projects/treto/map2.png)
 La carte avec géolocalisation des différentes structures
-![Critères](/assets/img/treto/criteria2.png)
+![Critères](/assets/img/projects/treto/criteria2.png)
 Un exemple de critère de lieu
-![Fiche structure](/assets/img/treto/show.png)
+![Fiche structure](/assets/img/projects/treto/show.png)
 Une fiche de structure
 
 Nous avons particulièrement travaillé les versions mobile et tablette de l’application, pour rendre son utilisation vraiment adaptée aux petits écrans et au tactile.
 
 <div markdown="1" style="--image-size: 25rem">
 
-![Carte](/assets/img/treto/xs/map2.png)
+![Carte](/assets/img/projects/treto/xs/map2.png)
 Les critères se replient en mode carte pour laisser l’espace
-![Critères](/assets/img/treto/xs/criteria.png)
+![Critères](/assets/img/projects/treto/xs/criteria.png)
 Valuation d’un critère
-![Fiche structure](/assets/img/treto/xs/show.png)
+![Fiche structure](/assets/img/projects/treto/xs/show.png)
 Une fiche de structure
 
 </div>
@@ -33,14 +33,14 @@ L’inscription à l’annuaire se fait via une procédure de candidature en deu
 
 Côté administration du projet, nous avons mis en place un workflow de validation qui s’opère via [Sharp](https://sharp.code16.fr), l’outil de gestion Open source développé par Code 16.
 
-![Compte](/assets/img/treto/account.png)
+![Compte](/assets/img/projects/treto/account.png)
 Le remplissage d’une fiche côté compte membre
-![Administration](/assets/img/treto/sharp2.png)
+![Administration](/assets/img/projects/treto/sharp2.png)
 Le tableau de bord indiquant aux administrateurs l’état de validation des candidatures
 
 La plateforme propose également des outils de partage d’information entre professionnels (annonces, plateaux libres) ainsi qu’un agenda culturel des tournées des compagnies.
 
-![Plateaux](/assets/img/treto/stages.png)
+![Plateaux](/assets/img/projects/treto/stages.png)
 L’outil « Plateaux libres » qui permet de mettre en relation compagnies et lieux
-![Agenda](/assets/img/treto/schedule.png)
+![Agenda](/assets/img/projects/treto/schedule.png)
 L’agenda des spectacles

@@ -1,5 +1,9 @@
 
 <x-layout class="light project {{ $page->bodyClass }}">
+    <x-title>
+        {{ $page->title }}
+    </x-title>
+
     <div class="relative">
         <x-section.title
             heading-level="h1"

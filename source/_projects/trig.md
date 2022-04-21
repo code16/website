@@ -9,15 +9,15 @@ Le Domaine de la Trigalière est vaste : 1200 hectares de forêt, au sein de laq
 
 <div markdown="1" style="--image-size: 25rem">
 
-![Carte](/assets/img/trig/map.png)
+![Carte](/assets/img/projects/trig/map.png)
 La carte est une extraction personnalisée d'Open Street Maps.
-![Apercu](/assets/img/trig/quickview.png)
+![Apercu](/assets/img/projects/trig/quickview.png)
 Cliquer sur un POI ouvre un apercu, sur mobile.
-![POI](/assets/img/trig/poi.png)
+![POI](/assets/img/projects/trig/poi.png)
 La page d'un POI dont le contenu est relativement libre, et peut inclure des photos et des vidéos.
-![Filtres](/assets/img/trig/filters.png)
+![Filtres](/assets/img/projects/trig/filters.png)
 L'utilisateur peut filtrer les POI par intérêt.
-![Code](/assets/img/trig/code.png)
+![Code](/assets/img/projects/trig/code.png)
 Certaines parties du Domaine proposent des cartels sur lesquels des codes sont inscrits, affichant une fiche sur l'application.
 
 </div>

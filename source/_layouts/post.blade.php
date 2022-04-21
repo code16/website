@@ -1,6 +1,10 @@
 
 
 <x-layout class="light">
+    <x-title>
+        {{ $page->title }}
+    </x-title>
+
     <x-slot name="nav">
         <x-nav />
     </x-slot>
