@@ -19,8 +19,8 @@ namespace App\Enums;
   
 enum BlogpostState: string  
 {  
-    case _DRAFT_ = 'state_draft';  
-    case _PUBLISHED_ = 'state_published';  
+    case DRAFT = 'state_draft';  
+    case PUBLISHED = 'state_published';  
 }
 ```
 
