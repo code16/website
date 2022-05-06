@@ -9,7 +9,6 @@
  */
 @endphp
 
-
 <div class="post-item relative mb-14">
     <div class="flex gap-4 max-w-2xl">
         <div class="w-1/4">
