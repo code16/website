@@ -14,6 +14,8 @@
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
+        <link rel="alternate" type="application/rss+xml" title="Code 16’s Blog" href="{{ $page->baseUrl }}/blog/feed.atom" />
+
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
     </head>
     <body {{ $attributes }}>
