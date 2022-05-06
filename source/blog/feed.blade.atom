@@ -1,0 +1,7 @@
+@extends('_layouts.rss')
+
+@section('entries')
+    @foreach ($posts as $post)
+        <x-rss.post-item :post="$post" />
+    @endforeach
+@endsection

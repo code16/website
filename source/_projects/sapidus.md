@@ -1,6 +1,4 @@
 ---
-extends: _layouts.project
-section: projectContent
 title: Sapidus intranet
 
 ---
@@ -11,14 +9,14 @@ Sapidus est un service proposant plusieurs outils à destination des équipes, r
 
 La page d'accueil personnalisable propose de retrouver les dernières données de chaque module.
 
-![Accueil](/assets/img/sapidus/home.png)
+![Accueil](/assets/img/projects/sapidus/home.png)
 
 Calendrier, l'un des modules, permet de lister les événements publics de tous les collaborateurs de l'Agence, repris depuis leur serveur Exchange, afin par exemple de rapidement trouver une date pour une réunion.
 
-![Calendrier](/assets/img/sapidus/calendars.png)
+![Calendrier](/assets/img/projects/sapidus/calendars.png)
 
 Le module Documents fonctionne comme un explorateur de fichiers en ligne, avec une gestion fine des droits d'accès en fonction des groupes, et un moteur de recherche dédié.
 
-![Documents](/assets/img/sapidus/documents.png)
+![Documents](/assets/img/projects/sapidus/documents.png)
 
 D'autres modules servent à consulter les actualités, à gérer ses liens utiles, à réserver des ressources en fonction d'un planning de disponibilité, ou encore à créer et archiver des documents de gestion (factures, lettres, ...) en liaison automatisée avec [Beatus](/p/beatus), le CRM développé par Code 16 pour le compte de l'Agence.

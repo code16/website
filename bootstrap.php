@@ -1,6 +1,6 @@
 <?php
 
-use TightenCo\Jigsaw\Jigsaw;
+use Torchlight\Jigsaw\TorchlightExtension;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -15,3 +15,9 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+//$container['markdownParser']->code_block_content_func = function ($code, $language) {
+//    return (new \Highlight\Highlighter())->highlight($language ?? 'plaintext', $code)->value;
+//};
+
+TorchlightExtension::make($container, $events)->boot();

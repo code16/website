@@ -1,11 +1,15 @@
 <?php
 
+$config = require './config.php';
+
 return [
     'production' => true,
-    'baseUrl' => '',
     'collections' => [
-        'projects' => [
-            'path' => 'p',
-        ]
+        'posts' => [
+            ...$config['collections']['posts'],
+            'filter' => function ($item) {
+                return !$item->draft;
+            }
+        ],
     ],
 ];

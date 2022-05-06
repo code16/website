@@ -1,0 +1,115 @@
+
+.content {
+  @apply font-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: var(--content-max-width);
+  margin-left: var(--content-margin-left);
+
+  --block-margin-bottom: 1.5rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    margin-bottom: var(--block-margin-bottom);
+  }
+
+  ol, ul {
+    padding-left: 2em;
+    margin-bottom: var(--block-margin-bottom);
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  li {
+    padding-left: .25em;
+    margin-bottom: .5rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  code {
+    display: inline-block;
+    font-size: .875rem;
+    padding: 0 0.5em;
+    color: #ca473f;
+    background-color: #f9f9f9;
+    border-radius: .375em;
+    line-height: 2;
+  }
+
+  pre {
+    margin-bottom: var(--block-margin-bottom);
+    border-radius: .5rem;
+    overflow-x: auto;
+    tab-size: 4;
+    white-space: pre;
+
+    code {
+      display: block;
+      padding: 1.25rem 0;
+      min-width: max-content;
+      background: none;
+      border-radius: 0;
+      color: inherit;
+      line-height: 2;
+    }
+
+    .line {
+      padding: 0 1.5rem;
+    }
+  }
+
+  hr {
+    margin: 1.5rem 0;
+  }
+
+  a {
+    @apply inline-block bg-brand-cyan-lighter text-brand-cyan-darker px-1 leading-tight;
+
+    &:hover {
+      @apply bg-brand-brown text-white no-underline;
+    }
+  }
+
+  .legend, img + em {
+    @apply block font-sans text-base not-italic text-grey-darker;
+  }
+
+  img {
+    box-shadow: var(--content-img-shadow);
+  }
+}
