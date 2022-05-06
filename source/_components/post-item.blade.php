@@ -12,7 +12,7 @@
 <div class="post-item relative mb-14">
     <div class="flex gap-4 max-w-2xl">
         <div class="w-1/4">
-            <img src="{{ $post->thumbnail }}" class="object-cover aspect-[1/1]" alt="{{ $post->title }}">
+            <img src="{{ $post->thumbnail }}" class="object-cover aspect-[1/1] w-full" alt="{{ $post->title }}">
         </div>
         <div class="flex-1 flex flex-col">
             <h2 class="text-xl mb-3">
