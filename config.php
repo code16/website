@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => env('APP_URL', ''),
     'collections' => [
         'projects' => [
             'path' => 'p',
