@@ -24,7 +24,29 @@ A new form field seems to be a simple solution. Maybe it could be named`SharpFor
 
 ## Chosen solution: just add a configuration method
 
-Finally, the held solution is to use use a regular `SharpFormListField`, and to add a coupe of API methods to configure the bulk option:
+Finally, the held solution is to use a regular `SharpFormListField`, and to add a coupe of API methods to configure the bulk option:
+
+```php
+SharpFormListField::make("pictures")
+  ->setLabel("Additional pictures")
+  ->setRemovable()
+  ->setSortable()
+  ->setAddable()
+  ->allowBulkUploadForField("file")
+  ->setBulkUploadFileCountLimitAtOnce(6)
+  ->setOrderAttribute("order")
+  ->addItemField(
+    SharpFormUploadField::make("file")
+      ->setFileFilterImages()
+      ->setStorageDisk("local")
+      ->setStorageBasePath("data/Spaceship/{id}/Pictures")
+      ->setMaxFileSize(3)
+  )
+  ->addItemField(
+    SharpFormTextField::make("legend")
+      ->setLabel("Legend")
+  );
+```    
 
 The two important methods are:
 
@@ -32,6 +54,10 @@ The two important methods are:
 *   `setBulkUploadFileCountLimitAtOnce(6)`: optionally, we can set the limit on parallel uploads (default is 10).
 
 And then, Sharp will render the list like this:
+
+<p>
+    <iframe src="https://giphy.com/embed/SntgQqMwbrw0ooRV5i" width="100%" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</p>
 
 This solution seems quite good to us, since it’s:
 

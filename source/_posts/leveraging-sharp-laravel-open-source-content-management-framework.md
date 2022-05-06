@@ -18,7 +18,7 @@ As many essential but hard to resolve topics, content management is addressed by
 - Developers should not have to work on the front-end development for the CMS.
 - The CMS should not have any expectations from the persistence layer.
 
-Since the first version of Sharp, many things happen in the Laravel content management field: the emergence of great paid products (Laravel Nova[^nova], Statamic[^statamic], October CMS[^octobercms]…), or the rise of headless CMS[^headlesscms], among other things. But Sharp is still a very relevant choice to us (and others), being stable on its core rules, very flexible, fairly easy to work with as a non-technical user, allowing developers to quickly build complex and testable features, and, of course, being an open source and free package.
+Since the first version of Sharp, many things happen in the Laravel content management field: the emergence of great paid products ([Laravel Nova](https://nova.laravel.com), [Statamic](https://statamic.com), [October CMS](https://octobercms.com)…), or the rise of [headless CMS](https://en.wikipedia.org/wiki/Headless_content_management_system), among other things. But Sharp is still a very relevant choice to us (and others), being stable on its core rules, very flexible, fairly easy to work with as a non-technical user, allowing developers to quickly build complex and testable features, and, of course, being an open source and free package.
 
 In our web company, we use it on almost all our projects: websites, mobile apps, SPA... Here's a few examples, illustrating the diversity of usages:
 
@@ -446,18 +446,9 @@ Dashboards can include filters and commands: a common use case is to add a comma
 
 ## So what have we learned?
 
-With that we implemented a basic CRUD[^crud], added functional commands to work with products, developed a page to manage orders, and a dashboard to present aggregated data; all of this was done respecting our 4 initial rules: no code adherence between website and CMS, clean terminology, no front-end development, and free choice of persistence layer — using a clean and documented API. Many features were ignored in this article (data localization, authorizations and policies, wizard commands, editor field with custom embeds, custom test assertions...), but I feel this is already a big introduction to the tool.
+With that we implemented a basic CRUD, added functional commands to work with products, developed a page to manage orders, and a dashboard to present aggregated data; all of this was done respecting our 4 initial rules: no code adherence between website and CMS, clean terminology, no front-end development, and free choice of persistence layer — using a clean and documented API. Many features were ignored in this article (data localization, authorizations and policies, wizard commands, editor field with custom embeds, custom test assertions...), but I feel this is already a big introduction to the tool.
 
 Laravel is a very (very) great framework, in many aspects; one of them is that it's a good fit for almost any type of projects, small or big, with a web frontend or JSON based... Sharp tries to be similar on this point, as a general purpose tool with built-in fast paths for standard needs. I think the real big advantage of Sharp comes with a bit of experience, and that's productivity: at some point it is fast to build complex features on top of a simple CRUD, mainly focusing of the functionality itself, without losing control over the code nor compromising the project architecture, thanks to a solid front-end code and clear and documented APIs. And because it features a simple and consistent UI (yes, you can change that blue color and add your logo), the administrators and content managers will also hopefully appreciate Sharp.
 
-You can find a complete documentation and a fully testable demo on Sharp's website[^sharpsite], and all its code is available on Github[^sharpgithub]. The code of the example developed for this article is not available (it's too messy, to be honest), but if you want you can browse the code of a more complete demo project directly in Sharp's repository, under the `demo` folder.
+You can find a complete documentation and a fully testable demo on [Sharp's website](https://sharp.code16.fr), and all its code is available on [Github](https://github.com/code16/sharp). The code of the example developed for this article is not available (it's too messy, to be honest), but if you want you can browse the code of a more complete demo project directly in Sharp's repository, under the `demo` folder.
 
-
-
-[^nova]: https://nova.laravel.com
-[^statamic]: https://statamic.com
-[^octobercms]: https://octobercms.com
-[^headlesscms]: https://en.wikipedia.org/wiki/Headless_content_management_system
-[^sharpsite]: https://sharp.code16.fr
-[^sharpgithub]: https://github.com/code16/sharp
-[^crud]: acronym for create, read, update, and delete

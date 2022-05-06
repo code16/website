@@ -57,6 +57,18 @@
         </x-paragraph>
 
         <x-paragraph>
+            These last years, our expertise is mainly focused on the
+            technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
+            around tools like Algolia, AWS, Laravel Forge and Envoyer.
+        </x-paragraph>
+
+        <x-paragraph>
+            <a class="text-xl" href="/blog">
+                • read the blog
+            </a>
+        </x-paragraph>
+
+        <x-paragraph>
             <x-slot name="title">
                 Our clients are partners
             </x-slot>
@@ -90,10 +102,9 @@
             <x-slot name="banner" src="/assets/img/projects/sharp/banner.png"></x-slot>
             <x-slot name="website_link" href="https://sharp.code16.fr"></x-slot>
 
-            Sharp est une plateforme de développement d’espaces de gestion de contenu et de données,
-            généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil
-            agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
-            d’administrer des commandes, des produits ou des inscriptions par exemple.
+            Sharp is a generalist and powerful platform for developing content and manage data.
+            We use it in many of our projects, to offer a pleasant and powerful tool allowing to publish pages,
+            images, videos of the sites as well as to manage orders, products or registrations for example.
         </x-project-item>
     </x-section>
 
@@ -174,6 +185,8 @@
                 <x-slot name="title">
                     peugeot-invest.com
                 </x-slot>
+
+                <x-slot name="banner" src="/assets/img/projects/toshi/banner.jpg"></x-slot>
 
                 <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
 
@@ -297,7 +310,7 @@
                     <span>Antoine Guingand</span>
                 </div>
             </x-slot>
-            Front-end developer (mobile apps, Vue.js).
+            Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
         </x-paragraph>
 
         <x-paragraph>
@@ -311,7 +324,8 @@
         Code 16<br>
         <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
         24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-        Philippe Lonchampt: <a href="mailto:philippe@code16.fr" class="regular">philippe@code16.fr</a><br>
-        <a href="https://github.com/code16" class="regular">Github</a> — <a href="https://medium.com/code16" class="regular">Medium</a>
+        <a href="https://github.com/code16" class="regular">Github</a>
+        —
+        <a href="/blog" class="regular">blog</a>
     </x-section>
 </x-layout>
