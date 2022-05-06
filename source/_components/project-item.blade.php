@@ -1,3 +1,6 @@
+@aware([
+    'lang'
+])
 @props([
     'separator' => false,
     // slots
@@ -33,7 +36,11 @@
                 @if($link)
                     <div class="mt-4">
                         <a class="text-xl" {{ $link->attributes }}>
-                            • voir les détails du projet
+                            @if($lang === 'en')
+                                • show project details
+                            @else
+                                • voir les détails du projet
+                            @endif
                         </a>
                     </div>
                 @endif
@@ -41,7 +48,11 @@
                 @if($website_link)
                     <div class="mt-4">
                         <a class="text-xl" {{ $website_link->attributes }} target="_blank">
-                            • afficher le site
+                            @if($lang === 'en')
+                                • show website
+                            @else
+                                • afficher le site
+                            @endif
                         </a>
                     </div>
                 @endif
