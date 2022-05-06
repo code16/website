@@ -310,7 +310,7 @@
                     <span>Antoine Guingand</span>
                 </div>
             </x-slot>
-            Front-end developer (mobile apps, Vue.js).
+            Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
         </x-paragraph>
 
         <x-paragraph>

@@ -485,7 +485,7 @@
                     <span>Antoine Guingand</span>
                 </div>
             </x-slot>
-            Reponsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
+            Responsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
             travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
         </x-paragraph>
 
