@@ -52,7 +52,13 @@
         <x-paragraph>
             Ces dernières années, notre expertise s’est principalement portée sur les
             technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
-            autour d’outils comme Algolia, AWS, Laravel Forge / Envoyer.
+            autour d’outils comme Algolia, AWS, Laravel Forge et Envoyer.
+        </x-paragraph>
+
+        <x-paragraph>
+            <a class="text-xl" href="/blog">
+                • lire le blog (en)
+            </a>
         </x-paragraph>
 
         <x-paragraph>
@@ -495,11 +501,9 @@
         <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a>
         <br>
         24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-        Philippe Lonchampt :
-        <a href="mailto:philippe@code16.fr" class="regular">philippe@code16.fr</a>
         <br>
         <a href="https://github.com/code16" class="regular">Github</a>
         —
-        <a href="https://medium.com/code16" class="regular">Medium</a>
+        <a href="/blog" class="regular">Blog</a>
     </x-section>
 </x-layout>
