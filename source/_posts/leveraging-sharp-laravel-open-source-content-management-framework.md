@@ -30,7 +30,7 @@ To present Sharp, I think the best way is to go through an example; and even if 
 
 ## Diving in! first step, list things
 
-If you install Sharp on your Laravel Project (as a composer dependency), the only thing you’ll get is a new `/sharp` route, with a login form. Everything after this login must be configured and developed, leveraging Sharp’s API.
+If you install [code16/sharp](https://github.com/code16/sharp) on your Laravel Project (as a composer dependency), the only thing you’ll get is a new `/sharp` route, with a login form. Everything after this login must be configured and developed, leveraging Sharp’s API.
 
 Here's our scenario: we are asked to present on a website the products of a local shop. The product listing comes from an external feed provided by some inventory management software. We must display in the admin section of the website the detailed product list (ref, price, whatever). For this, we are going to declare a `ProductEntity` (in Sharp, an Entity is a manageable thing; it’s typically a Model, but it can be anything), and develop a `ProductList`.
 
