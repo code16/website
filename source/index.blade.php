@@ -21,7 +21,7 @@
 
         <x-paragraph>
             Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
-            problème qui n'est pas forcément standard, tout en bénéficiant d’outils qui les rendent
+            problème qui n’est pas forcément standard, tout en bénéficiant d’outils qui les rendent
             autonomes au quotidien.
         </x-paragraph>
     </x-section>
@@ -36,7 +36,7 @@
                 Nous accordons une<br>(très) grande importance au code
             </x-slot>
             Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
-            partagées de part et d’autre et de le convertir finalement en code : c'est sur cela que
+            partagées de part et d’autre et de le convertir finalement en code : c’est sur cela que
             nous concentrons tous nos efforts.
         </x-paragraph>
 
@@ -174,7 +174,7 @@
                 <x-slot name="link" href="/p/merkur"></x-slot>
 
                 Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
-                    d'Art Verrier de Meisenthal</span>,
+                    d’Art Verrier de Meisenthal</span>,
                 une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
             </x-project-item>
 
@@ -190,10 +190,10 @@
                 <x-slot name="thumbnail" src="/assets/img/projects/maktaba/thumb.png"></x-slot>
                 <x-slot name="website_link" href="https://quaidesbrumes.com/"></x-slot>
 
-                Développement d'un site de vente en ligne et de génération de bons cadeaux pour
+                Développement d’un site de vente en ligne et de génération de bons cadeaux pour
                 la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
                 de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
-                système de conception et d'expédition de newsletters.
+                système de conception et d’expédition de newsletters.
             </x-project-item>
 
             <x-project-item>
@@ -300,7 +300,7 @@
                 <x-slot name="website_link" href="https://culturegrandest.fr"></x-slot>
 
                 Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
-                et porte d’entrée vers tous les sites et applications de l'agence ; la gestion de contenu, développée
+                et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
                 avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
             </x-project-item>
 
@@ -316,7 +316,7 @@
                 <x-slot name="website_link" href="https://maillon.eu"></x-slot>
 
                 Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,
-                qui présente, en respectant l'univers graphique de ce lieu emblématique de Strasbourg, les spectacles de
+                qui présente, en respectant l’univers graphique de ce lieu emblématique de Strasbourg, les spectacles de
                 la saison et
                 les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie
                 entièrement pensée et développée sur mesure.
@@ -429,25 +429,8 @@
     </x-section>
 
     <x-section>
-        <x-paragraph>
-            <x-slot name="title">
-                D'autres références
-            </x-slot>
-
-            Parmi les autres projets de plus petite taille ou plus anciens, citons le site internet avec
-            prise de réservation de l’excellente
-            <a href="https://librairie-amateur.com/" class="regular">Librairie de l'Amateur</a>,
-            le site de la
-            <a href="https://revue-radar.fr/" class="regular">revue Radar</a>
-            pour le compte de l'Université de Strasbourg, avec des outils de commentaire et de prise de note,
-            ou encore le site internet et un CRM dédié pour le compte du
-            <a href="http://ciav-meisenthal.fr/" class="regular">Centre international d'Art Verrier de Meisenthal</a>.
-        </x-paragraph>
-    </x-section>
-
-    <x-section>
         <x-slot name="title">
-            L'équipe
+            L’équipe
         </x-slot>
 
         <x-paragraph>
@@ -458,7 +441,7 @@
                     <span>Philippe Lonchampt</span>
                 </div>
             </x-slot>
-            Fondateur de Code 16 (anciennement nommé Développlan), gérant de l'entreprise et développeur principal
+            Fondateur de Code 16 (anciennement nommé Développlan), gérant de l’entreprise et développeur principal
             de plusieurs projets.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
@@ -473,8 +456,7 @@
                     <span>Arnaud Becher</span>
                 </div>
             </x-slot>
-            Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel, il intervient sur tous les
-            projets.
+            Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel avec une orientation infrastructure / devops, il intervient sur tous les projets.
         </x-paragraph>
 
         <x-paragraph>
@@ -485,7 +467,7 @@
                     <span>Antoine Guingand</span>
                 </div>
             </x-slot>
-            Responsable du côté <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
+            Responsable du développement <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
             travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
         </x-paragraph>
 

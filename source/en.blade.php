@@ -118,7 +118,7 @@
         </h3>
 
         <x-project-list>
-            <x-project-item>
+            <x-project-item separator>
                 <x-slot name="title">
                     EK France
                 </x-slot>
@@ -134,7 +134,7 @@
                 and wish list management.
             </x-project-item>
 
-            <x-project-item>
+            <x-project-item separator>
                 <x-slot name="title">
                     Projet Cursus
                 </x-slot>
@@ -150,7 +150,7 @@
                 <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management.
             </x-project-item>
 
-            <x-project-item>
+            <x-project-item separator>
                 <x-slot name="title">
                     Merkur, a high trafic event shop
                 </x-slot>
@@ -181,12 +181,12 @@
         </x-slot>
 
         <x-project-list>
-            <x-project-item>
+            <x-project-item separator>
                 <x-slot name="title">
                     peugeot-invest.com
                 </x-slot>
 
-                <x-slot name="banner" src="/assets/img/projects/toshi/banner.jpg"></x-slot>
+                <x-slot name="banner" src="/assets/img/projects/toshi/banner.png"></x-slot>
 
                 <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
 
@@ -194,7 +194,7 @@
                 various and numerous content types, including dataviz.
             </x-project-item>
 
-            <x-project-item>
+            <x-project-item separator>
                 <x-slot name="title">
                     jeparticipe.cfdt.fr
                 </x-slot>
