@@ -101,4 +101,4 @@ class BookCache {
 
 And with this, we have a simple system which handles the cache we need, and which is quite easy to parametrize (probabilities and steps could by defined in a config file, as a first step).
 
-That’s it, please fill free to [catch me on twitter](https://twitter.com/dvlpp) for any comment or question on this.
+That’s it, please feel free to [catch me on twitter](https://twitter.com/dvlpp) for any comment or question on this.
