@@ -12,17 +12,16 @@
     <x-section large>
         <x-paragraph>
             <x-slot name="title">
-                Nous développons<br>des applications web de qualité
+                Développement web<br>et mobile
             </x-slot>
             Nous concevons des sites internet et des applications mobiles à partir
-            de technologies open-source, avec une approche d’artisan&nbsp;: un développement sur-mesure
-            qui permet d’avoir la main à tous les niveaux.
+            de technologies open-source, avec une approche d’artisan.
         </x-paragraph>
 
         <x-paragraph>
-            Nos clients ont un point commun&nbsp;: ils veulent une solution adaptée à un
-            problème qui n’est pas forcément standard, tout en bénéficiant d’outils qui les rendent
-            autonomes au quotidien.
+            Nos projets sont le fruit d'un développement sur-mesure, venant apporter des solutions à des
+            problématiques qui ne sont pas forcément standard, tout en bénéficiant d’outils qui rendent
+            ses utilisateurs et administrateurs autonomes au quotidien.
         </x-paragraph>
     </x-section>
 
@@ -35,19 +34,39 @@
             <x-slot name="title">
                 Nous accordons une<br>(très) grande importance au code
             </x-slot>
-            Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
-            partagées de part et d’autre et de le convertir finalement en code : c’est sur cela que
-            nous concentrons tous nos efforts.
         </x-paragraph>
 
-        <x-paragraph>
-            L’expérience nous montre que ce code, pour qu’il soit fiable et qu’il puisse s’adapter
-            aux besoins futurs, doit être maîtrisé (ce qui nous pousse à ne dépendre
-            que de projets Open source), concis (pour qu’il reste compréhensible dans le temps, et
-            qu’il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
-            accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
-            à l’écriture, et limiter au maximum les régressions au fil des versions).
-        </x-paragraph>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+                <x-paragraph>
+                    Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
+                    partagées de part et d’autre et de le convertir finalement en code : c’est sur cela que
+                    nous concentrons tous nos efforts.
+                </x-paragraph>
+                <x-paragraph>
+                    L’expérience nous montre que ce code, pour qu’il soit fiable et qu’il puisse s’adapter
+                    aux besoins futurs, doit être maîtrisé (ce qui nous pousse à ne dépendre
+                    que de projets Open source), concis (pour qu’il reste compréhensible dans le temps, et
+                    qu’il soit simple à remplacer en cas de nouveau besoin exprimé), et systématiquement
+                    accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
+                    à l’écriture, et limiter au maximum les régressions au fil des versions).
+                </x-paragraph>
+            </div>
+            <div class="mb-16 lg:mb-0 hidden md:block">
+                <div class="card">
+                    <h3 class="mt-0 mb-4 inline-block uppercase tracking-widest">
+                        <a class="text-inherit" href="/blog">Le blog de Code 16</a>
+                    </h3>
+                    <hr>
+                    @foreach($posts->take(4) as $post)
+                        <x-homepage-post-item
+                            :post="$post"
+                            :page="$page"
+                        />
+                    @endforeach
+                </div>
+            </div>
+        </div>
 
         <x-paragraph>
             Ces dernières années, notre expertise s’est principalement portée sur les
@@ -56,20 +75,17 @@
         </x-paragraph>
 
         <x-paragraph>
-            <a class="text-xl" href="/blog">
-                • lire le blog (en)
-            </a>
-        </x-paragraph>
-
-        <x-paragraph>
             <x-slot name="title">
-                Nos clients sont des partenaires
+                Nos clients sont<br>des partenaires
             </x-slot>
             Plutôt que de multiplier les petits projets et les contacts, nous cherchons
             à créer des partenariats avec nos clients pour travailler avec eux sur le long terme,
-            afin d’assurer à nos logiciels une maintenance continue. Ainsi, nous sommes fiers de travailler
-            depuis des années avec Ek France, l’Agence culturelle Grand Est
-            ou le théâtre Le Maillon, pour citer quelques exemples.
+            afin d’assurer à nos logiciels une maintenance continue.
+        </x-paragraph>
+
+        <x-paragraph>
+            Nous ne sommes ni hébergeurs, ni designers, ni conseils en marketing&nbsp;: pour ces
+            tâches nous nous entourons d’autres professionnels qualifiés.
         </x-paragraph>
 
         <x-paragraph>
@@ -83,8 +99,8 @@
         </x-paragraph>
 
         <x-paragraph>
-            Dans le même esprit, nous avons développé et nous maintenons plusieurs projets Open source ;
-            parmi eux, citons le framework de gestion de contenu Sharp :
+            Dans ce même esprit, nous avons développé et nous maintenons plusieurs projets Open source&nbsp;;
+            parmi eux, citons le framework de gestion de contenu Sharp&nbsp;:
         </x-paragraph>
 
         <x-project-item>
@@ -127,7 +143,7 @@
         <x-project-list>
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet EK France
+                    Marketplace avec Click and Collect pour EK France
                 </x-slot>
 
                 <x-slot name="date">
@@ -146,7 +162,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Cursus
+                    Portail formations de l'Agence culturelle Grand Est
                 </x-slot>
 
                 <x-slot name="date">
@@ -163,7 +179,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Merkur
+                    Site événementiel à fort trafic de vente en ligne
                 </x-slot>
 
                 <x-slot name="date">
@@ -180,7 +196,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Maktaba
+                    Boutique en ligne sur mesure pour une librairie
                 </x-slot>
 
                 <x-slot name="date">
@@ -198,7 +214,7 @@
 
             <x-project-item>
                 <x-slot name="title">
-                    Projet Ekip
+                    Site de location de matériel scénique
                 </x-slot>
 
                 <x-slot name="date">
@@ -226,15 +242,13 @@
             </x-slot>
 
             Ces projets assez divers ont tous étés développés sur mesure, le plus souvent dès la conception de la
-            maquette graphique,
-            et sont entièrement administrés avec
-            <a href="https://sharp.code16.fr">Sharp</a>.
+            maquette graphique, et sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
         </x-paragraph>
 
         <x-project-list>
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Toshi
+                    Site vitrine de Peugeot Invest
                 </x-slot>
 
                 <x-slot name="date">
@@ -253,27 +267,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Syzito
-                </x-slot>
-
-                <x-slot name="date">
-                    depuis 2021
-                </x-slot>
-
-                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
-                <x-slot name="website_link" href="https://jeparticipe.cfdt.fr/"></x-slot>
-
-                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
-                présentant tous les débats et webinaires
-                proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
-                proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
-                intégrée
-                dans Sharp.
-            </x-project-item>
-
-            <x-project-item separator>
-                <x-slot name="title">
-                    Projet Symfonia
+                    Site de présentation du Pacte du pouvoir de vivre
                 </x-slot>
 
                 <x-slot name="date">
@@ -290,7 +284,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Acacia
+                    Portail principal de l’Agence culturelle Grand Est
                 </x-slot>
                 <x-slot name="date">
                     depuis 2016
@@ -304,27 +298,27 @@
                 avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
             </x-project-item>
 
-            <x-project-item separator>
-                <x-slot name="title">
-                    Projet Maillon
-                </x-slot>
-                <x-slot name="date">
-                    depuis 2014
-                </x-slot>
+{{--            <x-project-item separator>--}}
+{{--                <x-slot name="title">--}}
+{{--                    Projet Maillon--}}
+{{--                </x-slot>--}}
+{{--                <x-slot name="date">--}}
+{{--                    depuis 2014--}}
+{{--                </x-slot>--}}
 
-                <x-slot name="thumbnail" src="/assets/img/projects/maillon/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://maillon.eu"></x-slot>
+{{--                <x-slot name="thumbnail" src="/assets/img/projects/maillon/thumb.png"></x-slot>--}}
+{{--                <x-slot name="website_link" href="https://maillon.eu"></x-slot>--}}
 
-                Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,
-                qui présente, en respectant l’univers graphique de ce lieu emblématique de Strasbourg, les spectacles de
-                la saison et
-                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie
-                entièrement pensée et développée sur mesure.
-            </x-project-item>
+{{--                Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,--}}
+{{--                qui présente, en respectant l’univers graphique de ce lieu emblématique de Strasbourg, les spectacles de--}}
+{{--                la saison et--}}
+{{--                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie--}}
+{{--                entièrement pensée et développée sur mesure.--}}
+{{--            </x-project-item>--}}
 
             <x-project-item>
                 <x-slot name="title">
-                    Projet Musica
+                    Site de présentation du Festival Musica
                 </x-slot>
                 <x-slot name="date">
                     depuis 2017
@@ -355,7 +349,27 @@
         <x-project-list>
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Treto
+                    Plateforme de démocratie interne pour la CFDT
+                </x-slot>
+
+                <x-slot name="date">
+                    depuis 2021
+                </x-slot>
+
+                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
+                <x-slot name="website_link" href="https://jeparticipe.cfdt.fr/"></x-slot>
+
+                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
+                présentant tous les débats et webinaires
+                proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
+                proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
+                intégrée
+                dans Sharp.
+            </x-project-item>
+
+            <x-project-item separator>
+                <x-slot name="title">
+                    Plateforme de spectacle vivant du Grand Est
                 </x-slot>
 
                 <x-slot name="date">
@@ -375,7 +389,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Trig
+                    Application mobile touristique
                 </x-slot>
                 <x-slot name="date">
                     depuis 2018
@@ -390,39 +404,24 @@
                 nombreux points d’intérêt de sa forêt de 1200 hectares.
             </x-project-item>
 
-            <x-project-item separator>
+            <x-project-item>
                 <x-slot name="title">
-                    Projet Beatus
+                    Suite d’outils CRM, SSO, intranet
                 </x-slot>
 
                 <x-slot name="date">
                     depuis 2015
                 </x-slot>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/beatus/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/beatus"></x-slot>
+                <x-slot name="banner" src="/assets/img/projects/beatus/banner.jpg"></x-slot>
 
                 L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
                 par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
-                Nous avons tout d’abord développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
-                pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion.
-            </x-project-item>
-
-            <x-project-item>
-                <x-slot name="title">
-                    Projet Sapidus
-                </x-slot>
-
-                <x-slot name="date">
-                    depuis 2016
-                </x-slot>
-
-                <x-slot name="link" href="/p/sapidus"></x-slot>
-                <x-slot name="thumbnail" src="/assets/img/projects/sapidus/thumb.png"></x-slot>
-
-                Nous avons également écrit une plateforme intranet intégrant de nombreux
-                outils à partir de données externes variées.
+                Nous avons développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
+                pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion&nbsp;;
+                nous avons également écrit une plateforme intranet intégrant de nombreux outils à partir de
+                données externes variées.
             </x-project-item>
         </x-project-list>
 
@@ -441,8 +440,7 @@
                     <span>Philippe Lonchampt</span>
                 </div>
             </x-slot>
-            Fondateur de Code 16 (anciennement nommé Développlan), gérant de l’entreprise et développeur principal
-            de plusieurs projets.
+            Fondateur de Code 16, gérant de l’entreprise et développeur principal de plusieurs projets.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
             <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
