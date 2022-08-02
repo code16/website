@@ -13,12 +13,10 @@
     <x-section large>
         <x-paragraph>
             <x-slot name="title">
-                Quality web development
+                Quality web and mobile development
             </x-slot>
             We build since 2007 websites and mobile apps based on open source technologies,
             with an "artisan" state of mind: a tailor-made development that allows control at all levels.
-            We have mainly focused on <a href="https://laravel.com" class="regular">Laravel</a>
-            and <a href="https://vuejs.org/" class="regular">Vue.js</a> in recent years.
         </x-paragraph>
 
         <x-paragraph>
@@ -42,30 +40,45 @@
             <x-slot name="title">
                 We attach great<br>importance to the code
             </x-slot>
-            Our job is to understand a client's need, translate it into shared
-            specifications on both sides and ultimately convert it into code:
-            that's what we focus all our efforts on.
         </x-paragraph>
 
-        <x-paragraph>
-            Experience shows us that this code, to be reliable and able to adapt to future needs,
-            must be mastered (which implies to depend only on open source projects),
-            concise (so that it remains understandable over time, and that it is simple to replace
-            if a new need is expressed), and systematically accompanied by an automated suite of unit
-            and functional tests (used at first write stage and even more after, to limit as much as possible regressions
-            over the versions).
-        </x-paragraph>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+                <x-paragraph>
+                    Our job is to understand a client's need, translate it into shared
+                    specifications on both sides and ultimately convert it into code:
+                    that's what we focus all our efforts on.
+                </x-paragraph>
+
+                <x-paragraph>
+                    Experience shows us that this code, to be reliable and able to adapt to future needs,
+                    must be mastered (which implies to depend only on open source projects),
+                    concise (so that it remains understandable over time, and that it is simple to replace
+                    if a new need is expressed), and systematically accompanied by an automated suite of unit
+                    and functional tests (used at first write stage and even more after, to limit as much as possible regressions
+                    over the versions).
+                </x-paragraph>
+            </div>
+            <div class="mb-16 lg:mb-0 hidden md:block">
+                <div class="card">
+                    <h3 class="mt-0 mb-4 inline-block uppercase tracking-widest">
+                        <a class="text-inherit" href="/blog">Code 16's blog</a>
+                    </h3>
+                    <hr>
+                    @foreach($posts->take(4) as $post)
+                        <x-homepage-post-item
+                            :post="$post"
+                            :page="$page"
+                        />
+                    @endforeach
+                </div>
+            </div>
+        </div>
 
         <x-paragraph>
             These last years, our expertise is mainly focused on the
             technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
             around tools like Algolia, AWS, Laravel Forge and Envoyer.
-        </x-paragraph>
-
-        <x-paragraph>
-            <a class="text-xl" href="/blog">
-                • read the blog
-            </a>
         </x-paragraph>
 
         <x-paragraph>
@@ -120,7 +133,7 @@
         <x-project-list>
             <x-project-item separator>
                 <x-slot name="title">
-                    EK France
+                    Marketplace with Click and Collect for EK France
                 </x-slot>
 
                 <x-slot name="banner" src="/assets/img/projects/ek/banner.png"></x-slot>
@@ -136,7 +149,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Projet Cursus
+                    Training booking portal for Agence culturelle Grand Est
                 </x-slot>
 
                 <x-slot name="date">
@@ -152,7 +165,7 @@
 
             <x-project-item separator>
                 <x-slot name="title">
-                    Merkur, a high trafic event shop
+                    High trafic event shop
                 </x-slot>
 
                 <x-slot name="thumbnail" src="/assets/img/projects/merkur/thumb.png"></x-slot>
@@ -164,7 +177,7 @@
 
             <x-project-item>
                 <x-slot name="title">
-                    Ekip, a rental service
+                    Rental management system
                 </x-slot>
 
                 <x-slot name="thumbnail" src="/assets/img/projects/ekip/thumb.png"></x-slot>
@@ -194,16 +207,6 @@
                 various and numerous content types, including dataviz.
             </x-project-item>
 
-            <x-project-item separator>
-                <x-slot name="title">
-                    jeparticipe.cfdt.fr
-                </x-slot>
-
-                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
-
-                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
-            </x-project-item>
-
             <x-project-item>
                 <x-slot name="title">
                     pactedupouvoirdevivre.fr
@@ -223,6 +226,16 @@
         </x-slot>
 
         <x-project-list>
+            <x-project-item separator>
+                <x-slot name="title">
+                    jeparticipe.cfdt.fr
+                </x-slot>
+
+                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
+
+                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
+            </x-project-item>
+
             <x-project-item separator>
                 <x-slot name="title">
                     Treto, a cartographic website
@@ -248,29 +261,19 @@
                 to guide guests across the domain.
             </x-project-item>
 
-            <x-project-item separator>
+            <x-project-item>
                 <x-slot name="title">
-                    Beatus CRM
+                    CRM, SSO, intranet tools
                 </x-slot>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/beatus/thumb.png"></x-slot>
+                <x-slot name="banner" src="/assets/img/projects/beatus/banner.jpg"></x-slot>
 
                 The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 (the regional entity in charge of cultural development) asked us to work on several projects,
                 linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
-                First of all, we fully developed a dedicated custom CRM, linked to all other tools
-                to gather data for all contacts.
-            </x-project-item>
-
-            <x-project-item>
-                <x-slot name="title">
-                    Sapidus
-                </x-slot>
-
-                <x-slot name="thumbnail" src="/assets/img/projects/sapidus/thumb.png"></x-slot>
-
-                We also built an intranet platform, Sapidus, which integrates many internal tools
-                like calendar and resource management, news feed, packages and letters tracking, ...
+                We developed a dedicated custom CRM, linked to all other tools to gather data for all contacts;
+                we also built an intranet platform which integrates many internal tools
+                like calendar and resource management, news feed, packages and letters tracking...
             </x-project-item>
         </x-project-list>
     </x-section>
@@ -283,19 +286,21 @@
             <x-slot name="subtitle">
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
-                        src="https://gravatar.com/avatar/{{ md5('philippelonchampt@gmail.com') }}?d=retro" alt="">
+                        src="{{ $page->developers['philippe']->avatar }}" alt="">
                     <span>Philippe Lonchampt</span>
                 </div>
             </x-slot>
             Founder, manager and main developer of several projects.
-            <br><a href="mailto:philippe@code16.fr">email</a>, <a href="https://twitter.com/dvlpp">twitter</a>
+            <br>
+            <a href="mailto:philippe@code16.fr">email</a>,
+            <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
         </x-paragraph>
 
         <x-paragraph>
             <x-slot name="subtitle">
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
-                        src="https://gravatar.com/avatar/{{ md5('arnaud.becher@gmail.com') }}?d=retro" alt="">
+                        src="{{ $page->developers['arnaud']->avatar }}" alt="">
                     <span>Arnaud Becher</span>
                 </div>
             </x-slot>
@@ -306,7 +311,7 @@
             <x-slot name="subtitle">
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
-                        src="https://gravatar.com/avatar/{{ md5('guingand.antoine@gmail.com') }}?d=retro" alt="">
+                        src="{{ $page->developers['antoine']->avatar }}" alt="">
                     <span>Antoine Guingand</span>
                 </div>
             </x-slot>
