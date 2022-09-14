@@ -443,7 +443,8 @@
             Fondateur de Code 16, gérant de l’entreprise et développeur principal de plusieurs projets.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
-            <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
+            <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>,
+            <a href="{{ $page->developers['philippe']->linkedIn }}">linkedIn</a>
         </x-paragraph>
 
         <x-paragraph>
@@ -455,6 +456,9 @@
                 </div>
             </x-slot>
             Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel avec une orientation infrastructure / devops, il intervient sur tous les projets.
+            <br>
+            <a href="{{ $page->developers['arnaud']->twitter }}">twitter</a>,
+            <a href="{{ $page->developers['arnaud']->linkedIn }}">linkedIn</a>
         </x-paragraph>
 
         <x-paragraph>
@@ -467,6 +471,8 @@
             </x-slot>
             Responsable du développement <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
             travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
+            <br>
+            <a href="{{ $page->developers['antoine']->linkedIn }}">linkedIn</a>
         </x-paragraph>
 
         <x-paragraph>
@@ -478,11 +484,13 @@
 
     <x-section large>
         Code 16<br>
-        <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a>
+        <a href="https://www.gothamscm.com/" class="regular">SCM Gotham</a>
         <br>
         24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
         <br>
         <a href="https://github.com/code16" class="regular">Github</a>
+        —
+        <a href="https://www.linkedin.com/company/code-16-web" class="regular">LinkedIn</a>
         —
         <a href="/blog" class="regular">Blog</a>
     </x-section>
