@@ -1,9 +1,13 @@
 
 <x-layout class="home">
 
-    <x-slot name="nav">
-        <x-nav active="home" />
-    </x-slot>
+{{--    <x-slot:nav>--}}
+{{--        <x-nav active="home" />--}}
+{{--    </x-slot:nav>--}}
+
+    <x-slot:header>
+        <x-header />
+    </x-slot:header>
 
     <h1 class="sr-only">
         Code 16, développement Laravel et Vue.js
@@ -11,9 +15,9 @@
 
     <x-section large>
         <x-paragraph>
-            <x-slot name="title">
+            <x-slot:title>
                 Développement web<br>et mobile
-            </x-slot>
+            </x-slot:title>
             Nous concevons des sites internet et des applications mobiles à partir
             de technologies open-source, avec une approche d’artisan.
         </x-paragraph>
@@ -26,18 +30,12 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
-            Notre approche
-        </x-slot>
+        <x-ui.tabs>
+            <x-ui.tab>
+                <x-slot:title>
+                    Nous accordons une<br>(très) grande importance
+                </x-slot:title>
 
-        <x-paragraph>
-            <x-slot name="title">
-                Nous accordons une<br>(très) grande importance au code
-            </x-slot>
-        </x-paragraph>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
                 <x-paragraph>
                     Notre métier est de comprendre le besoin d’un client, de la traduire en spécifications
                     partagées de part et d’autre et de le convertir finalement en code : c’est sur cela que
@@ -51,87 +49,87 @@
                     accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
                     à l’écriture, et limiter au maximum les régressions au fil des versions).
                 </x-paragraph>
-            </div>
-            <div class="mb-16 lg:mb-0 hidden md:block">
-                <div class="card">
-                    <h3 class="mt-0 mb-4 inline-block uppercase tracking-widest">
-                        <a class="text-inherit" href="/blog">Le blog de Code 16</a>
-                    </h3>
-                    <hr>
-                    @foreach($posts->take(4) as $post)
-                        <x-homepage-post-item
-                            :post="$post"
-                            :page="$page"
-                        />
-                    @endforeach
-                </div>
-            </div>
-        </div>
+                <x-paragraph>
+                    Ces dernières années, notre expertise s’est principalement portée sur les
+                    technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
+                    autour d’outils comme Algolia, AWS, Laravel Forge et Envoyer.
+                </x-paragraph>
+            </x-ui.tab>
 
-        <x-paragraph>
-            Ces dernières années, notre expertise s’est principalement portée sur les
-            technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
-            autour d’outils comme Algolia, AWS, Laravel Forge et Envoyer.
-        </x-paragraph>
+            <x-ui.tab>
+                <x-slot:title>
+                    Nos clients sont<br>des partenaires
+                </x-slot:title>
 
-        <x-paragraph>
-            <x-slot name="title">
-                Nos clients sont<br>des partenaires
-            </x-slot>
-            Plutôt que de multiplier les petits projets et les contacts, nous cherchons
-            à créer des partenariats avec nos clients pour travailler avec eux sur le long terme,
-            afin d’assurer à nos logiciels une maintenance continue.
-        </x-paragraph>
+                <x-paragraph>
+                    Plutôt que de multiplier les petits projets et les contacts, nous cherchons
+                    à créer des partenariats avec nos clients pour travailler avec eux sur le long terme,
+                    afin d’assurer à nos logiciels une maintenance continue.
+                </x-paragraph>
 
-        <x-paragraph>
-            Nous ne sommes ni hébergeurs, ni designers, ni conseils en marketing&nbsp;: pour ces
-            tâches nous nous entourons d’autres professionnels qualifiés.
-        </x-paragraph>
+                <x-paragraph>
+                    Nous ne sommes ni hébergeurs, ni designers, ni conseils en marketing&nbsp;: pour ces
+                    tâches nous nous entourons d’autres professionnels qualifiés.
+                </x-paragraph>
+            </x-ui.tab>
 
-        <x-paragraph>
-            <x-slot name="title">
-                Nous sommes impliqués<br>dans l’Open source
-            </x-slot>
-            Nous faisons massivement (et uniquement) appel à des projets Open source dans nos réalisations,
-            et nous contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
-            une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l’ajout d’une nouvelle
-            fonctionnalité.
-        </x-paragraph>
+            <x-ui.tab>
+                <x-slot:title>
+                    Nous sommes impliqués<br>dans l’Open source
+                </x-slot:title>
 
-        <x-paragraph>
-            Dans ce même esprit, nous avons développé et nous maintenons plusieurs projets Open source&nbsp;;
-            parmi eux, citons le framework de gestion de contenu Sharp&nbsp;:
-        </x-paragraph>
+                <x-paragraph>
+                    Nous faisons massivement (et uniquement) appel à des projets Open source dans nos réalisations,
+                    et nous contribuons régulièrement au code de ces projets lorsque nous trouvons un point sur lequel
+                    une amélioration pourrait être apportée, que ce soit par une résolution de bug ou l’ajout d’une nouvelle
+                    fonctionnalité.
+                </x-paragraph>
 
-        <x-project-item>
-            <x-slot name="title">
-                Sharp for Laravel
-            </x-slot>
+                <x-paragraph>
+                    Dans ce même esprit, nous avons développé et nous maintenons plusieurs projets Open source&nbsp;;
+                    parmi eux, citons le framework de gestion de contenu Sharp&nbsp;:
+                </x-paragraph>
+            </x-ui.tab>
+        </x-ui.tabs>
 
-            <x-slot name="date">
-                depuis 2017
-            </x-slot>
+        {{--        <div class="card">--}}
+        {{--            <h3 class="mt-0 mb-4 inline-block uppercase tracking-widest">--}}
+        {{--                <a class="text-inherit" href="/blog">Le blog de Code 16</a>--}}
+        {{--            </h3>--}}
+        {{--            <hr>--}}
+        {{--            @foreach($posts->take(4) as $post)--}}
+        {{--                <x-homepage-post-item--}}
+        {{--                    :post="$post"--}}
+        {{--                    :page="$page"--}}
+        {{--                />--}}
+        {{--            @endforeach--}}
+        {{--        </div>--}}
+    </x-section>
 
-            <x-slot name="banner" src="/assets/img/projects/sharp/banner.png"></x-slot>
-            <x-slot name="website_link" href="https://sharp.code16.fr"></x-slot>
+    <x-section>
+        <x-slot:title>
+            Sharp for Laravel,<br>
+            le CMF Open Source
+        </x-slot:title>
 
+        <x-project-card.sharp>
             Sharp est une plateforme de développement d’espaces de gestion de contenu et de données,
             généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil
             agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
             d’administrer des commandes, des produits ou des inscriptions par exemple.
-        </x-project-item>
+
+            <x-slot:link href="https://sharp.code16.fr">
+                Voir le site dédié
+            </x-slot:link>
+        </x-project-card.sharp>
     </x-section>
 
     <x-section>
-        <x-slot name="title">
-            E-commerce
-        </x-slot>
+        <x-slot:title>
+            Sites e-commerce<br>et systèmes de gestion de commande
+        </x-slot:title>
 
         <x-paragraph>
-            <x-slot name="title">
-                Sites e-commerce<br>et systèmes de gestion de commande
-            </x-slot>
-
             Le terme e-commerce est ici entendu au sens large, puisque cette sélection regroupe des systèmes
             de vente en ligne avec livraison et des sites de commande ou réservation, avec paiement en ligne ou
             différé.
@@ -141,70 +139,72 @@
         </x-paragraph>
 
         <x-project-list>
+            <div class="grid grid-cols-2 gap-12">
+                <div class="col-span-full">
+                    <x-project-card.ek>
+                        <x-slot:subtitle>
+                            Marketplace avec Click and Collect et Ship from Store
+                        </x-slot:subtitle>
+
+                        Nous travaillons depuis des années avec EK France, le
+                        groupement des magasins
+                        <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
+                        Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
+                        gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
+
+                        <x-slot:link href="/p/ek-france">
+                            En savoir plus
+                        </x-slot:link>
+                    </x-project-card.ek>
+                </div>
+
+                <x-project-card>
+                    <x-slot:title>
+                        Portail formations de l'Agence culturelle Grand Est
+                    </x-slot:title>
+
+                    <x-slot:banner src="/assets/img/projects/cursus/banner.png"></x-slot:banner>
+
+                    Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
+                    nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
+                    les nombreuses formations proposées par la structure.
+
+                    <x-slot:link href="/p/cursus">
+                        En savoir plus
+                    </x-slot:link>
+                </x-project-card>
+
+                <x-project-card>
+                    <x-slot:title>
+                        Site événementiel à fort trafic de vente en ligne
+                    </x-slot:title>
+
+                    <x-slot:thumbnail src="/assets/img/projects/merkur/thumb.png"></x-slot:thumbnail>
+
+                    Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
+                        d’Art Verrier de Meisenthal</span>,
+                    une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
+
+                    <x-slot:link href="/p/merkur">
+                        En savoir plus
+                    </x-slot:link>
+                </x-project-card>
+            </div>
+
+
             <x-project-item separator>
-                <x-slot name="title">
-                    Marketplace avec Click and Collect pour EK France
-                </x-slot>
-
-                <x-slot name="date">
-                    depuis 2015
-                </x-slot>
-
-                <x-slot name="banner" src="/assets/img/projects/ek/banner.png"></x-slot>
-                <x-slot name="link" href="/p/ek-france"></x-slot>
-
-                Nous travaillons depuis des années avec <span class="text-brand-cyan-lighter">EK France</span>, le
-                groupement des magasins
-                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
-                gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
-            </x-project-item>
-
-            <x-project-item separator>
-                <x-slot name="title">
-                    Portail formations de l'Agence culturelle Grand Est
-                </x-slot>
-
-                <x-slot name="date">
-                    depuis 2021
-                </x-slot>
-
-                <x-slot name="banner" src="/assets/img/projects/cursus/banner.png"></x-slot>
-                <x-slot name="link" href="/p/cursus"></x-slot>
-
-                Pour <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>,
-                nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
-                les nombreuses formations proposées par la structure.
-            </x-project-item>
-
-            <x-project-item separator>
-                <x-slot name="title">
-                    Site événementiel à fort trafic de vente en ligne
-                </x-slot>
-
-                <x-slot name="date">
-                    depuis 2020
-                </x-slot>
-
-                <x-slot name="thumbnail" src="/assets/img/projects/merkur/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/merkur"></x-slot>
-
-                Nous avons mis en place, pour le compte du <span class="text-brand-cyan-lighter">Centre international
-                    d’Art Verrier de Meisenthal</span>,
-                une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
-            </x-project-item>
-
-            <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Boutique en ligne sur mesure pour une librairie
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2020
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/maktaba/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://quaidesbrumes.com/"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/maktaba/thumb.png"></x-slot:thumbnail>
+                <x-slot:link href="https://quaidesbrumes.com/">
+                    Voir le site
+                </x-slot:link>
 
                 Développement d’un site de vente en ligne et de génération de bons cadeaux pour
                 la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
@@ -213,16 +213,18 @@
             </x-project-item>
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     Site de location de matériel scénique
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2017
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/ekip/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/parcs-materiels-grand-est"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/ekip/thumb.png"></x-slot:thumbnail>
+                <x-slot:link href="/p/parcs-materiels-grand-est">
+                    En savoir plus
+                </x-slot:link>
 
                 Nous avons conçu et développé un système web de création de devis et de suivi
                 de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
@@ -232,31 +234,29 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
-            Sites de contenu
-        </x-slot>
+        <x-slot:title>
+            Portails internet et sites de contenu
+        </x-slot:title>
 
         <x-paragraph>
-            <x-slot name="title">
-                Portails internet et sites de contenu
-            </x-slot>
-
             Ces projets assez divers ont tous étés développés sur mesure, le plus souvent dès la conception de la
             maquette graphique, et sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
         </x-paragraph>
 
         <x-project-list>
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Site vitrine de Peugeot Invest
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2022
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/toshi/banner.png"></x-slot>
-                <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
+                <x-slot:banner src="/assets/img/projects/toshi/banner.png"></x-slot:banner>
+                <x-slot:link href="https://www.peugeot-invest.com/">
+                    Voir le site
+                </x-slot:link>
 
                 Développement complet du site bilingue <span class="text-brand-cyan-lighter">Peugeot Invest</span>,
                 qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
@@ -266,16 +266,18 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Site de présentation du Pacte du pouvoir de vivre
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2021
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/symfonia/banner.jpg"></x-slot>
-                <x-slot name="website_link" href="https://www.pactedupouvoirdevivre.fr/"></x-slot>
+                <x-slot:banner src="/assets/img/projects/symfonia/banner.jpg"></x-slot:banner>
+                <x-slot:link href="https://www.pactedupouvoirdevivre.fr/">
+                    Voir le site
+                </x-slot:link>
 
                 Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de
                 60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
@@ -283,15 +285,17 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Portail principal de l’Agence culturelle Grand Est
-                </x-slot>
-                <x-slot name="date">
+                </x-slot:title>
+                <x-slot:date>
                     depuis 2016
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/aca/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://culturegrandest.fr"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/aca/thumb.png"></x-slot:thumbnail>
+                <x-slot:link href="https://culturegrandest.fr">
+                    Voir le site
+                </x-slot:link>
 
                 Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
                 et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
@@ -317,15 +321,17 @@
 {{--            </x-project-item>--}}
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     Site de présentation du Festival Musica
-                </x-slot>
-                <x-slot name="date">
+                </x-slot:title>
+                <x-slot:date>
                     depuis 2017
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/musica/thumb.png"></x-slot>
-                <x-slot name="website_link" href="https://festivalmusica.fr"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/musica/thumb.png"></x-slot:thumbnail>
+                <x-slot:link href="https://festivalmusica.fr">
+                    Voir le site
+                </x-slot:link>
 
                 Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
                 accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
@@ -334,30 +340,30 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
-            Apps et outils
-        </x-slot>
+        <x-slot:title>
+            Applications, CRM et outils intranet
+        </x-slot:title>
 
         <x-paragraph>
-            <x-slot name="title">
-                Applications, CRM et outils intranet
-            </x-slot>
             Ces projets correspondent à des applications particulières, parfois adossées à des sites de contenu plus
             classiques.
         </x-paragraph>
 
         <x-project-list>
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Plateforme de démocratie interne pour la CFDT
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2021
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
-                <x-slot name="website_link" href="https://jeparticipe.cfdt.fr/"></x-slot>
+                <x-slot:banner src="/assets/img/projects/syzito/banner.jpg"></x-slot:banner>
+
+                <x-slot:link href="https://jeparticipe.cfdt.fr/">
+                    Voir le site
+                </x-slot:link>
 
                 Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
                 présentant tous les débats et webinaires
@@ -368,16 +374,19 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Plateforme de spectacle vivant du Grand Est
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2019
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/treto/banner.png"></x-slot>
-                <x-slot name="link" href="/p/treto"></x-slot>
+                <x-slot:banner src="/assets/img/projects/treto/banner.png"></x-slot:banner>
+
+                <x-slot:link href="/p/treto">
+                    En savoir plus
+                </x-slot:link>
 
                 Nous avons conçu et construit la
                 <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
@@ -388,14 +397,17 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Application mobile touristique
-                </x-slot>
-                <x-slot name="date">
+                </x-slot:title>
+                <x-slot:date>
                     depuis 2018
-                </x-slot>
-                <x-slot name="thumbnail" src="/assets/img/projects/trig/thumb.png"></x-slot>
-                <x-slot name="link" href="/p/trig"></x-slot>
+                </x-slot:date>
+                <x-slot:thumbnail src="/assets/img/projects/trig/thumb.png"></x-slot:thumbnail>
+
+                <x-slot:link href="/p/trig">
+                    En savoir plus
+                </x-slot:link>
 
                 Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
                 campagne,
@@ -405,15 +417,15 @@
             </x-project-item>
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     Suite d’outils CRM, SSO, intranet
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     depuis 2015
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/beatus/banner.jpg"></x-slot>
+                <x-slot:banner src="/assets/img/projects/beatus/banner.jpg"></x-slot:banner>
 
                 L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
@@ -428,9 +440,9 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             L’équipe
-        </x-slot>
+        </x-slot:title>
 
         <x-paragraph>
             <x-slot name="subtitle">

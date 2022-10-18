@@ -159,64 +159,50 @@ function updateRects(el) {
     }
 }
 
-const breakpoint = 768;
 
-const directive = {
-    inserted(el, { value={} }) {
-        if(!value) {
-            return;
-        }
+export default function stickyTitle(options) {
+    const el = this.$el;
 
-        el._stickyTitleState = {
-            ready: false,
-            initialRect: getRect(el),
-            props: { ...defaultProps, ...value },
-            placeholder: createPlaceholder(el),
-            container: null,
-            isFirstScroll: true,
-            touchBottom: null,
-            touchTop: null,
-            idle: true
-        };
-        if(value.container) {
-            let container = findAncestor(el, value.container.slice(1));
-            if(container) {
-                el._stickyTitleState.container = container;
-                el._stickyTitleState.containerRect = getRect(container);
-            }
-        }
-
-        let idle = debounce(() => el._stickyTitleState.idle = true, 200);
-
-        document.addEventListener('DOMContentLoaded', ()=>{
-            console.log('dom loaded');
-            el._stickyTitleScrollListener();
-        });
-
-        el._stickyTitleScrollListener = () => {
-            idle();
-            updateRects(el);
-            if(el._stickyTitleState.ready) {
-                handleScroll(el);
-            }
-            el._stickyTitleState.idle = false;
-        };
-        el.parentElement.appendChild(el._stickyTitleState.placeholder);
-        el.classList.add('sticky-title');
-
-        window.addEventListener('scroll', el._stickyTitleScrollListener);
-    },
-    unbind(el) {
-        el._stickyTitleState = null;
-        window.removeEventListener('scroll', el._stickyTitleScrollListener);
+    if(window.innerWidth < 768) {
+        return;
     }
-};
 
+    el._stickyTitleState = {
+        ready: false,
+        initialRect: getRect(el),
+        props: { ...defaultProps, ...options },
+        placeholder: createPlaceholder(el),
+        container: null,
+        isFirstScroll: true,
+        touchBottom: null,
+        touchTop: null,
+        idle: true
+    };
+    if(options.container) {
+        let container = findAncestor(el, options.container.slice(1));
+        if(container) {
+            el._stickyTitleState.container = container;
+            el._stickyTitleState.containerRect = getRect(container);
+        }
+    }
 
+    let idle = debounce(() => el._stickyTitleState.idle = true, 200);
 
-const noop = ()=>{};
+    document.addEventListener('DOMContentLoaded', ()=>{
+        console.log('dom loaded');
+        el._stickyTitleScrollListener();
+    });
 
-export default function(Vue) {
-    Vue.directive('sticky-title', window.innerWidth >= breakpoint ? directive : noop);
+    el._stickyTitleScrollListener = () => {
+        idle();
+        updateRects(el);
+        if(el._stickyTitleState.ready) {
+            handleScroll(el);
+        }
+        el._stickyTitleState.idle = false;
+    };
+    el.parentElement.insertBefore(el._stickyTitleState.placeholder, el.nextElementSibling);
+    el.classList.add('sticky-title');
+
+    window.addEventListener('scroll', el._stickyTitleScrollListener);
 }
-

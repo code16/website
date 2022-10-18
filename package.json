@@ -18,7 +18,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "mobile-detect": "^1.4.1",
+        "alpinejs": "^3.10.4",
         "vue": "^2.6.10",
         "vue-carousel": "^0.8.1"
     }

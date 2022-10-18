@@ -24,9 +24,13 @@
 
         <div class="p-8 sm:p-16">
             <div id="app" class="container">
-                <header class="mb-16">
-                    <x-logo />
-                </header>
+                @if($header)
+                    {{ $header }}
+                @else
+                    <header class="mb-16">
+                        <x-logo />
+                    </header>
+                @endif
 
                 <main>
                     {{ $slot }}

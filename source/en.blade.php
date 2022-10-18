@@ -2,9 +2,9 @@
 
 <x-layout class="home" lang="en">
 
-    <x-slot name="nav">
+    <x-slot:nav>
         <x-nav active="home" lang="en" />
-    </x-slot>
+    </x-slot:nav>
 
     <h1 class="sr-only">
         Code 16, Laravel development
@@ -12,9 +12,9 @@
 
     <x-section large>
         <x-paragraph>
-            <x-slot name="title">
+            <x-slot:title>
                 Quality web and mobile development
-            </x-slot>
+            </x-slot:title>
             We build since 2007 websites and mobile apps based on open source technologies,
             with an "artisan" state of mind: a tailor-made development that allows control at all levels.
         </x-paragraph>
@@ -32,14 +32,14 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             Our approach
-        </x-slot>
+        </x-slot:title>
 
         <x-paragraph>
-            <x-slot name="title">
+            <x-slot:title>
                 We attach great<br>importance to the code
-            </x-slot>
+            </x-slot:title>
         </x-paragraph>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -82,18 +82,18 @@
         </x-paragraph>
 
         <x-paragraph>
-            <x-slot name="title">
+            <x-slot:title>
                 Our clients are partners
-            </x-slot>
+            </x-slot:title>
             Rather than multiplying small projects and contacts, we seek to create partnerships
             with our clients to work with them over the long term, in order to ensure
             continuous maintenance to our software.
         </x-paragraph>
 
         <x-paragraph>
-            <x-slot name="title">
+            <x-slot:title>
                 We are involved<br>in open source
-            </x-slot>
+            </x-slot:title>
             We massively use open source projects in our work, and we regularly contribute to the
             code of these projects when we find some part where an improvement could be made,
             whether by fixing a bug or adding a new functionality.
@@ -104,16 +104,19 @@
         </x-paragraph>
 
         <x-project-item>
-            <x-slot name="title">
+            <x-slot:title>
                 Sharp for Laravel
-            </x-slot>
+            </x-slot:title>
 
-            <x-slot name="date">
+            <x-slot:date>
                 since 2017
-            </x-slot>
+            </x-slot:date>
 
-            <x-slot name="banner" src="/assets/img/projects/sharp/banner.png"></x-slot>
-            <x-slot name="website_link" href="https://sharp.code16.fr"></x-slot>
+            <x-slot:banner src="/assets/img/projects/sharp/banner.png"></x-slot:banner>
+
+            <x-slot:link href="https://sharp.code16.fr">
+                Show website
+            </x-slot:link>
 
             Sharp is a generalist and powerful platform for developing content and manage data.
             We use it in many of our projects, to offer a pleasant and powerful tool allowing to publish pages,
@@ -122,9 +125,9 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             E-commerce
-        </x-slot>
+        </x-slot:title>
 
         <h3 class="mb-4 mt-12 text-xl md:text-3xl lg:text-4xl">
             E-commerce and ordering systems
@@ -132,11 +135,11 @@
 
         <x-project-list>
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Marketplace with Click and Collect for EK France
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/ek/banner.png"></x-slot>
+                <x-slot:banner src="/assets/img/projects/ek/banner.png"></x-slot:banner>
 
                 We have been working for years with EK France, which groups 150+ stores
                 (<a href="https://ambianceetstyles.com">Ambiance & Styles</a> and
@@ -148,15 +151,15 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Training booking portal for Agence culturelle Grand Est
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="date">
+                <x-slot:date>
                     since 2021
-                </x-slot>
+                </x-slot:date>
 
-                <x-slot name="banner" src="/assets/img/projects/cursus/banner.png"></x-slot>
+                <x-slot:banner src="/assets/img/projects/cursus/banner.png"></x-slot:banner>
 
                 This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a>
                 handles course registration via a complex process depending on various course options and registrant type.
@@ -164,11 +167,11 @@
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     High trafic event shop
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/merkur/thumb.png"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/merkur/thumb.png"></x-slot:thumbnail>
 
                 We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
                 <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
@@ -176,11 +179,11 @@
             </x-project-item>
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     Rental management system
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="thumbnail" src="/assets/img/projects/ekip/thumb.png"></x-slot>
+                <x-slot:thumbnail src="/assets/img/projects/ekip/thumb.png"></x-slot:thumbnail>
 
                 We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
                 advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
@@ -189,30 +192,32 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             Content websites
-        </x-slot>
+        </x-slot:title>
 
         <x-project-list>
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     peugeot-invest.com
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/toshi/banner.png"></x-slot>
+                <x-slot:banner src="/assets/img/projects/toshi/banner.png"></x-slot:banner>
 
-                <x-slot name="website_link" href="https://www.peugeot-invest.com/"></x-slot>
+                <x-slot:link href="https://www.peugeot-invest.com/">
+                    Show website
+                </x-slot:link>
 
                 This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
                 various and numerous content types, including dataviz.
             </x-project-item>
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     pactedupouvoirdevivre.fr
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/symfonia/banner.jpg"></x-slot>
+                <x-slot:banner src="/assets/img/projects/symfonia/banner.jpg"></x-slot:banner>
 
                 <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection
                 of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
@@ -221,37 +226,37 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             Apps / tools
-        </x-slot>
+        </x-slot:title>
 
         <x-project-list>
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     jeparticipe.cfdt.fr
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/syzito/banner.jpg"></x-slot>
+                <x-slot:banner src="/assets/img/projects/syzito/banner.jpg"></x-slot:banner>
 
                 <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Treto, a cartographic website
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/treto/banner.png"></x-slot>
+                <x-slot:banner src="/assets/img/projects/treto/banner.png"></x-slot:banner>
 
                 We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
                 for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
             </x-project-item>
 
             <x-project-item separator>
-                <x-slot name="title">
+                <x-slot:title>
                     Trig, a cartographic iOS / Android app
-                </x-slot>
-                <x-slot name="thumbnail" src="/assets/img/projects/trig/thumb.png"></x-slot>
+                </x-slot:title>
+                <x-slot:thumbnail src="/assets/img/projects/trig/thumb.png"></x-slot:thumbnail>
 
                 The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
                 which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
@@ -262,11 +267,11 @@
             </x-project-item>
 
             <x-project-item>
-                <x-slot name="title">
+                <x-slot:title>
                     CRM, SSO, intranet tools
-                </x-slot>
+                </x-slot:title>
 
-                <x-slot name="banner" src="/assets/img/projects/beatus/banner.jpg"></x-slot>
+                <x-slot:banner src="/assets/img/projects/beatus/banner.jpg"></x-slot:banner>
 
                 The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
                 (the regional entity in charge of cultural development) asked us to work on several projects,
@@ -279,17 +284,17 @@
     </x-section>
 
     <x-section>
-        <x-slot name="title">
+        <x-slot:title>
             The team
-        </x-slot>
+        </x-slot:title>
         <x-paragraph>
-            <x-slot name="subtitle">
+            <x-slot:subtitle>
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
                         src="{{ $page->developers['philippe']->avatar }}" alt="">
                     <span>Philippe Lonchampt</span>
                 </div>
-            </x-slot>
+            </x-slot:subtitle>
             Founder, manager and main developer of several projects.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
@@ -297,24 +302,24 @@
         </x-paragraph>
 
         <x-paragraph>
-            <x-slot name="subtitle">
+            <x-slot:subtitle>
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
                         src="{{ $page->developers['arnaud']->avatar }}" alt="">
                     <span>Arnaud Becher</span>
                 </div>
-            </x-slot>
+            </x-slot:subtitle>
             Backend developer (PHP and Laravel).
         </x-paragraph>
 
         <x-paragraph>
-            <x-slot name="subtitle">
+            <x-slot:subtitle>
                 <div class="flex items-center mb-2">
                     <img class="mr-2 h-12 w-12 rounded-full"
                         src="{{ $page->developers['antoine']->avatar }}" alt="">
                     <span>Antoine Guingand</span>
                 </div>
-            </x-slot>
+            </x-slot:subtitle>
             Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
         </x-paragraph>
 
