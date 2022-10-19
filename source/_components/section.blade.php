@@ -4,9 +4,8 @@
     'title' => null,
 ])
 
-<div class="section mb-16 md:mb-32">
-    <div class="relative">
-
+<div {{ $attributes->class('section py-8 md:py-16') }}>
+    <div class="container relative">
         <div class="section__content">
             @if($title)
                 <x-section.title>

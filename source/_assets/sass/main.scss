@@ -20,6 +20,10 @@
 @import "page/project";
 @import "page/home";
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   min-height: 100%;
   line-height: 1.5;
@@ -40,11 +44,17 @@ body {
   --nav-link-color: #2C7467;
 }
 
+.container {
+  padding-inline: 2rem;
+
+  @screen sm {
+    padding-inline: 4rem;
+  }
+}
 
 ul {
   @apply mt-2;
 }
-
 
 .sticky-title-object {
   transition: transform 100ms ease-in-out;

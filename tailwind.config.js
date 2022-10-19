@@ -24,6 +24,7 @@ module.exports = {
         'white': '#ffffff',
         'brand-brown': '#282224',
         'brand-darkblue': '#071735',
+        'brand-darkblue-lighter': '#0d284e',
         'brand-cyan-lighter': '#B7FFF2',
         'brand-cyan': '#61FFE3',
         'brand-cyan-darker': '#2C7467',
@@ -36,4 +37,5 @@ module.exports = {
       },
     }
   },
+  plugins: [],
 }

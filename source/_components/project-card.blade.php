@@ -1,17 +1,25 @@
 @props([
-    'link'
+    // slots
+    'img' => null,
+    'link' => null,
 ])
 
 <x-card class="bg-white text-black">
-    <h3>
-        {{ $title }}
-    </h3>
+    @if($img)
+        <x-card.img :attributes="$img->attributes" />
+    @endif
+    <x-card.body>
+        <h3 class="font-bold mb-6">
+            {{ $title }}
+        </h3>
 
-    {{ $slot }}
-
+        {{ $slot }}
+    </x-card.body>
     @if($link)
-        <x-card.button :attributes="$link->attributes">
-            {{ $link }}
-        </x-card.button>
+        <x-card.footer>
+            <x-card.button :attributes="$link->attributes">
+                {{ $link }}
+            </x-card.button>
+        </x-card.footer>
     @endif
 </x-card>

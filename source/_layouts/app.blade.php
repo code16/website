@@ -17,13 +17,21 @@
         <link rel="alternate" type="application/rss+xml" title="Code 16’s Blog" href="{{ $page->baseUrl }}/blog/feed.atom" />
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
+
+        @if(!$page->production)
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {!! \Illuminate\Support\Str::of(file_get_contents(__DIR__ . '/../tailwind.config.js'))->after('theme:')->before('plugins:') !!}
+                }
+            </script>
+        @endif
     </head>
     <body {{ $attributes }}>
-
         {{ $nav }}
 
-        <div class="p-8 sm:p-16">
-            <div id="app" class="container">
+        <div class="py-8 sm:py-16">
+            <div id="app">
                 @if($header)
                     {{ $header }}
                 @else
