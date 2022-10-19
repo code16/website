@@ -5,12 +5,8 @@
         {{ $page->title }}
     </x-title>
 
-    <x-slot name="nav">
-        <x-nav />
-    </x-slot>
-
     <section class="content" data-image-dialog>
-        <div class="mb-8">
+        <div class="mb-8 mt-16">
             <h1 class="!mb-0">
                 {{ $page->title }}
             </h1>

@@ -4,7 +4,7 @@
     'link' => null,
 ])
 
-<x-card class="bg-white text-black">
+<x-card {{ $attributes->class('bg-white text-black') }}>
     @if($img)
         <x-card.img :attributes="$img->attributes" />
     @endif

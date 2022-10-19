@@ -10,7 +10,7 @@
 <div {{ $attributes->class(['py-12 first:pt-0 last:pb-0']) }}>
     <div class="flex gap-8">
         @if($img)
-            <img {{ $img->attributes->class('h-32 w-32 rounded-lg hidden sm:block') }} alt="{{ $title }}">
+            <img {{ $img->attributes->class('h-32 w-32 rounded-lg hidden sm:block object-cover') }} alt="{{ $title }}">
         @endif
 
         <div class="flex-1">

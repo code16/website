@@ -45,11 +45,8 @@ body {
 }
 
 .container {
-  padding-inline: 2rem;
-
-  @screen sm {
-    padding-inline: 4rem;
-  }
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
 }
 
 ul {

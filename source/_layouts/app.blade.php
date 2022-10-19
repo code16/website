@@ -35,8 +35,10 @@
                 @if($header)
                     {{ $header }}
                 @else
-                    <header class="mb-16">
-                        <x-logo />
+                    <header>
+                        <div class="container">
+                            <x-logo />
+                        </div>
                     </header>
                 @endif
 

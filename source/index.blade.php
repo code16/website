@@ -1,14 +1,34 @@
 
 <x-layout class="home">
+    <a class="absolute top-1 uppercase text-xs tracking-wider underline font-bold"
+        style="left: var(--container-padding-x)"
+        href="/en"
+    >
+        English version
+    </a>
+
     <x-slot:header>
-        <x-header />
+        <x-header>
+            <x-header.nav-item href="#approach">
+                Notre approche
+            </x-header.nav-item>
+            <x-header.nav-item href="#projects">
+                Nos projets
+            </x-header.nav-item>
+            <x-header.nav-item href="#team">
+                L’équipe
+            </x-header.nav-item>
+            <x-header.nav-item href="/blog">
+                Blog
+            </x-header.nav-item>
+        </x-header>
     </x-slot:header>
 
     <h1 class="sr-only">
         Code 16, développement Laravel et Vue.js
     </h1>
 
-    <x-section large>
+    <x-section>
         <x-slot:title>
             Développement web<br>et mobile
         </x-slot:title>
@@ -87,19 +107,6 @@
                 </x-paragraph>
             </x-ui.tab>
         </x-ui.tabs>
-
-        {{--        <div class="card">--}}
-        {{--            <h3 class="mt-0 mb-4 inline-block uppercase tracking-widest">--}}
-        {{--                <a class="text-inherit" href="/blog">Le blog de Code 16</a>--}}
-        {{--            </h3>--}}
-        {{--            <hr>--}}
-        {{--            @foreach($posts->take(4) as $post)--}}
-        {{--                <x-homepage-post-item--}}
-        {{--                    :post="$post"--}}
-        {{--                    :page="$page"--}}
-        {{--                />--}}
-        {{--            @endforeach--}}
-        {{--        </div>--}}
     </x-section>
 
     <x-section id="projects">
@@ -134,24 +141,22 @@
             fidélité...).
         </x-paragraph>
 
-        <div class="grid grid-cols-2 gap-12">
-            <div class="col-span-full">
-                <x-project-card.ek>
-                    <x-slot:subtitle>
-                        Marketplace avec Click and Collect et Ship from Store
-                    </x-slot:subtitle>
+        <x-project-grid>
+            <x-project-card.ek class="col-span-full">
+                <x-slot:title>
+                    Marketplace avec Click and Collect et Ship from Store
+                </x-slot:title>
 
-                    Nous travaillons depuis des années avec EK France, le
-                    groupement des magasins
-                    <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
-                    Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
-                    gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
+                Nous travaillons depuis des années avec EK France, le
+                groupement des magasins
+                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
+                Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
+                gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
 
-                    <x-slot:link href="/p/ek-france">
-                        En savoir plus
-                    </x-slot:link>
-                </x-project-card.ek>
-            </div>
+                <x-slot:link href="/p/ek-france">
+                    En savoir plus
+                </x-slot:link>
+            </x-project-card.ek>
 
             <x-project-card>
                 <x-slot:title>
@@ -183,9 +188,9 @@
                     En savoir plus
                 </x-slot:link>
             </x-project-card>
-        </div>
+        </x-project-grid>
 
-        <x-project-item separator>
+        <x-project-item>
             <x-slot:title>
                 Boutique en ligne sur mesure pour une librairie
             </x-slot:title>
@@ -235,63 +240,57 @@
             maquette graphique, et sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
         </x-paragraph>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Site vitrine de Peugeot Invest
-            </x-slot:title>
+        <x-project-grid>
+            <x-project-card class="col-span-full">
+                <x-slot:title>
+                    Site vitrine de Peugeot Invest
+                </x-slot:title>
 
-            <x-slot:date>
-                depuis 2022
-            </x-slot:date>
+                <x-slot:img src="/assets/img/projects/toshi/banner.png"></x-slot:img>
 
-            <x-slot:banner src="/assets/img/projects/toshi/banner.png"></x-slot:banner>
-            <x-slot:link href="https://www.peugeot-invest.com/">
-                Voir le site
-            </x-slot:link>
+                Développement complet du site bilingue Peugeot Invest,
+                qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
+                des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
+                La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
+                administrable.
 
-            Développement complet du site bilingue <span class="text-brand-cyan-lighter">Peugeot Invest</span>,
-            qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
-            des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
-            La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
-            administrable.
-        </x-project-item>
+                <x-slot:link href="https://www.peugeot-invest.com/">
+                    Voir le site
+                </x-slot:link>
+            </x-project-card>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Site de présentation du Pacte du pouvoir de vivre
-            </x-slot:title>
+            <x-project-card>
+                <x-slot:title>
+                    Site de présentation du Pacte du pouvoir de vivre
+                </x-slot:title>
 
-            <x-slot:date>
-                depuis 2021
-            </x-slot:date>
+                <x-slot:img src="/assets/img/projects/symfonia/banner.jpg"></x-slot:img>
 
-            <x-slot:banner src="/assets/img/projects/symfonia/banner.jpg"></x-slot:banner>
-            <x-slot:link href="https://www.pactedupouvoirdevivre.fr/">
-                Voir le site
-            </x-slot:link>
+                Développement du site et de la gestion de contenu du Pacte du pouvoir de vivre, une alliance de plus de
+                60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
+                le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
 
-            Développement du site et de la gestion de contenu du <span class="text-brand-cyan-lighter">Pacte du pouvoir de vivre</span>, une alliance de plus de
-            60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
-            le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
-        </x-project-item>
+                <x-slot:link href="https://www.pactedupouvoirdevivre.fr/">
+                    Voir le site
+                </x-slot:link>
+            </x-project-card>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Portail principal de l’Agence culturelle Grand Est
-            </x-slot:title>
-            <x-slot:date>
-                depuis 2016
-            </x-slot:date>
+            <x-project-card>
+                <x-slot:title>
+                    Portail principal de l’Agence culturelle Grand Est
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
-            <x-slot:link href="https://culturegrandest.fr">
-                Voir le site
-            </x-slot:link>
+                <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
 
-            Création du portail principal de <span class="text-brand-cyan-lighter">l’Agence culturelle Grand Est</span>, chargé de nombreux contenus
-            et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
-            avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
-        </x-project-item>
+                Création du portail principal de l’Agence culturelle Grand Est, chargé de nombreux contenus
+                et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
+                avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
+
+                <x-slot:link href="https://culturegrandest.fr">
+                    Voir le site
+                </x-slot:link>
+            </x-project-card>
+        </x-project-grid>
 
 {{--            <x-project-item separator>--}}
 {{--                <x-slot name="title">--}}
@@ -315,17 +314,15 @@
             <x-slot:title>
                 Site de présentation du Festival Musica
             </x-slot:title>
-            <x-slot:date>
-                depuis 2017
-            </x-slot:date>
 
             <x-slot:img src="/assets/img/projects/musica/thumb.png"></x-slot:img>
-            <x-slot:link href="https://festivalmusica.fr">
-                Voir le site
-            </x-slot:link>
 
             Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
             accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
+
+            <x-slot:link href="https://festivalmusica.fr">
+                Voir le site
+            </x-slot:link>
         </x-project-item>
     </x-section>
 
@@ -339,80 +336,68 @@
             classiques.
         </x-paragraph>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Plateforme de démocratie interne pour la CFDT
-            </x-slot:title>
+        <x-project-grid>
+            <x-project-card>
+                <x-slot:title>
+                    Plateforme de démocratie interne pour la CFDT
+                </x-slot:title>
 
-            <x-slot:date>
-                depuis 2021
-            </x-slot:date>
+                <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
 
-            <x-slot:banner src="/assets/img/projects/syzito/banner.jpg"></x-slot:banner>
+                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
+                présentant tous les débats et webinaires
+                proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
+                proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
+                intégrée
+                dans Sharp.
 
-            <x-slot:link href="https://jeparticipe.cfdt.fr/">
-                Voir le site
-            </x-slot:link>
+                <x-slot:link href="https://jeparticipe.cfdt.fr/">
+                    Voir le site
+                </x-slot:link>
+            </x-project-card>
 
-            Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
-            présentant tous les débats et webinaires
-            proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
-            proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
-            intégrée
-            dans Sharp.
-        </x-project-item>
+            <x-project-card>
+                <x-slot:title>
+                    Plateforme de spectacle vivant du Grand Est
+                </x-slot:title>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Plateforme de spectacle vivant du Grand Est
-            </x-slot:title>
+                <x-slot:img src="/assets/img/projects/treto/banner.png"></x-slot:img>
 
-            <x-slot:date>
-                depuis 2019
-            </x-slot:date>
+                Nous avons conçu et construit la
+                <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
+                dans le Grand Est,
+                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
+                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
+                calendriers de spectacle...
 
-            <x-slot:banner src="/assets/img/projects/treto/banner.png"></x-slot:banner>
-
-            <x-slot:link href="/p/treto">
-                En savoir plus
-            </x-slot:link>
-
-            Nous avons conçu et construit la
-            <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
-            dans le Grand Est,
-            qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
-            de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
-            calendriers de spectacle...
-        </x-project-item>
+                <x-slot:link href="/p/treto">
+                    En savoir plus
+                </x-slot:link>
+            </x-project-card>
+        </x-project-grid>
 
         <x-project-item separator>
             <x-slot:title>
                 Application mobile touristique
             </x-slot:title>
-            <x-slot:date>
-                depuis 2018
-            </x-slot:date>
-            <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
 
-            <x-slot:link href="/p/trig">
-                En savoir plus
-            </x-slot:link>
+            <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
 
             Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
             campagne,
             nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
             orientant vers les
             nombreux points d’intérêt de sa forêt de 1200 hectares.
+
+            <x-slot:link href="/p/trig">
+                En savoir plus
+            </x-slot:link>
         </x-project-item>
 
         <x-project-item>
             <x-slot:title>
                 Suite d’outils CRM, SSO, intranet
             </x-slot:title>
-
-            <x-slot:date>
-                depuis 2015
-            </x-slot:date>
 
             <x-slot:banner src="/assets/img/projects/beatus/banner.jpg"></x-slot:banner>
 
@@ -481,7 +466,7 @@
         </x-paragraph>
     </x-section>
 
-    <x-section large>
+    <x-section>
         Code 16<br>
         <a href="https://www.gothamscm.com/" class="regular">SCM Gotham</a>
         <br>
