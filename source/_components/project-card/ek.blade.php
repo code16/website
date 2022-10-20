@@ -5,7 +5,7 @@
 ])
 
 <x-card {{ $attributes->class('text-white') }} style="background-color: #862532">
-    <x-card.img src="/assets/img/projects/ek/banner.png" />
+    <x-card.img src="/assets/img/projects/ek/banner.jpg" />
     <x-card.body>
         <div class="grid grid-cols-3 gap-12">
             <div>

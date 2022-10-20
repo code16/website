@@ -43,13 +43,19 @@
             problématiques qui ne sont pas forcément standard, tout en bénéficiant d’outils qui rendent
             ses utilisateurs et administrateurs autonomes au quotidien.
         </x-paragraph>
+
+        <x-paragraph>
+            Ces dernières années, notre expertise s’est principalement portée sur les
+            technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
+            autour d’outils comme Algolia, AWS, Laravel Forge et Envoyer.
+        </x-paragraph>
     </x-section>
 
     <x-section id="approach" class="bg-brand-darkblue-lighter font-bold">
         <x-ui.tabs>
             <x-ui.tab>
                 <x-slot:title>
-                    Nous accordons une<br>(très) grande importance
+                    Nous accordons une grande importance au code
                 </x-slot:title>
 
                 <x-paragraph>
@@ -65,16 +71,12 @@
                     accompagné d’une suite automatisée de tests unitaires et fonctionnels (pour le valider
                     à l’écriture, et limiter au maximum les régressions au fil des versions).
                 </x-paragraph>
-                <x-paragraph>
-                    Ces dernières années, notre expertise s’est principalement portée sur les
-                    technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
-                    autour d’outils comme Algolia, AWS, Laravel Forge et Envoyer.
-                </x-paragraph>
+
             </x-ui.tab>
 
             <x-ui.tab>
                 <x-slot:title>
-                    Nos clients sont<br>des partenaires
+                    Nos clients sont des partenaires
                 </x-slot:title>
 
                 <x-paragraph>
@@ -91,7 +93,7 @@
 
             <x-ui.tab>
                 <x-slot:title>
-                    Nous sommes impliqués<br>dans l’Open source
+                    Nous sommes impliqués dans l’Open source
                 </x-slot:title>
 
                 <x-paragraph>
@@ -103,7 +105,7 @@
 
                 <x-paragraph>
                     Dans ce même esprit, nous avons développé et nous maintenons plusieurs projets Open source&nbsp;;
-                    parmi eux, citons le framework de gestion de contenu Sharp&nbsp;:
+                    parmi eux, citons le framework de gestion de contenu Sharp for Laravel&nbsp;.
                 </x-paragraph>
             </x-ui.tab>
         </x-ui.tabs>
@@ -116,8 +118,8 @@
         </x-slot:title>
 
         <x-project-card.sharp>
-            Sharp est une plateforme de développement d’espaces de gestion de contenu et de données,
-            généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, pour proposer un outil
+            Sharp est une plateforme de développement de systèmes de gestion de contenu et de données,
+            généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, afin de proposer un outil
             agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
             d’administrer des commandes, des produits ou des inscriptions par exemple.
 
@@ -163,7 +165,7 @@
                     Portail formations de l'Agence culturelle Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/cursus/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/cursus/banner.jpg"></x-slot:img>
 
                 Pour l’Agence culturelle Grand Est,
                 nous avons réalisé un portail de réservation, de prise de commande et de gestion pour
@@ -179,7 +181,7 @@
                     Site événementiel à fort trafic de vente en ligne
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/merkur/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/merkur/banner.jpg"></x-slot:img>
 
                 Nous avons mis en place, pour le compte du Centre international d’Art Verrier de Meisenthal,
                 une boutique événementielle d’objets en verre comprenant notamment leurs célèbres boules de Noël.
@@ -236,23 +238,35 @@
         </x-slot:title>
 
         <x-paragraph>
-            Ces projets assez divers ont tous étés développés sur mesure, le plus souvent dès la conception de la
-            maquette graphique, et sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
+            Ces projets assez divers ont tous été développés sur mesure, le plus souvent dès la conception de la
+            maquette graphique. Ils sont entièrement administrés avec <a href="https://sharp.code16.fr">Sharp</a>.
         </x-paragraph>
 
         <x-project-grid>
-            <x-project-card class="col-span-full">
+            <x-project-card.acero class="col-span-full">
+                <x-slot:title>
+                    Site de présentation de Sycomore AM
+                </x-slot:title>
+
+                Nous avons développé pour la société de gestion d'actifs Sycomore AM un site
+                multilingue riche de contenus et de données, provenant de plusieurs sources :
+                une API dédiée permet de mettre à jour les données des fonds et documents, et
+                <a href="https://sharp.code16.fr">Sharp</a> vient en appui pour la gestion des pages et la publication des articles.
+
+                <x-slot:link href="https://www.sycomore-am.com">
+                    Voir le site
+                </x-slot:link>
+            </x-project-card.acero>
+
+            <x-project-card>
                 <x-slot:title>
                     Site vitrine de Peugeot Invest
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/toshi/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/toshi/banner.jpg"></x-slot:img>
 
-                Développement complet du site bilingue Peugeot Invest,
-                qui présente de nombreux et variés contenus, dont des visualisations graphiques, et qui permet
-                des recherches documentaires plein texte au sein de fichiers PDFs dans deux langues.
-                La gestion de contenu, gérée par Sharp, est particulièrement poussée puisque tout le site est
-                administrable.
+                Développement complet du site en deux langues, présentant des contenus nombreux et variés
+                dont des visualisations graphiques, et permettant des recherches documentaires plein texte au sein de fichiers PDFs.
 
                 <x-slot:link href="https://www.peugeot-invest.com/">
                     Voir le site
@@ -266,49 +280,46 @@
 
                 <x-slot:img src="/assets/img/projects/symfonia/banner.jpg"></x-slot:img>
 
-                Développement du site et de la gestion de contenu du Pacte du pouvoir de vivre, une alliance de plus de
+                Développement du site et de la gestion de contenu, pour ce site présentant une alliance de
                 60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
-                le soutien aux migrants, l’éducation populaire, de l’économie sociale et solidaire et de la mutualité.
+                le soutien aux migrants, l’éducation populaire.
 
                 <x-slot:link href="https://www.pactedupouvoirdevivre.fr/">
                     Voir le site
                 </x-slot:link>
             </x-project-card>
-
-            <x-project-card>
-                <x-slot:title>
-                    Portail principal de l’Agence culturelle Grand Est
-                </x-slot:title>
-
-                <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
-
-                Création du portail principal de l’Agence culturelle Grand Est, chargé de nombreux contenus
-                et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
-                avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
-
-                <x-slot:link href="https://culturegrandest.fr">
-                    Voir le site
-                </x-slot:link>
-            </x-project-card>
         </x-project-grid>
 
-{{--            <x-project-item separator>--}}
-{{--                <x-slot name="title">--}}
-{{--                    Projet Maillon--}}
-{{--                </x-slot>--}}
-{{--                <x-slot name="date">--}}
-{{--                    depuis 2014--}}
-{{--                </x-slot>--}}
+        <x-project-item>
+            <x-slot:title>
+                Site du théâtre de la Comédie de Colmar
+            </x-slot:title>
 
-{{--                <x-slot name="thumbnail" src="/assets/img/projects/maillon/thumb.png"></x-slot>--}}
-{{--                <x-slot name="website_link" href="https://maillon.eu"></x-slot>--}}
+            <x-slot:img src="/assets/img/projects/kolben/thumb.jpg"></x-slot:img>
 
-{{--                Le site multilingue du <span class="text-brand-cyan-lighter">théâtre Le Maillon</span>,--}}
-{{--                qui présente, en respectant l’univers graphique de ce lieu emblématique de Strasbourg, les spectacles de--}}
-{{--                la saison et--}}
-{{--                les autres activités du théâtre, et propose surtout une gestion avancée de compte et de billetterie--}}
-{{--                entièrement pensée et développée sur mesure.--}}
-{{--            </x-project-item>--}}
+            Ce site présente la programmation actuelle et les archives du théâtre,
+            en respectant l'univers graphique fort développé par le studio Atelier Poste 4.
+
+            <x-slot:link href="https://comedie-colmar.com">
+                Voir le site
+            </x-slot:link>
+        </x-project-item>
+
+        <x-project-item>
+            <x-slot:title>
+                Portail principal de l’Agence culturelle Grand Est
+            </x-slot:title>
+
+            <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
+
+            Création du portail principal de l’Agence culturelle Grand Est, chargé de nombreux contenus
+            et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
+            avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
+
+            <x-slot:link href="https://culturegrandest.fr">
+                Voir le site
+            </x-slot:link>
+        </x-project-item>
 
         <x-project-item>
             <x-slot:title>
@@ -361,7 +372,7 @@
                     Plateforme de spectacle vivant du Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/treto/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
 
                 Nous avons conçu et construit la
                 <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
@@ -399,7 +410,7 @@
                 Suite d’outils CRM, SSO, intranet
             </x-slot:title>
 
-            <x-slot:banner src="/assets/img/projects/beatus/banner.jpg"></x-slot:banner>
+            <x-slot:img src="/assets/img/projects/beatus/thumb.jpg"></x-slot:img>
 
             L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
             nous a confié au fil du temps de nombreux projets, reliés entre eux
