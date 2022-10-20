@@ -72,6 +72,12 @@ function handleScroll(el) {
     let scrollY = window.pageYOffset;
     let dy = scrollY - (initialRect.y - paddingTop + startOffset);
 
+    if(!isEnabled()) {
+        setStatic(el, { state:el._stickyTitleState });
+        setTransform(el, 'none');
+        return;
+    }
+
     // console.log(el, dy);
     if((isSticky||isFirstScroll) && dy<duration) {
         setStatic(el, { state:el._stickyTitleState });
@@ -159,13 +165,12 @@ function updateRects(el) {
     }
 }
 
+function isEnabled() {
+    return window.innerWidth >= 992;
+}
 
 export default function stickyTitle(options) {
     const el = this.$el;
-
-    if(window.innerWidth < 768) {
-        return;
-    }
 
     el._stickyTitleState = {
         ready: false,
@@ -188,11 +193,6 @@ export default function stickyTitle(options) {
 
     let idle = debounce(() => el._stickyTitleState.idle = true, 200);
 
-    document.addEventListener('DOMContentLoaded', ()=>{
-        console.log('dom loaded');
-        el._stickyTitleScrollListener();
-    });
-
     el._stickyTitleScrollListener = () => {
         idle();
         updateRects(el);
@@ -204,5 +204,10 @@ export default function stickyTitle(options) {
     el.parentElement.insertBefore(el._stickyTitleState.placeholder, el.nextElementSibling);
     el.classList.add('sticky-title');
 
+    document.addEventListener('DOMContentLoaded', () => {
+        el._stickyTitleScrollListener();
+    });
+
     window.addEventListener('scroll', el._stickyTitleScrollListener);
+    window.addEventListener('resize', el._stickyTitleScrollListener);
 }

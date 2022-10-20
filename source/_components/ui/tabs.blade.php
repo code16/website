@@ -6,7 +6,7 @@
 @endphp
 
 <div x-data="{ index: 0 }">
-    <div class="grid grid-cols-2">
+    <div class="grid md:grid-cols-2">
         <div class="pr-6">
             @foreach($self->tabs as $tab)
                 <div class="mb-8">

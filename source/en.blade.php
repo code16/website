@@ -45,10 +45,6 @@
     </x-section>
 
     <x-section id="approach" class="bg-brand-darkblue-lighter font-bold">
-        <x-slot:title>
-            Our approach
-        </x-slot:title>
-
         <x-ui.tabs>
             <x-ui.tab>
                 <x-slot:title>

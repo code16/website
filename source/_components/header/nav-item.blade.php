@@ -2,6 +2,11 @@
     'href'
 ])
 
-<a class="uppercase text-xl tracking-widest text-inherit font-bold" href="{{ $href }}">
+<a @class([
+    'uppercase text-lg xl:text-xl tracking-wider text-inherit font-bold',
+    'hidden lg:block' => str_contains($href, '#'),
+])
+    href="{{ $href }}"
+>
     {{ $slot }}
 </a>
