@@ -16,6 +16,9 @@
 
         <link rel="alternate" type="application/rss+xml" title="Code 16’s Blog" href="{{ $page->baseUrl }}/blog/feed.atom" />
 
+        <link rel="preload" href="/assets/fonts/spectral-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/karla-v21-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
 
         @if(!$page->production)

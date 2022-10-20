@@ -50,7 +50,7 @@
         </x-paragraph>
     </x-section>
 
-    <x-section id="approach" class="bg-brand-darkblue-lighter font-bold">
+    <x-section id="approach" class="bg-brand-darkblue-lighter font-medium">
         <x-ui.tabs>
             <x-ui.tab>
                 <x-slot:title>
