@@ -24,7 +24,7 @@
 
     <x-section>
         <x-slot:title>
-            Quality web and mobile development
+            Quality web <br>and mobile development
         </x-slot:title>
 
         <x-paragraph>
@@ -108,15 +108,17 @@
             Sharp for Laravel
         </x-slot:title>
 
-        <x-project-card.sharp>
-            Sharp is a generalist and powerful platform for developing content and manage data.
-            We use it in many of our projects, to offer a pleasant and powerful tool allowing to publish pages,
-            images, videos of the sites as well as to manage orders, products or registrations for example.
+        <x-project-grid>
+            <x-project-card.sharp class="col-span-full">
+                Sharp is a generalist and powerful platform for developing content and manage data.
+                We use it in many of our projects, to offer a pleasant and powerful tool allowing to publish pages,
+                images, videos of the sites as well as to manage orders, products or registrations for example.
 
-            <x-slot:link href="https://sharp.code16.fr">
-                Show website
-            </x-slot:link>
-        </x-project-card.sharp>
+                <x-slot:link href="https://sharp.code16.fr">
+                    Show website
+                </x-slot:link>
+            </x-project-card.sharp>
+        </x-project-grid>
     </x-section>
 
     <x-section>
@@ -164,16 +166,18 @@
             </x-project-card>
         </x-project-grid>
 
-        <x-project-item>
-            <x-slot:title>
-                Rental management system
-            </x-slot:title>
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    Rental management system
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/ekip/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/ekip/thumb.png"></x-slot:img>
 
-            We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
-            advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
-        </x-project-item>
+                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
+                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
+            </x-project-item>
+        </x-project-list>
     </x-section>
 
     <x-section>
@@ -215,56 +219,58 @@
             Apps / tools
         </x-slot:title>
 
-        <x-project-item>
-            <x-slot:title>
-                jeparticipe.cfdt.fr
-            </x-slot:title>
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    jeparticipe.cfdt.fr
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
 
-            <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
-        </x-project-item>
+                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Treto, a cartographic website
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Treto, a cartographic website
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/treto/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/treto/banner.png"></x-slot:img>
 
-            We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
-            for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
-        </x-project-item>
+                We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
+                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Trig, a cartographic iOS / Android app
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Trig, a cartographic iOS / Android app
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
 
-            The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
-            which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
-            asked us to create Trig, a mobile app
-            (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
-            et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
-            to guide guests across the domain.
-        </x-project-item>
+                The <a href="http://www.domainedelatrigaliere.com/" class="regular">Domaine de la Trigalière</a>,
+                which rents beautiful and luxury vacation houses in a great area made of forests and lakes,
+                asked us to create Trig, a mobile app
+                (<a href="https://itunes.apple.com/fr/app/trigali%C3%A8re/id1332741594?mt=8">iOS</a>
+                et <a href="https://play.google.com/store/apps/details?id=fr.code16.trig">Android</a>)
+                to guide guests across the domain.
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                CRM, SSO, intranet tools
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    CRM, SSO, intranet tools
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/beatus/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/beatus/thumb.jpg"></x-slot:img>
 
-            The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
-            (the regional entity in charge of cultural development) asked us to work on several projects,
-            linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
-            We developed a dedicated custom CRM, linked to all other tools to gather data for all contacts;
-            we also built an intranet platform which integrates many internal tools
-            like calendar and resource management, news feed, packages and letters tracking...
-        </x-project-item>
+                The <a href="https://culturegrandest.fr" class="regular">Agence culturelle Grand Est</a>
+                (the regional entity in charge of cultural development) asked us to work on several projects,
+                linked together by a personalized <em>Single Sign On</em> account system and API synchronizations.
+                We developed a dedicated custom CRM, linked to all other tools to gather data for all contacts;
+                we also built an intranet platform which integrates many internal tools
+                like calendar and resource management, news feed, packages and letters tracking...
+            </x-project-item>
+        </x-project-list>
     </x-section>
 
     <x-section id="team">
@@ -272,41 +278,20 @@
             The team
         </x-slot:title>
 
-        <x-paragraph>
-            <x-slot:subtitle>
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['philippe']->avatar }}" alt="">
-                    <span>Philippe Lonchampt</span>
-                </div>
-            </x-slot:subtitle>
+        <x-team-member-item :member="$page->developers['philippe']">
             Founder, manager and main developer of several projects.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
             <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
-        </x-paragraph>
+        </x-team-member-item>
 
-        <x-paragraph>
-            <x-slot:subtitle>
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['arnaud']->avatar }}" alt="">
-                    <span>Arnaud Becher</span>
-                </div>
-            </x-slot:subtitle>
+        <x-team-member-item :member="$page->developers['arnaud']">
             Backend developer (PHP and Laravel).
-        </x-paragraph>
+        </x-team-member-item>
 
-        <x-paragraph>
-            <x-slot:subtitle>
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['antoine']->avatar }}" alt="">
-                    <span>Antoine Guingand</span>
-                </div>
-            </x-slot:subtitle>
+        <x-team-member-item :member="$page->developers['antoine']">
             Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
-        </x-paragraph>
+        </x-team-member-item>
 
         <x-paragraph>
             —<br>

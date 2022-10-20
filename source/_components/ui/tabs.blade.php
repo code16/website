@@ -11,19 +11,20 @@
             @foreach($self->tabs as $tab)
                 <x-ui.tab.title class="mb-8">
                     <a @class([
-                            'text-inherit py-1 !no-underline hover:opacity-100',
-                            'opacity-20' => !$loop->first,
+                            'block text-inherit !no-underline hover:opacity-100',
+                            'opacity-30' => !$loop->first,
                         ])
-                        :class="{ 'opacity-20': index !== {{ $loop->index }} }"
+                        :class="{ 'opacity-30': index !== {{ $loop->index }} }"
                         href="#"
                         @click.prevent="index = {{ $loop->index }}"
+                        @mouseenter="index = {{ $loop->index }}"
                     >
                         {{ $tab->title }}
                     </a>
                 </x-ui.tab.title>
             @endforeach
         </div>
-        <div class="grid gap-12">
+        <div class="grid gap-12 lg:gap-0">
             {{ $slot }}
         </div>
     </div>

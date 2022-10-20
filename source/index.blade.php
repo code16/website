@@ -116,16 +116,18 @@
             le CMF Open Source
         </x-slot:title>
 
-        <x-project-card.sharp>
-            Sharp est une plateforme de développement de systèmes de gestion de contenu et de données,
-            généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, afin de proposer un outil
-            agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
-            d’administrer des commandes, des produits ou des inscriptions par exemple.
+        <x-project-grid>
+            <x-project-card.sharp class="col-span-full">
+                Sharp est une plateforme de développement de systèmes de gestion de contenu et de données,
+                généraliste et puissante. Nous l’utilisons dans beaucoup de nos projets, afin de proposer un outil
+                agréable et performant permettant de mettre en ligne les pages, images, vidéos des sites aussi bien que
+                d’administrer des commandes, des produits ou des inscriptions par exemple.
 
-            <x-slot:link href="https://sharp.code16.fr">
-                Voir le site dédié
-            </x-slot:link>
-        </x-project-card.sharp>
+                <x-slot:link href="https://sharp.code16.fr">
+                    Voir le site dédié
+                </x-slot:link>
+            </x-project-card.sharp>
+        </x-project-grid>
     </x-section>
 
     <x-section>
@@ -150,7 +152,7 @@
 
                 Nous travaillons depuis des années avec EK France, le
                 groupement des magasins
-                <a href="https://ambianceetstyles.com" class="regular">Ambiance & Styles</a> et <a href="https://www.culinarion.com" class="regular">Culinarion</a>.
+                <a href="https://ambianceetstyles.com">Ambiance & Styles</a> et <a href="https://www.culinarion.com">Culinarion</a>.
                 Notre champ d’action est vaste&nbsp;: sites internet avec <em>marketplace</em>, <em>Click & Collect</em>, <em>Ship from Store</em>,
                 gestion de contenu marketing, synchronisation des comptes fidélité, outils intranet.
 
@@ -207,7 +209,7 @@
                 </x-slot:link>
 
                 Développement d’un site de vente en ligne et de génération de bons cadeaux pour
-                la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
+                la librairie Quai des Brumes, avec un système adapté
                 de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
                 système de conception et d’expédition de newsletters.
             </x-project-item>
@@ -330,7 +332,7 @@
 
                 <x-slot:img src="/assets/img/projects/musica/thumb.png"></x-slot:img>
 
-                Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
+                Création du site du festival international de musique contemporaine Musica,
                 accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
 
                 <x-slot:link href="https://festivalmusica.fr">
@@ -358,7 +360,7 @@
 
                 <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
 
-                Création de la plateforme des adhérents de la <span class="text-brand-cyan-lighter">CFDT</span>,
+                Création de la plateforme des adhérents de la CFDT,
                 présentant tous les débats et webinaires
                 proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
                 proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
@@ -378,7 +380,7 @@
                 <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
 
                 Nous avons conçu et construit la
-                <a href="https://treto.fr/" class="regular">plateforme du spectacle vivant</a>
+                <a href="https://treto.fr/">plateforme du spectacle vivant</a>
                 dans le Grand Est,
                 qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
                 de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
@@ -398,7 +400,7 @@
 
                 <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
 
-                Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
+                Le Domaine de la Trigalière, qui loue des belles maisons de
                 campagne,
                 nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
                 orientant vers les
@@ -416,7 +418,7 @@
 
                 <x-slot:img src="/assets/img/projects/beatus/thumb.jpg"></x-slot:img>
 
-                L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
+                L’Agence culturelle Grand Est
                 nous a confié au fil du temps de nombreux projets, reliés entre eux
                 par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
                 Nous avons développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
@@ -432,48 +434,27 @@
             L’équipe
         </x-slot:title>
 
-        <x-paragraph>
-            <x-slot name="subtitle">
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['philippe']->avatar }}" alt="Philippe Lonchampt">
-                    <span>Philippe Lonchampt</span>
-                </div>
-            </x-slot>
+        <x-team-member-item :member="$page->developers['philippe']">
             Fondateur de Code 16, gérant de l’entreprise et développeur principal de plusieurs projets.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
             <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>,
             <a href="{{ $page->developers['philippe']->linkedIn }}">linkedIn</a>
-        </x-paragraph>
+        </x-team-member-item>
 
-        <x-paragraph>
-            <x-slot name="subtitle">
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['arnaud']->avatar }}" alt="Arnaud Becher">
-                    <span>Arnaud Becher</span>
-                </div>
-            </x-slot>
+        <x-team-member-item :member="$page->developers['arnaud']">
             Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel avec une orientation infrastructure / devops, il intervient sur tous les projets.
             <br>
             <a href="{{ $page->developers['arnaud']->twitter }}">twitter</a>,
             <a href="{{ $page->developers['arnaud']->linkedIn }}">linkedIn</a>
-        </x-paragraph>
+        </x-team-member-item>
 
-        <x-paragraph>
-            <x-slot name="subtitle">
-                <div class="flex items-center mb-2">
-                    <img class="mr-2 h-12 w-12 rounded-full"
-                        src="{{ $page->developers['antoine']->avatar }}" alt="Antoine Guingand">
-                    <span>Antoine Guingand</span>
-                </div>
-            </x-slot>
+        <x-team-member-item :member="$page->developers['antoine']">
             Responsable du développement <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
             travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
             <br>
             <a href="{{ $page->developers['antoine']->linkedIn }}">linkedIn</a>
-        </x-paragraph>
+        </x-team-member-item>
 
         <x-paragraph>
             —<br>

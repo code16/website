@@ -30,22 +30,16 @@
     <body {{ $attributes }}>
         {{ $nav }}
 
-        <div class="py-8 sm:py-16">
-            <div id="app">
-                @if($header)
-                    {{ $header }}
-                @else
-                    <header>
-                        <div class="container">
-                            <x-logo />
-                        </div>
-                    </header>
-                @endif
+        <div id="app">
+            @if($header)
+                {{ $header }}
+            @else
+                <x-header />
+            @endif
 
-                <main>
-                    {{ $slot }}
-                </main>
-            </div>
+            <main>
+                {{ $slot }}
+            </main>
         </div>
 
         <x-image-dialog />

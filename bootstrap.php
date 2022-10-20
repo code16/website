@@ -12,7 +12,9 @@ use Torchlight\Jigsaw\TorchlightExtension;
 //    return (new \Highlight\Highlighter())->highlight($language ?? 'plaintext', $code)->value;
 //};
 
-TorchlightExtension::make($container, $events)->boot();
+if(env('TORCHLIGHT_ENABLED', true)) {
+    TorchlightExtension::make($container, $events)->boot();
+}
 
 $container->bind(\Illuminate\Contracts\View\Factory::class, Factory::class);
 

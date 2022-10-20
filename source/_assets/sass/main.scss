@@ -5,12 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'typography';
-
 @import "components/content";
 @import "components/paragraph";
 @import "components/stack";
-@import "components/logo";
 @import "components/carousel";
 @import "components/sticky-title";
 @import "components/section";
@@ -20,29 +17,39 @@
 @import "page/project";
 @import "page/home";
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-html, body {
-  min-height: 100%;
-  line-height: 1.5;
-  overflow-x: hidden;
-}
+  html, body {
+    min-height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
 
-body {
-  background-color: var(--body-bg-color, #071735);
-  color: var(--body-color, #EBEBEB);
-  font-size: 1.125rem;
-  @apply font-sans;
-}
+  body {
+    background-color: var(--body-bg-color, #071735);
+    color: var(--body-color, #EBEBEB);
+    font-size: 1.125rem;
+    @apply font-sans;
+  }
 
-.light {
-  --body-bg-color: white;
-  --body-color: #22292f;
-  --logo-bg-color: #22292f;
-  --logo-color: #EBEBEB;
-  --nav-link-color: #2C7467;
+  .light {
+    --body-bg-color: white;
+    --body-color: #22292f;
+    --logo-bg-color: #22292f;
+    --logo-color: #EBEBEB;
+    --nav-link-color: #2C7467;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+
+  ul {
+    @apply mt-2;
+  }
 }
 
 @layer components {
@@ -50,11 +57,6 @@ body {
     padding-left: var(--container-padding-x);
     padding-right: var(--container-padding-x);
   }
-}
-
-
-ul {
-  @apply mt-2;
 }
 
 [x-cloak] {

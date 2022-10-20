@@ -7,7 +7,7 @@
     'img' => null,
 ])
 
-<div {{ $attributes->class(['mb-10 last:mb-0']) }}>
+<div {{ $attributes->class(['mb-12 last:mb-0']) }}>
     <div class="flex gap-8">
         @if($img)
             <img {{ $img->attributes->class('h-32 w-32 rounded-lg hidden sm:block object-cover') }} alt="{{ $title }}">

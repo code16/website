@@ -5,8 +5,8 @@
         {{ $page->title }}
     </x-title>
 
-    <section class="content" data-image-dialog>
-        <div class="mb-8 mt-16">
+    <x-section class="content" data-image-dialog>
+        <div class="mb-8">
             <h1 class="!mb-0">
                 {{ $page->title }}
             </h1>
@@ -18,9 +18,11 @@
             @endif
         </div>
 
-        @yield('content')
-    </section>
+        <div>
+            @yield('content')
+        </div>
 
-    <x-post.author-card :page="$page" />
+        <x-post.author-card :page="$page" />
+    </x-section>
 </x-layout>
 

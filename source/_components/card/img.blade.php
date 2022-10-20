@@ -1,2 +1,2 @@
 
-<img class="rounded-t-3xl" {{ $attributes }}>
+<img {{ $attributes->class('rounded-t-3xl') }}>

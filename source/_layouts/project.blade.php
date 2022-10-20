@@ -4,17 +4,15 @@
         {{ $page->title }}
     </x-title>
 
-    <div class="relative">
-        <x-section.title
-            heading-level="h1"
-        >
+    <x-section>
+        <x-section.title heading-level="h1">
             {{ $page->title }}
         </x-section.title>
 
-        <div data-v-app>
-            <stacker class="content mt-6" :breakpoint="768">
+        <div class="content" data-v-app>
+            <stacker class="mt-6" :breakpoint="768">
                 @yield('content')
             </stacker>
         </div>
-    </div>
+    </x-section>
 </x-layout>

@@ -18,6 +18,7 @@ document.querySelectorAll('pre').forEach(pre => {
         app.$mount(el);
     });
 
+window.Alpine = Alpine;
 
 Alpine.data('stickyTitle', stickyTitle);
 

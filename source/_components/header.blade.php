@@ -5,7 +5,7 @@
     'team',
 ])
 
-<header class="container lg:pl-16">
+<header class="container lg:pl-16 pt-16">
     <div class="flex gap-12">
         <x-logo />
 
