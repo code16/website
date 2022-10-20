@@ -9,7 +9,7 @@
         <x-card.img :attributes="$img->attributes" />
     @endif
     <x-card.body>
-        <h3 class="font-bold mb-6">
+        <h3 class="font-bold mb-4 text-xl">
             {{ $title }}
         </h3>
 

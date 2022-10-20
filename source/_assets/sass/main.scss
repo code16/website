@@ -33,6 +33,7 @@ html, body {
 body {
   background-color: var(--body-bg-color, #071735);
   color: var(--body-color, #EBEBEB);
+  font-size: 1.125rem;
   @apply font-sans;
 }
 
@@ -44,17 +45,16 @@ body {
   --nav-link-color: #2C7467;
 }
 
-.container {
-  padding-left: var(--container-padding-x);
-  padding-right: var(--container-padding-x);
+@layer components {
+  .container {
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+  }
 }
+
 
 ul {
   @apply mt-2;
-}
-
-.sticky-title-object {
-  transition: transform 100ms ease-in-out;
 }
 
 [x-cloak] {

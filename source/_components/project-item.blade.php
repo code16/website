@@ -7,7 +7,7 @@
     'img' => null,
 ])
 
-<div {{ $attributes->class(['py-12 first:pt-0 last:pb-0']) }}>
+<div {{ $attributes->class(['mb-10 last:mb-0']) }}>
     <div class="flex gap-8">
         @if($img)
             <img {{ $img->attributes->class('h-32 w-32 rounded-lg hidden sm:block object-cover') }} alt="{{ $title }}">
@@ -15,14 +15,14 @@
 
         <div class="flex-1">
             <div class="font-serif">
-                <h3 class="text-xl flex-grow">{{ $title }}</h3>
+                <h3 class="font-bold mb-2 text-xl">{{ $title }}</h3>
 
                 {{ $slot }}
             </div>
 
             @if($link)
-                <div class="mt-4">
-                   <x-link :attributes="$link->attributes->class('text-xl')">
+                <div class="mt-2">
+                   <x-link :attributes="$link->attributes->class('text-sm font-bold tracking-wider uppercase underline')">
                        {{ $link }}
                    </x-link>
                 </div>

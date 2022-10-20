@@ -5,11 +5,11 @@
     'team',
 ])
 
-<header style="padding-left: var(--container-padding-x)">
+<header class="container lg:pl-16">
     <div class="flex gap-12">
         <x-logo />
 
-        <div class="flex gap-10 xl:gap-12 items-center">
+        <div class="flex gap-10 xl:gap-12 items-end mb-9">
             {{ $slot }}
         </div>
     </div>

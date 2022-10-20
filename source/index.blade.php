@@ -1,7 +1,6 @@
 
 <x-layout class="home">
-    <a class="absolute top-1 uppercase text-xs tracking-wider underline font-bold"
-        style="left: var(--container-padding-x)"
+    <a class="absolute top-1 left-4 sm:left-8 lg:left-16 uppercase text-xs tracking-wider underline font-bold"
         href="/en"
     >
         English version
@@ -192,44 +191,46 @@
             </x-project-card>
         </x-project-grid>
 
-        <x-project-item>
-            <x-slot:title>
-                Boutique en ligne sur mesure pour une librairie
-            </x-slot:title>
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    Boutique en ligne sur mesure pour une librairie
+                </x-slot:title>
 
-            <x-slot:date>
-                depuis 2020
-            </x-slot:date>
+                <x-slot:date>
+                    depuis 2020
+                </x-slot:date>
 
-            <x-slot:img src="/assets/img/projects/maktaba/thumb.png"></x-slot:img>
-            <x-slot:link href="https://quaidesbrumes.com/">
-                Voir le site
-            </x-slot:link>
+                <x-slot:img src="/assets/img/projects/maktaba/thumb.png"></x-slot:img>
+                <x-slot:link href="https://quaidesbrumes.com/">
+                    Voir le site
+                </x-slot:link>
 
-            Développement d’un site de vente en ligne et de génération de bons cadeaux pour
-            la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
-            de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
-            système de conception et d’expédition de newsletters.
-        </x-project-item>
+                Développement d’un site de vente en ligne et de génération de bons cadeaux pour
+                la <span class="text-brand-cyan-lighter">librairie Quai des Brumes</span>, avec un système adapté
+                de suivi et traitement des commandes. Le projet comprend également une plateforme de blogs et un
+                système de conception et d’expédition de newsletters.
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Site de location de matériel scénique
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Site de location de matériel scénique
+                </x-slot:title>
 
-            <x-slot:date>
-                depuis 2017
-            </x-slot:date>
+                <x-slot:date>
+                    depuis 2017
+                </x-slot:date>
 
-            <x-slot:img src="/assets/img/projects/ekip/thumb.png"></x-slot:img>
-            <x-slot:link href="/p/parcs-materiels-grand-est">
-                En savoir plus
-            </x-slot:link>
+                <x-slot:img src="/assets/img/projects/ekip/thumb.png"></x-slot:img>
+                <x-slot:link href="/p/parcs-materiels-grand-est">
+                    En savoir plus
+                </x-slot:link>
 
-            Nous avons conçu et développé un système web de création de devis et de suivi
-            de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
-            étroite avec le logiciel de gestion de stock déjà en place.
-        </x-project-item>
+                Nous avons conçu et développé un système web de création de devis et de suivi
+                de commandes de location de matériel scénique, sur plusieurs dépôts du Grand Est, en liaison
+                étroite avec le logiciel de gestion de stock déjà en place.
+            </x-project-item>
+        </x-project-list>
     </x-section>
 
     <x-section>
@@ -290,51 +291,53 @@
             </x-project-card>
         </x-project-grid>
 
-        <x-project-item>
-            <x-slot:title>
-                Site du théâtre de la Comédie de Colmar
-            </x-slot:title>
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    Site du théâtre de la Comédie de Colmar
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/kolben/thumb.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/kolben/thumb.jpg"></x-slot:img>
 
-            Ce site présente la programmation actuelle et les archives du théâtre,
-            en respectant l'univers graphique fort développé par le studio Atelier Poste 4.
+                Ce site présente la programmation actuelle et les archives du théâtre,
+                en respectant l'univers graphique fort développé par le studio Atelier Poste 4.
 
-            <x-slot:link href="https://comedie-colmar.com">
-                Voir le site
-            </x-slot:link>
-        </x-project-item>
+                <x-slot:link href="https://comedie-colmar.com">
+                    Voir le site
+                </x-slot:link>
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Portail principal de l’Agence culturelle Grand Est
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Portail principal de l’Agence culturelle Grand Est
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
 
-            Création du portail principal de l’Agence culturelle Grand Est, chargé de nombreux contenus
-            et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
-            avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
+                Création du portail principal de l’Agence culturelle Grand Est, chargé de nombreux contenus
+                et porte d’entrée vers tous les sites et applications de l’agence ; la gestion de contenu, développée
+                avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
 
-            <x-slot:link href="https://culturegrandest.fr">
-                Voir le site
-            </x-slot:link>
-        </x-project-item>
+                <x-slot:link href="https://culturegrandest.fr">
+                    Voir le site
+                </x-slot:link>
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Site de présentation du Festival Musica
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Site de présentation du Festival Musica
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/musica/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/musica/thumb.png"></x-slot:img>
 
-            Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
-            accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
+                Création du site du <span class="text-brand-cyan-lighter">festival international de musique contemporaine Musica</span>,
+                accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
 
-            <x-slot:link href="https://festivalmusica.fr">
-                Voir le site
-            </x-slot:link>
-        </x-project-item>
+                <x-slot:link href="https://festivalmusica.fr">
+                    Voir le site
+                </x-slot:link>
+            </x-project-item>
+        </x-project-list>
     </x-section>
 
     <x-section>
@@ -387,39 +390,41 @@
             </x-project-card>
         </x-project-grid>
 
-        <x-project-item separator>
-            <x-slot:title>
-                Application mobile touristique
-            </x-slot:title>
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    Application mobile touristique
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/trig/thumb.png"></x-slot:img>
 
-            Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
-            campagne,
-            nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
-            orientant vers les
-            nombreux points d’intérêt de sa forêt de 1200 hectares.
+                Le <span class="text-brand-cyan-lighter">Domaine de la Trigalière</span>, qui loue des belles maisons de
+                campagne,
+                nous a demandé de réaliser une application mobile (iOS et Android) pour assister les hôtes en les
+                orientant vers les
+                nombreux points d’intérêt de sa forêt de 1200 hectares.
 
-            <x-slot:link href="/p/trig">
-                En savoir plus
-            </x-slot:link>
-        </x-project-item>
+                <x-slot:link href="/p/trig">
+                    En savoir plus
+                </x-slot:link>
+            </x-project-item>
 
-        <x-project-item>
-            <x-slot:title>
-                Suite d’outils CRM, SSO, intranet
-            </x-slot:title>
+            <x-project-item>
+                <x-slot:title>
+                    Suite d’outils CRM, SSO, intranet
+                </x-slot:title>
 
-            <x-slot:img src="/assets/img/projects/beatus/thumb.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/beatus/thumb.jpg"></x-slot:img>
 
-            L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
-            nous a confié au fil du temps de nombreux projets, reliés entre eux
-            par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
-            Nous avons développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
-            pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion&nbsp;;
-            nous avons également écrit une plateforme intranet intégrant de nombreux outils à partir de
-            données externes variées.
-        </x-project-item>
+                L’<span class="text-brand-cyan-lighter">Agence culturelle Grand Est</span>
+                nous a confié au fil du temps de nombreux projets, reliés entre eux
+                par un système de comptes <em>Single Sign On</em> personnalisé et par des synchronisations API.
+                Nous avons développé un outil CRM (<em>Customer Relationship Manager</em>) sur mesure,
+                pour centraliser les contacts de l’Agence et de proposer des outils adaptés de gestion&nbsp;;
+                nous avons également écrit une plateforme intranet intégrant de nombreux outils à partir de
+                données externes variées.
+            </x-project-item>
+        </x-project-list>
     </x-section>
 
     <x-section id="team">
@@ -477,7 +482,7 @@
         </x-paragraph>
     </x-section>
 
-    <x-section>
+    <x-section class="text-base">
         Code 16<br>
         <a href="https://www.gothamscm.com/" class="regular">SCM Gotham</a>
         <br>

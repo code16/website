@@ -204,10 +204,12 @@ export default function stickyTitle(options) {
     el.parentElement.insertBefore(el._stickyTitleState.placeholder, el.nextElementSibling);
     el.classList.add('sticky-title');
 
-    document.addEventListener('DOMContentLoaded', () => {
-        el._stickyTitleScrollListener();
-    });
+    if(isEnabled()) {
+        document.addEventListener('DOMContentLoaded', () => {
+            el._stickyTitleScrollListener();
+        });
 
-    window.addEventListener('scroll', el._stickyTitleScrollListener);
-    window.addEventListener('resize', el._stickyTitleScrollListener);
+        window.addEventListener('scroll', el._stickyTitleScrollListener);
+        window.addEventListener('resize', el._stickyTitleScrollListener);
+    }
 }
