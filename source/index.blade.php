@@ -458,6 +458,5 @@
         </x-paragraph>
     </x-section>
 
-    <x-section.footer></x-section.footer>
-
+    <x-footer />
 </x-layout>

@@ -47,6 +47,10 @@
     font-weight: bold;
   }
 
+  svg:not([fill]) {
+    fill: currentColor;
+  }
+
   ul {
     @apply mt-2;
   }
