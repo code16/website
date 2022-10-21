@@ -348,8 +348,8 @@
         </x-slot:title>
 
         <x-paragraph>
-            Ces projets correspondent à des applications particulières, parfois adossées à des sites de contenu plus
-            classiques.
+            Ces projets correspondent à des applications particulières,
+            parfois adossées à des sites de contenu plus classiques.
         </x-paragraph>
 
         <x-project-grid>
@@ -360,12 +360,10 @@
 
                 <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
 
-                Création de la plateforme des adhérents de la CFDT,
-                présentant tous les débats et webinaires
+                Création de la plateforme des adhérents de la CFDT, présentant tous les débats et webinaires
                 proposés dans le cadre de la démocratie interne du syndicat, et permettant de s’y inscrire, ou d’en
                 proposer des nouveaux. Toute la gestion des inscriptions, débats, propositions et du contenu est
-                intégrée
-                dans Sharp.
+                intégrée dans Sharp.
 
                 <x-slot:link href="https://jeparticipe.cfdt.fr/">
                     Voir le site
@@ -379,12 +377,9 @@
 
                 <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
 
-                Nous avons conçu et construit la
-                <a href="https://treto.fr/">plateforme du spectacle vivant</a>
-                dans le Grand Est,
-                qui regroupe les salles, compagnies et bureaux de production sur une carte aec de nombreux outils
-                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de
-                calendriers de spectacle...
+                Nous avons conçu et construit la <a href="https://treto.fr/">plateforme du spectacle vivant</a>
+                dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production sur une carte avec de nombreux outils
+                de filtrage et recherche. La plateforme propose également des outils de publication d’annonces, de calendriers de spectacle...
 
                 <x-slot:link href="/p/treto">
                     En savoir plus
@@ -463,16 +458,6 @@
         </x-paragraph>
     </x-section>
 
-    <x-section class="text-base">
-        Code 16<br>
-        <a href="https://www.gothamscm.com/" class="regular">SCM Gotham</a>
-        <br>
-        24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-        <br>
-        <a href="https://github.com/code16" class="regular">Github</a>
-        —
-        <a href="https://www.linkedin.com/company/code-16-web" class="regular">LinkedIn</a>
-        —
-        <a href="/blog" class="regular">Blog</a>
-    </x-section>
+    <x-section.footer></x-section.footer>
+
 </x-layout>

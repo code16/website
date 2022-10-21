@@ -1,6 +1,12 @@
 
 
 <x-layout class="home" lang="en">
+    <a class="absolute top-1 left-4 sm:left-8 lg:left-16 uppercase text-xs tracking-wider underline font-bold"
+       href="/"
+    >
+        Version française
+    </a>
+
     <x-slot:header>
         <x-header>
             <x-header.nav-item href="#approach">
@@ -24,7 +30,7 @@
 
     <x-section>
         <x-slot:title>
-            Quality web <br>and mobile development
+            Quality web<br>and mobile development
         </x-slot:title>
 
         <x-paragraph>
@@ -40,7 +46,9 @@
 
         <x-paragraph>
             We are located in Strasbourg, a city on the eastern border of France,
-            but we can of course work remotely.
+            but we can of course work remotely. These last years, our expertise is mainly focused on the
+            technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova... around tools like Algolia,
+            AWS, Laravel Forge and Envoyer.
         </x-paragraph>
     </x-section>
 
@@ -48,7 +56,7 @@
         <x-ui.tabs>
             <x-ui.tab>
                 <x-slot:title>
-                    We attach great<br>importance to the code
+                    We attach great importance to the code
                 </x-slot:title>
 
                 <x-paragraph>
@@ -66,11 +74,6 @@
                     over the versions).
                 </x-paragraph>
 
-                <x-paragraph>
-                    These last years, our expertise is mainly focused on the
-                    technologies Laravel, Vue.js, Livewire, Alpine.js, Cordova...
-                    around tools like Algolia, AWS, Laravel Forge and Envoyer.
-                </x-paragraph>
             </x-ui.tab>
 
             <x-ui.tab>
@@ -87,7 +90,7 @@
 
             <x-ui.tab>
                 <x-slot:title>
-                    We are involved<br>in open source
+                    We are involved in open source
                 </x-slot:title>
 
                 <x-paragraph>
@@ -110,7 +113,7 @@
 
         <x-project-grid>
             <x-project-card.sharp class="col-span-full">
-                Sharp is a generalist and powerful platform for developing content and manage data.
+                Sharp is a generalist and powerful open source platform for developing content and manage data.
                 We use it in many of our projects, to offer a pleasant and powerful tool allowing to publish pages,
                 images, videos of the sites as well as to manage orders, products or registrations for example.
 
@@ -139,18 +142,26 @@
                 Click & Collect and Ship from Store, online payment with multiple accounts, delivery systems,
                 synchronization of fidelity accounts... The websites also handle gift card orders
                 and wish list management.
+
+                <x-slot:link href="https://ambianceetstyles.com">
+                    Show website
+                </x-slot:link>
             </x-project-card.ek>
 
             <x-project-card>
                 <x-slot:title>
-                    Training booking portal for Agence culturelle Grand Est
+                    Training booking portal for the Agence culturelle Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/cursus/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/cursus/banner.jpg"></x-slot:img>
 
                 This <a href="https://culturegrandest.fr/cursus/formations/">course ordering system</a>
                 handles course registration via a complex process depending on various course options and registrant type.
                 <a href="https://sharp.code16.fr">Sharp</a> is leveraged for content and order management.
+
+                <x-slot:link href="https://culturegrandest.fr/cursus/formations">
+                    Show website
+                </x-slot:link>
             </x-project-card>
 
             <x-project-card>
@@ -158,11 +169,14 @@
                     High trafic event shop
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/merkur/thumb.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/merkur/banner.jpg"></x-slot:img>
 
                 We built, for the Centre international d’Art Verrier de Meisenthal (CIAV),
-                <a href="https://boutique.ciav-meisenthal.fr">an event shop</a> for glass objects
-                including their famous Christmas bulbs.
+                an event shop for glass objects including their famous Christmas bulbs.
+
+                <x-slot:link href="https://boutique.ciav-meisenthal.fr">
+                    Show website
+                </x-slot:link>
             </x-project-card>
         </x-project-grid>
 
@@ -174,8 +188,13 @@
 
                 <x-slot:img src="/assets/img/projects/ekip/thumb.png"></x-slot:img>
 
-                We designed and developed <a href="https://parcsmaterielsgrandest.fr">Ekip</a>, a web system for creating
-                advanced quotes and monitoring orders in the context stage equipment rental, from cart to invoice, smoothly bounded with a legacy system.
+                We designed and developed a web system for creating advanced quotes and monitoring
+                orders in the context stage equipment rental, from cart to invoice, smoothly bounded
+                with a legacy system.
+
+                <x-slot:link href="https://parcsmaterielsgrandest.fr">
+                    Show website
+                </x-slot:link>
             </x-project-item>
         </x-project-list>
     </x-section>
@@ -185,15 +204,35 @@
             Content websites
         </x-slot:title>
 
+        <x-paragraph>
+            Following projects are diverse but were all been custom developed.
+            They rely on <a href="https://sharp.code16.fr">Sharp</a> for their content management.
+        </x-paragraph>
+
         <x-project-grid>
-            <x-project-card>
+            <x-project-card.acero class="col-span-full">
                 <x-slot:title>
-                    peugeot-invest.com
+                    Content website of Sycomore AM
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/toshi/banner.png"></x-slot:img>
+                We developed for the asset management company Sycomore AM a multilingual site rich in content and data,
+                coming from several sources: a dedicated API allows to update the data of the funds and documents,
+                and <a href="https://sharp.code16.fr">Sharp</a> supports the management of the pages and the publication
+                of articles.
 
-                This multilingual website for <a href="https://www.peugeot-invest.com/">Peugeot Invest</a> presents
+                <x-slot:link href="https://www.sycomore-am.com">
+                    Show website
+                </x-slot:link>
+            </x-project-card.acero>
+
+            <x-project-card>
+                <x-slot:title>
+                    Peugeot Invest website
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/toshi/banner.jpg"></x-slot:img>
+
+                This multilingual website for Peugeot Invest presents
                 various and numerous content types, including dataviz.
 
                 <x-slot:link href="https://www.peugeot-invest.com/">
@@ -203,15 +242,52 @@
 
             <x-project-card>
                 <x-slot:title>
-                    pactedupouvoirdevivre.fr
+                    NGO website
                 </x-slot:title>
 
                 <x-slot:img src="/assets/img/projects/symfonia/banner.jpg"></x-slot:img>
 
-                <a href="https://pactedupouvoirdevivre.fr">Main website of the alliance</a> of 60 well known organizations which are major players in the protection
-                of the environment, the fight against poverty, support for migrants, popular education, social and solidarity economy and mutuality.
+                Main website of the alliance of 60 well known organizations which are major players in the protection
+                of the environment, the fight against poverty, support for migrants, popular education.
+
+                <x-slot:link href="https://www.pactedupouvoirdevivre.fr">
+                    Show website
+                </x-slot:link>
             </x-project-card>
         </x-project-grid>
+
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
+                    Comédie de Colmar theatre website
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/kolben/thumb.jpg"></x-slot:img>
+
+                This website presents the current programming and archives of the theater,
+                with the strong graphic universe developed by the graphic studio Atelier Poste 4.
+
+                <x-slot:link href="https://comedie-colmar.com">
+                    Show website
+                </x-slot:link>
+            </x-project-item>
+
+            <x-project-item>
+                <x-slot:title>
+                    Agence culturelle Grand Est main portal
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/aca/thumb.png"></x-slot:img>
+
+                Creation of the main portal of the Agence culturelle Grand Est, loaded with numerous contents
+                and gateway to all the agency's sites and applications.
+
+                <x-slot:link href="https://culturegrandest.fr">
+                    Show website
+                </x-slot:link>
+            </x-project-item>
+        </x-project-list>
+
     </x-section>
 
     <x-section>
@@ -219,28 +295,40 @@
             Apps / tools
         </x-slot:title>
 
-        <x-project-list>
-            <x-project-item>
+        <x-project-grid>
+            <x-project-card>
                 <x-slot:title>
-                    jeparticipe.cfdt.fr
+                    Internal democracy platform for the CFDT union
                 </x-slot:title>
 
                 <x-slot:img src="/assets/img/projects/syzito/banner.jpg"></x-slot:img>
 
-                <a href="https://jeparticipe.cfdt.fr">Online platform for the CFDT</a> syndicate, with registration / event management.
-            </x-project-item>
+                Creation of the CFDT members' platform, presenting all the debates and webinars
+                proposed within the framework of the internal democracy of the union, and allowing to register or to
+                propose new ones. All the management of registrations, debates, proposals and content is integrated in Sharp.
 
-            <x-project-item>
+                <x-slot:link href="https://jeparticipe.cfdt.fr/">
+                    Show website
+                </x-slot:link>
+            </x-project-card>
+
+            <x-project-card>
                 <x-slot:title>
-                    Treto, a cartographic website
+                    Live performance platform of the Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/treto/banner.png"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
 
-                We developed <a href="https://treto.fr/">Treto</a> a regional advanced POI platform
-                for theaters, companies and show producers, with registration and application, account management, validation workflow, ...
-            </x-project-item>
+                We designed and built the platform Treto, which brings together venues, companies and production offices
+                on a map with numerous filters and search tools. The platform also offers access for publishing announcements, show calendars...
 
+                <x-slot:link href="https://treto.fr">
+                    Show website
+                </x-slot:link>
+            </x-project-card>
+        </x-project-grid>
+
+        <x-project-list>
             <x-project-item>
                 <x-slot:title>
                     Trig, a cartographic iOS / Android app
@@ -282,15 +370,21 @@
             Founder, manager and main developer of several projects.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
-            <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>
+            <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>,
+            <a href="{{ $page->developers['philippe']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
         <x-team-member-item :member="$page->developers['arnaud']">
             Backend developer (PHP and Laravel).
+            <br>
+            <a href="{{ $page->developers['arnaud']->twitter }}">twitter</a>,
+            <a href="{{ $page->developers['arnaud']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
         <x-team-member-item :member="$page->developers['antoine']">
             Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
+            <br>
+            <a href="{{ $page->developers['antoine']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
         <x-paragraph>
@@ -300,12 +394,5 @@
         </x-paragraph>
     </x-section>
 
-    <x-section large>
-        Code 16<br>
-        <a href="http://www.gothamscm.com/" class="regular">SCM Gotham</a><br>
-        24 rue du Vieux marché aux Vins, 67000 Strasbourg, France<br>
-        <a href="https://github.com/code16" class="regular">Github</a>
-        —
-        <a href="/blog" class="regular">blog</a>
-    </x-section>
+    <x-section.footer></x-section.footer>
 </x-layout>
