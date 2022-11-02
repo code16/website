@@ -1,23 +1,25 @@
 <?php
 
+use Illuminate\Container\Container;
+use Illuminate\View\Factory;
 use Torchlight\Jigsaw\TorchlightExtension;
 
-/** @var $container \Illuminate\Container\Container */
+/** @var $container Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
 
-/**
- * You can run custom code at different stages of the build process by
- * listening to the 'beforeBuild', 'afterCollections', and 'afterBuild' events.
- *
- * For example:
- *
- * $events->beforeBuild(function (Jigsaw $jigsaw) {
- *     // Your code here
- * });
- */
 
 //$container['markdownParser']->code_block_content_func = function ($code, $language) {
 //    return (new \Highlight\Highlighter())->highlight($language ?? 'plaintext', $code)->value;
 //};
 
-TorchlightExtension::make($container, $events)->boot();
+if(env('TORCHLIGHT_ENABLED', true)) {
+    TorchlightExtension::make($container, $events)->boot();
+}
+
+$container->bind(\Illuminate\Contracts\View\Factory::class, Factory::class);
+
+function view(string $view, array $data = [])
+{
+    return Container::getInstance()->make(Factory::class)
+        ->make($view, $data);
+}

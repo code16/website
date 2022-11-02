@@ -4,15 +4,14 @@
     'title' => null,
 ])
 
-<div class="section mb-16 md:mb-32">
-    <div class="relative" v-cloak>
-        @if($title)
-            <x-section.title>
-                {{ $title }}
-            </x-section.title>
-        @endif
-
+<div {{ $attributes->class('section py-12 md:py-16') }}>
+    <div class="container relative">
         <div class="section__content">
+            @if($title)
+                <x-section.title>
+                    {{ $title }}
+                </x-section.title>
+            @endif
             {{ $slot }}
         </div>
     </div>

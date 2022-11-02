@@ -6,34 +6,29 @@
         Blog
     </x-title>
 
-    <x-slot name="nav">
-        <x-nav active="blog" />
-    </x-slot>
+    <x-section>
+        <x-section.title heading-level="h1">
+            Code 16’s blog
+        </x-section.title>
 
-    <div class="section__content">
-        <div class="inline-block mb-12">
-            <h1 class="text-2xl uppercase tracking-widest">
-                Code 16’s blog
-            </h1>
-            <p class="mt-3">
+        <div class="mb-16">
+            <x-paragraph>
                 Here is a selection of blog posts (in english) about <a href="https://sharp.code16.fr">Sharp</a>, Laravel and general web / PHP development,
                 written by <a href="/en">Code 16</a> members.
-            </p>
+            </x-paragraph>
         </div>
+
         @foreach($posts as $post)
             <x-post-item
                 :post="$post"
                 :page="$page"
             />
         @endforeach
-    </div>
-
-    <x-section large>
-        <p class="mt-5">
-            <a href="/en">
-                &lt; learn about Code 16
-            </a>
-        </p>
     </x-section>
 
+    <x-section>
+        <a href="/en">
+            &lt; learn about Code 16
+        </a>
+    </x-section>
 </x-layout>

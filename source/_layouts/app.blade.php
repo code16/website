@@ -16,22 +16,33 @@
 
         <link rel="alternate" type="application/rss+xml" title="Code 16’s Blog" href="{{ $page->baseUrl }}/blog/feed.atom" />
 
+        <link rel="preload" href="/assets/fonts/spectral-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/karla-v21-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
+
+        @if(!$page->production)
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {!! \Illuminate\Support\Str::of(file_get_contents(__DIR__ . '/../tailwind.config.js'))->after('theme:')->before('plugins:') !!}
+                }
+            </script>
+        @endif
     </head>
     <body {{ $attributes }}>
-
         {{ $nav }}
 
-        <div class="p-8 sm:p-16">
-            <div id="app" class="container">
-                <header class="mb-16">
-                    <x-logo />
-                </header>
+        <div id="app">
+            @if($header)
+                {{ $header }}
+            @else
+                <x-header />
+            @endif
 
-                <main>
-                    {{ $slot }}
-                </main>
-            </div>
+            <main>
+                {{ $slot }}
+            </main>
         </div>
 
         <x-image-dialog />

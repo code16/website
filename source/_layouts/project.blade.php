@@ -4,16 +4,15 @@
         {{ $page->title }}
     </x-title>
 
-    <div class="relative">
-        <x-section.title
-            heading-level="h1"
-            :sticky-title-options="['startOffset' => -130]"
-        >
+    <x-section>
+        <x-section.title heading-level="h1">
             {{ $page->title }}
         </x-section.title>
 
-        <stacker class="content mt-6" :breakpoint="768">
-            @yield('content')
-        </stacker>
-    </div>
+        <div class="content" data-v-app>
+            <stacker class="mt-6" :breakpoint="768">
+                @yield('content')
+            </stacker>
+        </div>
+    </x-section>
 </x-layout>

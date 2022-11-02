@@ -15,8 +15,8 @@
             <img src="{{ $post->thumbnail }}" class="object-cover aspect-[1/1] w-full" alt="{{ $post->title }}">
         </div>
         <div class="flex-1 flex flex-col">
-            <h2 class="text-xl mb-3">
-                <a href="{{ $post->getUrl() }}" class="text-inherit after:absolute after:inset-0 after:z-10">
+            <h2 class="text-xl font-bold mb-3">
+                <a href="{{ $post->getUrl() }}" class="text-inherit after:absolute after:inset-0 after:z-10 hover:underline">
                     {{ $post->title }}
                 </a>
             </h2>
