@@ -3,6 +3,7 @@
     'title' => null,
     // slots
     'nav' => null,
+    'header' => null,
 ])
 
 @include('_layouts.app', [

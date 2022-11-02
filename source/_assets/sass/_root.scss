@@ -2,14 +2,17 @@
 :root {
   --image-size: 100%;
   --content-max-width: 100%;
+  --container-padding-x: 1rem;
 
+  @screen sm {
+    --container-padding-x: 2rem;
+  }
   @screen md {
     --image-size: 30rem;
-    --content-margin-left: 12rem;
   }
   @screen lg {
     --image-size: 34rem;
-    --content-max-width: 42rem;
+    --content-margin-left: 12rem;
   }
   @media (min-width: 1048px) {
     --image-size: 44rem;
@@ -17,6 +20,7 @@
   @screen xl {
     --image-size: 54rem;
     --content-max-width: 48rem;
+    --content-margin-left: 14rem;
   }
   @media (min-width: 1300px) {
     --image-size: 58rem;

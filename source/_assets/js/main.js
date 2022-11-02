@@ -1,17 +1,25 @@
 import Vue from 'vue';
-import stickyTitle from './sticky-title';
-import Stacker from './components/Stacker';
+import stickyTitle from './components/sticky-title';
+import Stacker from './vue/components/Stacker';
+import Alpine from 'alpinejs';
 
-
-Vue.use(stickyTitle);
 
 document.querySelectorAll('pre').forEach(pre => {
     pre.setAttribute('v-pre', '');
 });
 
-new Vue({
-    el:'#app',
-    components: {
-        Stacker
-    }
-});
+[...document.querySelectorAll('[data-v-app]')]
+    .forEach(el => {
+        const app = new Vue({
+            components: {
+                Stacker
+            },
+        });
+        app.$mount(el);
+    });
+
+window.Alpine = Alpine;
+
+Alpine.data('stickyTitle', stickyTitle);
+
+Alpine.start();

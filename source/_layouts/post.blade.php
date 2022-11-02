@@ -5,11 +5,7 @@
         {{ $page->title }}
     </x-title>
 
-    <x-slot name="nav">
-        <x-nav />
-    </x-slot>
-
-    <section class="content" data-image-dialog>
+    <x-section class="content" data-image-dialog>
         <div class="mb-8">
             <h1 class="!mb-0">
                 {{ $page->title }}
@@ -22,9 +18,11 @@
             @endif
         </div>
 
-        @yield('content')
-    </section>
+        <div>
+            @yield('content')
+        </div>
 
-    <x-post.author-card :page="$page" />
+        <x-post.author-card :page="$page" />
+    </x-section>
 </x-layout>
 
