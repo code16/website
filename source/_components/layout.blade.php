@@ -4,6 +4,9 @@
     // slots
     'nav' => null,
     'header' => null,
+    'metaDescription' => null,
+    'metaImage' => null,
+    'metaType' => null,
 ])
 
 @include('_layouts.app', [

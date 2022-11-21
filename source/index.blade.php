@@ -1,5 +1,9 @@
 
 <x-layout class="home">
+    <x-meta.description
+        content="Nous concevons des sites internet et des applications mobiles à partir de technologies open-source, avec une approche d’artisan."
+    />
+
     <a class="absolute top-1 left-4 sm:left-8 lg:left-16 uppercase text-xs tracking-wider underline font-bold"
         href="/en"
     >

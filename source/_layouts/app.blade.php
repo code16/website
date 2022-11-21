@@ -5,12 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>
-            @if($title)
-                {{ $title }} -
-            @endif
-            Code 16, développement Laravel et Vue.js
-        </title>
+        @php($title = ($title ? trim($title) . ' - ' : '') . 'Code 16, développement Laravel et Vue.js')
+
+        <title>{{ $title }}</title>
+
+        @if($metaDescription)
+            <meta name="description" content="{{ $metaDescription->attributes['content'] }}">
+        @endif
+
+        <meta property="og:type" content="{{ $metaType->attributes['content'] ?? 'website' }}">
+        <meta property="og:title" content="{{ $title }}">
+        <meta property="og:image" content="{{ $metaImage->attributes['content'] ?? '/assets/img/og-image.png' }}">
+        @if($metaDescription)
+            <meta property="og:description" content="{{ $metaDescription->attributes['content'] }}">
+        @endif
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 

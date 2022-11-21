@@ -5,6 +5,9 @@
         {{ $page->title }}
     </x-title>
 
+    <x-meta.image :content="$page->thumbnail" />
+    <x-meta.type content="article" />
+
     <x-section class="content" data-image-dialog>
         <div class="mb-8">
             <h1 class="!mb-0">
