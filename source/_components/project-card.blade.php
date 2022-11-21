@@ -6,7 +6,7 @@
 
 <x-card {{ $attributes->class('bg-white text-black') }}>
     @if($img)
-        <x-card.img :attributes="$img->attributes" />
+        <x-card.img :attributes="$img->attributes" alt="{{ $title }}" />
     @endif
     <x-card.body>
         <h3 class="font-bold mb-4 text-xl">

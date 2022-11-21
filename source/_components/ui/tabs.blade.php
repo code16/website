@@ -12,9 +12,9 @@
                 <x-ui.tab.title class="mb-8">
                     <a @class([
                             'block text-inherit !no-underline hover:opacity-100',
-                            'opacity-30' => !$loop->first,
+                            'opacity-40' => !$loop->first,
                         ])
-                        :class="{ 'opacity-30': index !== {{ $loop->index }} }"
+                        :class="{ 'opacity-40': index !== {{ $loop->index }} }"
                         href="#"
                         @click.prevent="index = {{ $loop->index }}"
                         @mouseenter="index = {{ $loop->index }}"

@@ -7,7 +7,7 @@
 ])
 
 <x-card {{ $attributes }}>
-    <x-card.img class="hidden md:block" :attributes="$img->attributes" />
+    <x-card.img class="hidden md:block" :attributes="$img->attributes" alt="{{ $title }}" />
     <x-card.body>
         <div class="grid md:grid-cols-3 gap-6 md:gap-12">
             <div>
