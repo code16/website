@@ -1,6 +1,10 @@
 
 
 <x-layout class="home" lang="en">
+    <x-meta.description
+        content='We build since 2007 websites and mobile apps based on open source technologies, with an "artisan" state of mind: a tailor-made development that allows control at all levels.'
+    />
+
     <a class="absolute top-1 left-4 sm:left-8 lg:left-16 uppercase text-xs tracking-wider underline font-bold"
        href="/"
     >
