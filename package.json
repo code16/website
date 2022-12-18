@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "alpinejs": "^3.10.4",
+        "puppeteer": "^19.4.1",
         "vue": "^2.6.10",
         "vue-carousel": "^0.8.1"
     }
