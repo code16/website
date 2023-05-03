@@ -33,6 +33,7 @@
         <link rel="preload" href="/assets/fonts/karla-v21-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
         <script src="https://cdn.usefathom.com/script.js" data-site="UYEFQCWU" defer></script>
+        <script async src="https://umami.dvlpp.com/script.js" data-website-id="b1d26098-0f1b-423d-a6db-d2bc22bed6db"></script>
 
         @if(!$page->production)
             <script src="https://cdn.tailwindcss.com"></script>
