@@ -7,8 +7,6 @@ thumbnail: /assets/img/posts/a-feature-preview-of-sharp-8/thumbnail.png
 author: philippe
 ---
 
-![](/assets/img/posts/a-feature-preview-of-sharp-8/thumbnail.jpg)
-
 We, at [Code 16](https://code16.fr), are currently developing on the next major version of [Sharp](https://sharp.code16.fr) for Laravel. Here’s a preview of some new features we’re working on:
 
 ## Bulk commands
