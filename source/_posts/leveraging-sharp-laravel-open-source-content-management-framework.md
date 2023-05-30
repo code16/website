@@ -1,7 +1,7 @@
 ---
 title: Leveraging Sharp, an open source content management framework, in a Laravel project
 description: "A full tour of Sharp for Laravel"
-thumbnail: /assets/img/posts/leveraging-sharp-laravel-open-source-content-management-framework/thumbnail.png
+thumbnail: /assets/img/posts/leveraging-sharp-laravel-open-source-content-management-framework/thumbnail2.png
 date: 2022-05-25
 author: philippe
 ---
