@@ -300,6 +300,21 @@
         <x-project-list>
             <x-project-item>
                 <x-slot:title>
+                    Site du théâtre Le Maillon
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/athena/thumb.jpg"></x-slot:img>
+
+                Ce site présente dans deux langues la saison en cours et les archives du Maillon,
+                ainsi que les nombreuses activités annexes et hors les murs du théâtre.
+
+                <x-slot:link href="https://maillon.eu">
+                    Voir le site
+                </x-slot:link>
+            </x-project-item>
+
+            <x-project-item>
+                <x-slot:title>
                     Site du théâtre de la Comédie de Colmar
                 </x-slot:title>
 
@@ -325,21 +340,6 @@
                 avec Sharp, permet une grande souplesse dans la gestion des pages du site, et de leur hiérarchie.
 
                 <x-slot:link href="https://culturegrandest.fr">
-                    Voir le site
-                </x-slot:link>
-            </x-project-item>
-
-            <x-project-item>
-                <x-slot:title>
-                    Site de présentation du Festival Musica
-                </x-slot:title>
-
-                <x-slot:img src="/assets/img/projects/musica/thumb.png"></x-slot:img>
-
-                Création du site du festival international de musique contemporaine Musica,
-                accompagné de ses bases de ressources (biographies des très nombreux artistes ayant participé au festival et répertoire des œuvres jouées).
-
-                <x-slot:link href="https://festivalmusica.fr">
                     Voir le site
                 </x-slot:link>
             </x-project-item>
