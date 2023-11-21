@@ -264,13 +264,15 @@
                     Voir le site
                 </x-slot:link>
             </x-project-card.acero>
+        </x-project-grid>
 
-            <x-project-card>
+        <x-project-list>
+            <x-project-item>
                 <x-slot:title>
                     Site vitrine de Peugeot Invest
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/toshi/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/toshi/thumb.jpg"></x-slot:img>
 
                 Développement complet du site en deux langues, présentant des contenus nombreux et variés
                 dont des visualisations graphiques, et permettant des recherches documentaires plein texte au sein de fichiers PDFs.
@@ -278,26 +280,8 @@
                 <x-slot:link href="https://www.peugeot-invest.com/">
                     Voir le site
                 </x-slot:link>
-            </x-project-card>
+            </x-project-item>
 
-            <x-project-card>
-                <x-slot:title>
-                    Site de présentation du Pacte du pouvoir de vivre
-                </x-slot:title>
-
-                <x-slot:img src="/assets/img/projects/symfonia/banner.jpg"></x-slot:img>
-
-                Développement du site et de la gestion de contenu, pour ce site présentant une alliance de
-                60 organisations acteurs majeurs dans la protection de l’environnement, la lutte contre la pauvreté,
-                le soutien aux migrants, l’éducation populaire.
-
-                <x-slot:link href="https://www.pactedupouvoirdevivre.fr/">
-                    Voir le site
-                </x-slot:link>
-            </x-project-card>
-        </x-project-grid>
-
-        <x-project-list>
             <x-project-item>
                 <x-slot:title>
                     Site du théâtre Le Maillon
@@ -376,10 +360,28 @@
 
             <x-project-card>
                 <x-slot:title>
+                    Application / CRM de mise en relation
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/barbon/banner.jpg"></x-slot:img>
+
+                Développement pour le compte de <a href="https://www.bureau132.fr/">Bureau 132</a>
+                d’une application de mise en relation de clients et de courtiers en assurance,
+                avec gestion d'un workflow complet de demande de devis.
+
+                <x-slot:link href="/posts/a-full-app-in-sharp">
+                    Lire le blog (en)
+                </x-slot:link>
+            </x-project-card>
+        </x-project-grid>
+
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
                     Plateforme de spectacle vivant du Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/treto/thumb.png"></x-slot:img>
 
                 Nous avons conçu et construit la <a href="https://treto.fr/">plateforme du spectacle vivant</a>
                 dans le Grand Est, qui regroupe les salles, compagnies et bureaux de production sur une carte avec de nombreux outils
@@ -388,10 +390,8 @@
                 <x-slot:link href="/p/treto">
                     En savoir plus
                 </x-slot:link>
-            </x-project-card>
-        </x-project-grid>
+            </x-project-item>
 
-        <x-project-list>
             <x-project-item>
                 <x-slot:title>
                     Application mobile touristique

@@ -228,13 +228,15 @@
                     Show website
                 </x-slot:link>
             </x-project-card.acero>
+        </x-project-grid>
 
-            <x-project-card>
+        <x-project-list>
+            <x-project-item>
                 <x-slot:title>
                     Peugeot Invest website
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/toshi/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/toshi/thumb.jpg"></x-slot:img>
 
                 This multilingual website for Peugeot Invest presents
                 various and numerous content types, including dataviz.
@@ -242,25 +244,23 @@
                 <x-slot:link href="https://www.peugeot-invest.com/">
                     Show website
                 </x-slot:link>
-            </x-project-card>
+            </x-project-item>
 
-            <x-project-card>
+            <x-project-item>
                 <x-slot:title>
-                    NGO website
+                    Le Maillon theatre website
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/symfonia/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/athena/thumb.jpg"></x-slot:img>
 
-                Main website of the alliance of 60 well known organizations which are major players in the protection
-                of the environment, the fight against poverty, support for migrants, popular education.
+                This multilingual website presents the current programming along with the many activities
+                offered by this institution.
 
-                <x-slot:link href="https://www.pactedupouvoirdevivre.fr">
-                    Show website
+                <x-slot:link href="https://maillon.eu">
+                    Voir le site
                 </x-slot:link>
-            </x-project-card>
-        </x-project-grid>
+            </x-project-item>
 
-        <x-project-list>
             <x-project-item>
                 <x-slot:title>
                     Comédie de Colmar theatre website
@@ -318,10 +318,29 @@
 
             <x-project-card>
                 <x-slot:title>
+                    Application / CRM in the insurance sector
+                </x-slot:title>
+
+                <x-slot:img src="/assets/img/projects/barbon/banner.jpg"></x-slot:img>
+
+                We developed, for the French company <a href="https://www.bureau132.fr/">Bureau 132</a>,
+                a contact platform for insurance brokers, allowing to manage requests for quotation through a dedicated workflow.
+
+                <x-slot:link href="/posts/a-full-app-in-sharp">
+                    Read the blog post
+                </x-slot:link>
+            </x-project-card>
+
+
+        </x-project-grid>
+
+        <x-project-list>
+            <x-project-item>
+                <x-slot:title>
                     Live performance platform of the Grand Est
                 </x-slot:title>
 
-                <x-slot:img src="/assets/img/projects/treto/banner.jpg"></x-slot:img>
+                <x-slot:img src="/assets/img/projects/treto/thumb.png"></x-slot:img>
 
                 We designed and built the platform Treto, which brings together venues, companies and production offices
                 on a map with numerous filters and search tools. The platform also offers access for publishing announcements, show calendars...
@@ -329,10 +348,8 @@
                 <x-slot:link href="https://treto.fr">
                     Show website
                 </x-slot:link>
-            </x-project-card>
-        </x-project-grid>
+            </x-project-item>
 
-        <x-project-list>
             <x-project-item>
                 <x-slot:title>
                     Trig, a cartographic iOS / Android app
