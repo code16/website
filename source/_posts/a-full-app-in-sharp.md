@@ -1,7 +1,7 @@
 ---
 title: A full app built with Sharp.
 description: >-
-  We were able to design a build a full management app in Sharp 8. 
+  We used Sharp 8 as a framework to design a build a full management app. 
 date: 2023-11-21
 thumbnail: /assets/img/posts/a-full-app-in-sharp/thumbnail.png
 author: philippe
