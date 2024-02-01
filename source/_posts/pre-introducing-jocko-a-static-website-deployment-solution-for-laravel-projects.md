@@ -103,7 +103,7 @@ After that you’ll be able to access to the Jocko dashboard of your project, wh
 
 Jocko comes with a preview (pre-deploy) website, where you can see the real production content; the final step is to deploy it to its real hosting space of your choice: once configured, it will be a one-click operation from Jocko:
 
-[VISUAL OF DEPLOYMENT]
+![Publication](/assets/img/posts/pre-introducing-jocko-a-static-website-deployment-solution-for-laravel-projects/jocko-deploy.jpg)
 
 ## Some details on the how
 
