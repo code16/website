@@ -113,6 +113,8 @@ So, how does it work? Well, we use a few good packages, and a wrote a lot of cod
 - `calebporzio/sushi` handles the magic of Eloquent models linked to collections,
 - and of course `code16/sharp` is leveraged for all the CMS part.
 
+There’s more to show, with custom commands which allow to create functional tasks from the CMS (for instance a CSV export, or a batch update) and even API search to implement a search engine on the (static) website.
+
 If you feel that Jocko could be a good fit for one of your projects, and if you want to test the product, you can [subscribe to the newsletter here](https://jocko.code16.fr) to be notified when we launch the beta (very soon hopefully).
 
 As always, feel free to [catch me on Twitter](https://twitter.com/dvlpp) for any comment or question on this.
