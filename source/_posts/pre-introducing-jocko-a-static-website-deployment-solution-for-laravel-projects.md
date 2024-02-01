@@ -3,7 +3,7 @@ title: Pre-introducing Jocko:: a static website deployment solution for laravel 
 description: >-
   Jocko allows to create a static website from a Laravel project, providing the CMS section and more.
 date: 2024-01-31
-thumbnail: /assets/img/posts/a-feature-preview-of-sharp-8/thumbnail.png
+thumbnail: /assets/img/posts/pre-introducing-jocko-a-static-website-deployment-solution-for-laravel-projects/thumbnail.png
 author: philippe
 ---
 
@@ -28,7 +28,8 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        app(JockoCollectionsManager::class)
+        app(JockoConfiguration::class)
+            ->setName('some-key', 'The Jocko Website Factory')
             ->addCollection(
                 JockoCollection::make('pages')
                     ->setIcon('fa-file')
@@ -91,12 +92,14 @@ You can then develop the website (mostly) as usual, using blade views, controlle
 When your project is ready, the next step is to **create a Jocko account**, to get a proper token and to run an artisan command to initialize the project on the Jocko side:
 
 ```bash
-php artisan jocko:configure --project=your-project-name --token=your-token
+php artisan jocko:configure --token=my-token
 ```
 
 After that you’ll be able to access to the Jocko dashboard of your project, where you can manage the content of your collections:
 
-[VISUAL OF SHARP LOL]
+![List of posts](/assets/img/posts/pre-introducing-jocko-a-static-website-deployment-solution-for-laravel-projects/jocko-list.jpg)
+
+![A post form](/assets/img/posts/pre-introducing-jocko-a-static-website-deployment-solution-for-laravel-projects/jocko-form.jpg)
 
 Jocko comes with a preview (pre-deploy) website, where you can see the real production content; the final step is to deploy it to its real hosting space of your choice: once configured, it will be a one-click operation from Jocko:
 
