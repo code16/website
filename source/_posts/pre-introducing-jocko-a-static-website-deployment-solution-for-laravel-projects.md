@@ -2,7 +2,7 @@
 title: Pre-introducing Jocko:: a static website deployment solution for laravel projects.
 description: >-
   Jocko allows to create a static website from a Laravel project, providing the CMS section and more.
-date: 2024-01-31
+date: 2024-02-05
 thumbnail: /assets/img/posts/pre-introducing-jocko-a-static-website-deployment-solution-for-laravel-projects/thumbnail.png
 author: philippe
 ---
