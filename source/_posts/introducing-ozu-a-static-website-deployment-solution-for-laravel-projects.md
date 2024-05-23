@@ -1,5 +1,5 @@
 ---
-title: Introducing Ozu, a static website deployment solution for laravel projects.
+title: Introducing Ozu, a static website deployment solution for Laravel projects.
 description: >-
   Ozu allows to build and deploy a static website from a standard Laravel codebase, providing the CMS section and more.
 date: 2024-05-23
