@@ -27,7 +27,7 @@ And as a big bonus, we want to allow our customers to manage the content of thei
 
 Here’s a quick overview of what Ozu is, and how it can be used:
 
-The first component is a Laravel package (`code16/ozu-client`) that you need to install on your project; the main impact is to add a trait in your models, and some custom methods to build the CMS part:
+**The first component is a Laravel package** (`code16/ozu-client`) that you need to install on your project; the main impact is to add a trait in your models, and some custom methods to build the CMS part:
 
 ```php
 class Project extends Model
@@ -54,10 +54,10 @@ class Project extends Model
     public static function configureOzuCollectionList(OzuCollectionListConfig $config): OzuCollectionListConfig
     {
         return $config
-            ->addColumn(OzuColumn::makeImage('cover', 1))
-            ->addColumn(OzuColumn::makeText('title', 4)->setLabel('Title'))
-            ->addColumn(OzuColumn::makeText('place', 3)->setLabel('Place'))
-            ->addColumn(OzuColumn::makeText('year', 3)->setLabel('Year'))
+            ->addColumn(OzuColumn::makeImage('cover'))
+            ->addColumn(OzuColumn::makeText('title')->setLabel('Title'))
+            ->addColumn(OzuColumn::makeText('place')->setLabel('Place'))
+            ->addColumn(OzuColumn::makeText('year')->setLabel('Year'))
             ->setIsSearchable()
             ->setIsReorderable();
     }
@@ -87,9 +87,9 @@ class Project extends Model
 
 An Ozu model has a few base fields (cover, title, content...), and as you can see in the code above you can declare more of them if needed.
 
-You can then develop the website as usual using blade views, controllers, routes, Eloquent models, migrations, seeder, factories...
+**You can then develop the website as usual** using blade views, controllers, routes, Eloquent models, migrations, seeder, factories...
 
-When your project is ready, the next step would be to create an Ozu account, to get a proper token and to run an artisan command to initialize the project on the Ozu side:
+When your project is ready, the next step would be to create an Ozu account, to get a proper token and to run an artisan command to **initialize the project on the Ozu side**:
 
 ```bash
 php artisan ozu:configure-cms
@@ -97,9 +97,9 @@ php artisan ozu:configure-cms
 
 After this command you’ll be able to access to the Ozu dashboard of your project, where you can manage the production content of your models:
 
-![A post form](/assets/img/posts/introducing-ozu-a-static-website-deployment-solution-for-laravel-projects/sharp.jpg)
+![The project form](/assets/img/posts/introducing-ozu-a-static-website-deployment-solution-for-laravel-projects/sharp.jpg)
 
-The final step is to deploy it to its real hosting space of your choice: once configured, it will be a one-click operation from Ozu:
+The final step is to **deploy it to its real hosting space** of your choice: once configured, it will be a one-click operation from Ozu:
 
 ![Publication](/assets/img/posts/introducing-ozu-a-static-website-deployment-solution-for-laravel-projects/deploy.jpg)
 
@@ -107,8 +107,8 @@ The idea is to let the content manager decide when to deploy: once the content i
 
 ## The when
 
-Ozu is a working piece of software that we are already using on some real projects, but it’s still in beta: we are looking for early testers to get feedback, and we are planning to launch the first public version in a few months.
+Ozu is a working piece of software that we are in fact already using on some production projects, but it’s still in beta: we are looking for early testers to get more feedback, and we are planning to launch the first public version in a few months.
 
-If you feel that Ozu could be a good fit for one of your projects and if you want to test the product, you can simply [subscribe to the newsletter here](https://ozu.code16.fr/#join) to be notified when we launch the beta.
+If you feel that **Ozu could be a good fit for one of your projects and if you want to test the product**, or if you want to be notified when we launch it, you can simply [subscribe to the newsletter here](https://ozu.code16.fr/#join).
 
-As always, feel free to [catch me on Twitter/X](https://x.com/dvlpp) for any comment or question on this, or by mail (philippe at code16.fr).
+That’s it for now; feel free to [catch me on Twitter/X](https://x.com/dvlpp) or directly by mail (philippe at code16.fr) for any comment or question on Ozu.
