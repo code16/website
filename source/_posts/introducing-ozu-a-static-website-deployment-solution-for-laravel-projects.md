@@ -11,9 +11,9 @@ author: philippe
 
 In the past few months we built a project, at Code 16, that we found very useful to build and deploy static websites. We weren't very happy with the existing solutions, so we decided to create our own product with three main goals in mind: keep our Laravel stack, handle all the deployment stuff and allow our customer to manage their content. 
 
-We called it [Ozu](https://ozu.code16.fr). Since it begins to be in a good state we decided to try to share this one as a product, and today is the presentation day, with a [product landing page launch](https://ozu.code16.fr). 
+We called it [Ozu](https://ozu.code16.fr); since it begins to be in a good state we decided to got for a product with this, and today is the presentation day with a [product landing page launch](https://ozu.code16.fr).
 
-It’s quite a big deal, and to be honest it still requires some work, but we think that Ozu is mature enough to onboard some early beta testers.
+It’s quite a big deal for us, and to be honest it still requires some work, but we think that Ozu is mature enough to onboard some early beta testers.
 
 ## But first, the why
 
@@ -109,6 +109,6 @@ The idea is to let the content manager decide when to deploy: once the content i
 
 Ozu is a working piece of software that we are already using on some real projects, but it’s still in beta: we are looking for early testers to get feedback, and we are planning to launch the first public version in a few months.
 
-If you feel that Ozu could be a good fit for one of your projects and if you want to test the product, you can simply [subscribe to the newsletter here](https://ozu.code16.fr) to be notified when we launch the beta.
+If you feel that Ozu could be a good fit for one of your projects and if you want to test the product, you can simply [subscribe to the newsletter here](https://ozu.code16.fr/#join) to be notified when we launch the beta.
 
-As always, feel free to [catch me on Twitter/X](https://x.com/dvlpp) for any comment or question on this.
+As always, feel free to [catch me on Twitter/X](https://x.com/dvlpp) for any comment or question on this, or by mail (philippe at code16.fr).
