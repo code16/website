@@ -395,17 +395,16 @@
             <a href="{{ $page->developers['philippe']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
-        <x-team-member-item :member="$page->developers['arnaud']">
-            Backend developer (PHP and Laravel).
-            <br>
-            <a href="{{ $page->developers['arnaud']->twitter }}">twitter</a>,
-            <a href="{{ $page->developers['arnaud']->linkedIn }}">linkedIn</a>
-        </x-team-member-item>
-
         <x-team-member-item :member="$page->developers['antoine']">
             Front-end developer (mobile apps, Vue.js, Alpine.js, Livewire).
             <br>
             <a href="{{ $page->developers['antoine']->linkedIn }}">linkedIn</a>
+        </x-team-member-item>
+
+        <x-team-member-item :member="$page->developers['lucien']">
+            Backend developer (PHP and Laravel).
+            <br>
+            <a href="{{ $page->developers['lucien']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
         <x-paragraph>

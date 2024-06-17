@@ -434,25 +434,26 @@
         </x-slot:title>
 
         <x-team-member-item :member="$page->developers['philippe']">
-            Fondateur de Code 16, gérant de l’entreprise et développeur principal de plusieurs projets.
+            Fondateur de Code 16, gérant de l’entreprise et développeur principal
+            de plusieurs projets.
             <br>
             <a href="mailto:philippe@code16.fr">email</a>,
             <a href="{{ $page->developers['philippe']->twitter }}">twitter</a>,
             <a href="{{ $page->developers['philippe']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
-        <x-team-member-item :member="$page->developers['arnaud']">
-            Développeur <em>back</em> expérimenté, spécialiste de PHP et Laravel avec une orientation infrastructure / devops, il intervient sur tous les projets.
-            <br>
-            <a href="{{ $page->developers['arnaud']->twitter }}">twitter</a>,
-            <a href="{{ $page->developers['arnaud']->linkedIn }}">linkedIn</a>
-        </x-team-member-item>
-
         <x-team-member-item :member="$page->developers['antoine']">
-            Responsable du développement <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;; il
-            travaille le plus souvent avec Vue.js, Alpine.js ou Livewire.
+            Responsable du développement <em>front</em>, à la fois sur les sites et sur les applications mobiles&nbsp;;
+            il travaille le plus souvent avec Inertia, Alpine.js, Vue.js, Tailwind et Livewire.
             <br>
             <a href="{{ $page->developers['antoine']->linkedIn }}">linkedIn</a>
+        </x-team-member-item>
+
+        <x-team-member-item :member="$page->developers['lucien']">
+            Développeur <em>back</em> spécialiste de PHP et Laravel avec une orientation infrastructure / devops,
+            il intervient sur tous les projets.
+            <br>
+            <a href="{{ $page->developers['lucien']->linkedIn }}">linkedIn</a>
         </x-team-member-item>
 
         <x-paragraph>

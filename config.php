@@ -29,6 +29,11 @@ return [
             'twitter' => 'https://twitter.com/smknstd',
             'linkedIn' => 'https://www.linkedin.com/in/arnaud-becher-0a85bb162/',
         ],
+        'lucien' => [
+            'name' => 'Lucien Puget',
+            'avatar' => 'https://gravatar.com/avatar/' . md5('lucien.puget@code16.fr') . '?d=retro',
+            'linkedIn' => 'https://www.linkedin.com/in/lucienpuget/',
+        ],
         'antoine' => [
             'name' => 'Antoine Guingand',
             'avatar' => 'https://gravatar.com/avatar/' . md5('guingand.antoine@gmail.com') . '?d=retro',
