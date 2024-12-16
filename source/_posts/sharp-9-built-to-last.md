@@ -1,5 +1,5 @@
 ---
-title: Sharp 9 — built to last.
+title: Sharp 9, built to last.
 description: >-
   The v9 is mainly focused on technical improvements, but it also brings nice new features. 
 date: 2024-12-17
@@ -7,7 +7,7 @@ thumbnail: /assets/img/posts/sharp-9-built-to-last/thumb.png
 author: philippe
 ---
 
-In the release post of [Sharp 8](https://code16.fr/posts/sharp-8-for-laravel-is-here/), last year, I mentioned that we were already working on the v9, and that it would be an ambitious technical release, without new features. It was indeed ambitious, and it took us a bit more time than expected, but it's finally here! and good news: it also brings some great new features.
+In the release post of [Sharp 8](https://code16.fr/posts/sharp-8-for-laravel-is-here/), last year, I mentioned that we were already working on the v9, and that it would be an ambitious technical release, without new features. It was indeed ambitious, and it took us a bit more time than expected, but it’s finally here! and good news: it also brings some great new features.
 
 ## Inertia, Tailwind CSS and shadcn/ui
 
@@ -15,7 +15,7 @@ In the release post of [Sharp 8](https://code16.fr/posts/sharp-8-for-laravel-is-
 
 We rewrote A LOT of code. 
 
-The front part of Sharp is now built with [Inertia.js](https://inertiajs.com/), for the better: we preserved the powerful breadcrumb system of Sharp, while managing to remove a lot of complexity due to the json-based API, making the code more maintainable and more testable. On the DX side, it's also a big win, as it's now easier to debug functional code with your regular tools (Xdebug, `dd()`...).
+The front part of Sharp is now built with [Inertia.js](https://inertiajs.com/), for the better: we preserved the powerful breadcrumb system of Sharp, while managing to remove a lot of complexity due to the json-based API, making the code more maintainable and more testable. On the DX side, it’s also a big win, as it’s now easier to debug functional code with your regular tools (Xdebug, `dd()`...).
 
 We also took the opportunity to switch to [Tailwind CSS](https://tailwindcss.com/) and to leverage [shadcn/ui](https://ui.shadcn.com) to entirely rebuild Sharp’s UI: every filter, form field, dialog was rewritten leading to, we think, a big improvement in terms of consistency and design.
 
@@ -31,7 +31,9 @@ As a bonus input validation can be part on the Form class in 9.x which often lea
 
 This release is really DX-focused, as we made a lot of improvements in this area:
 
-- new **code-based configuration system** (no more `config/sharp.php`)
+### New code-based configuration system 
+
+No more `config/sharp.php` file.
 
 ```php
 class SharpServiceProvider extends SharpAppServiceProvider
@@ -50,7 +52,9 @@ class SharpServiceProvider extends SharpAppServiceProvider
 }
 ```
 
-- new **artisan commands** to generate resources with prompts, and a new `sharp:install` command to get started quickly
+### New artisan commands to generate resources with prompts
+
+With a new `sharp:install` command to get started quickly:
 
 ```bash
 ➜  php artisan sharp:install
@@ -63,38 +67,51 @@ class SharpServiceProvider extends SharpAppServiceProvider
    INFO  Sharp has been installed! You can now generate your first Sharp Entity with [php artisan sharp:generator].
 ```
 
-- built-in **impersonation system** on dev environment
+### Built-in impersonation system on dev environment
 
 ![](/assets/img/posts/sharp-9-built-to-last/impersonation.png)
 
-- no more Vue templates (autocomplete, page alerts...): **everything is now in full Blade**
+### And more...
+
+- no more Vue templates (autocomplete, page alerts...): **everything is now in Blade**
 - no more dependence towards Font Awesome, as we now leverage `blade-ui-kit/blade-icons` allowing you to **use many icon sets**
 - new performance system to **memoize instances in Entity Lists** (to spare DB queries)
-- **improved Editor field**: add custom embeds in the toolbar, allow legend on uploads, and more
+- **improved Editor field**: add custom embeds in the toolbar and allow legend on uploads
 
 ## New user features
 
 The idea was not to add features on this version, but since the new code organization allowed us to do it quite easily, we added some nice things:
 
-- first, while it's not technically a feature, it's worth mentioning the **new UI**
+### New UI
+
+While it’s not technically a feature it’s worth mentioning it: the new UI is more consistent, more modern, more accessible and more responsive.
 
 ![](/assets/img/posts/sharp-9-built-to-last/ui.png)
 
-- implement **forgotten password** only with configuration
-- new **quick creation system**: allow your user to create an instance from the List page, in a modal, without adding any code except the configuration
+### Forgotten password 
+
+Really built-in, like the 2FA: should only be a matter of configuration.
+
+### New quick creation system
+
+Allow your user to create an instance from the List page, in a modal, without adding any code but relying on your regular Form implementation.
 
 <video width="1302" height="836" controls class="mb-6">
     <source src="/assets/img/posts/sharp-9-built-to-last/quick-create.mp4" type="video/mp4">
 </video>
 
-- **Dark mode**!
+### Dark mode!
   
 ![](/assets/img/posts/sharp-9-built-to-last/dark-mode.png)
 
 ## How to upgrade?
 
-Let's be honest, upgrading from 8.x to 9.x will require some work given that we touched many parts of the package. But we tried to ease the pain as much as possible, and we wrote a [dedicated upgrade guide](https://sharp.code16.fr/docs/guide/upgrading/9.0) to help you through the process.
+First, at the time of writing this blog post, Sharp 9 is still in beta: make sure not to use it in production yet (we are confident that a stable version will be released soon).
 
-## What's next?
+Next, let's be honest, upgrading from 8.x to 9.x will require some work given that we touched many parts of the package. But we tried to ease the pain as much as possible, and we wrote a [dedicated upgrade guide](https://sharp9.code16.fr/docs/guide/upgrading/9.0) to help you through the process.
 
-Sharp 9 represents a very solid foundation for the future, and we are already planning for new features for the 9.1 version. You can stay tuned joining the Discord server, or following this blog; and you can reach me directly at philippe [at] code16.fr (as I'm quietly quitting X/Twitter).
+And **if you are new to Sharp**, well, this announcement post is not a good starting point: maybe you can read this old but still relevant [introduction post](https://code16.fr/posts/leveraging-sharp-laravel-open-source-content-management-framework/), and go to [Sharp’s website](https://sharp.code16.fr) to check the online demo, and get started with the documentation. 
+
+## What’s next?
+
+Sharp 9 represents a very solid foundation for the future, and we are already planning for new features in the 9.1 version. You can stay tuned joining the [Discord server](https://discord.com/invite/sFBT5c3XZz), or following this blog; and you can reach me directly at philippe [at] code16.fr (as I'm quietly quitting X/Twitter) for any particular question or feedback.
