@@ -25,7 +25,7 @@ On the backend side, we refactored the way uploads are handled, and without brea
 
 But more importantly, it leads us fixing an old pain point: form input validation was handled **before** field formatting in 8.x because of upload related constrains, leading to annoyances for the developer like the delayed creation (if you know, you know). This is now fixed, and form validation is now done after formatting, which is a much more logical and powerful way to handle it.
 
-As a bonus input validation can be part on the Form class in 9.x which often leads to a more readable code and less boilerplate.
+As a bonus input validation can be part of the Form class in 9.x which often leads to a more readable code and less boilerplate.
 
 ## Developer experience (DX) improvements
 
