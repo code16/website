@@ -23,7 +23,7 @@ We also took the opportunity to switch to [Tailwind CSS](https://tailwindcss.com
 
 On the backend side, we refactored the way uploads are handled, and without breaking changes, it allows us to add upload validation (file size, dimensions) and a new fluent thumbnail API. 
 
-But more importantly, it leads us fixing old pain point: form input validation was handled **before** field formatting in 8.x because of upload related constrains, leading to annoyances for the developer like the delayed creation (if you know, you know). This is now fixed, and form validation is now done after formatting, which is a much more logical and powerful way to handle it.
+But more importantly, it leads us fixing an old pain point: form input validation was handled **before** field formatting in 8.x because of upload related constrains, leading to annoyances for the developer like the delayed creation (if you know, you know). This is now fixed, and form validation is now done after formatting, which is a much more logical and powerful way to handle it.
 
 As a bonus input validation can be part on the Form class in 9.x which often leads to a more readable code and less boilerplate.
 
