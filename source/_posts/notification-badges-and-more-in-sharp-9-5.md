@@ -74,8 +74,6 @@ class MySharpMenu extends SharpMenu
 }
 ```
 
-With this, if the user clicks on the badge, it will redirect to the entity list of posts in draft state, with a filter applied. This can already be useful in many different cases, but we still felt that it was lacking of clarity: if the user clicks on the item (not the badge) and faces the unfiltered entity list, it can be confusing. To provide context, our idea is to make use of the already in place [global page alert feature](https://sharp.code16.fr/docs/guide/page-alerts#add-global-page-alert), adding a way to display a link in it:
-
 With this enhancement, clicking the badge leads the user directly to the filtered list of draft posts. A big improvement, but we still felt something was missing: if a user clicks the menu item itself (not the badge), they end up on the full, unfiltered list, without any context related to the badge, which can be confusing. A good solution to solve this is to leverage the [global page alert system](https://sharp.code16.fr/docs/guide/page-alerts#add-global-page-alert), and we enhanced it with support for links:
 
 ```php
